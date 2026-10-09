@@ -19,7 +19,7 @@
 | [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 기억한 취향에 맞는 다음 음료를 고르기 어려운 문제 | 취향 해석, 조건 검사, 추천 보류와 후속 알림 시제품 |
 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 판매 준비 과정의 지연, 오류와 담당자 누락 | 우선 신호, 다음 행동과 완료 기준을 연결한 운영표 |
 | [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | VIP 행사 전후의 고객 정보와 담당 업무가 끊기는 문제 | 가상 행사 고객 흐름, 측정 기준과 인계 구조 |
-| [퍼짐](https://github.com/jhheo51-arch/perjim) | 다음 콘텐츠를 제안한 근거를 확인하기 어려운 문제 | 공개 글 기반 분석과 콘텐츠 구성안, 독립 사례 분석 |
+| [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
@@ -33,4 +33,4 @@
 
 프로젝트 관련 질문은 해당 공개 저장소의 **Issues(질문과 개선 제안을 남기는 공간)**에서 다룹니다.
 
-이 소개 문서를 보관한 저장소는 현재 비공개입니다. 위 대표 프로젝트 링크는 공개 저장소로 연결됩니다.
+대표 프로젝트 5개는 모두 공개 저장소로 연결됩니다. 코드, 문서와 결과물의 이용 범위는 각 저장소의 `LICENSE.md`에서 확인할 수 있습니다.
