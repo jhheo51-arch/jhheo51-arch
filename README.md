@@ -23,6 +23,14 @@
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
+## 지원 직무별로 보기
+
+| 관심 직무 | 먼저 볼 프로젝트 | 확인할 판단 |
+|---|---|---|
+| 제품 기획, 서비스 기획 | [MEMOIVE](https://github.com/jhheo51-arch/memoive), [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 사용자 입력부터 결과 확인, 저장과 오류 대응까지 이어지는 흐름 |
+| 운영 기획, CRM | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board), [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | 우선순위, 담당자, 다음 행동과 완료 기준 |
+| 브랜드 마케팅, 콘텐츠 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 자료 조사, 콘텐츠 제작, 반응 확인과 수정 과정 |
+
 ## 프로젝트를 볼 때
 
 웹 서비스에서는 직접 작성과 AI 보조의 역할, 저장 실패와 오류 이후의 흐름을 중점적으로 봤습니다. 운영 프로젝트에서는 담당자, 기한, 다음 행동과 완료 기준이 이어지는지를 확인했습니다.
