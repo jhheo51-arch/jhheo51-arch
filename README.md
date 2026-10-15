@@ -7,7 +7,6 @@
 ## 포트폴리오
 
 - [포트폴리오 PDF](./허재혁_포트폴리오.pdf)
-- [GitHub 프로필](https://github.com/jhheo51-arch)
 
 ## 작업하는 방식
 
@@ -25,6 +24,9 @@
 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 판매 준비 과정의 지연, 오류와 담당자 누락 | 우선 신호, 다음 행동과 완료 기준을 연결한 운영표 |
 | [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | VIP 행사 전후의 고객 정보와 담당 업무가 끊기는 문제 | 가상 행사 고객 흐름, 측정 기준과 인계 구조 |
 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
+| [IRP 객단가 레이더](https://github.com/jhheo51-arch/irp-aov-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안(진행 중) |
+| [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 전기차 고객센터에서 차주 정보가 흩어지고 안전 신호가 늦게 올라가는 문제 | 가상 완성차 회사의 VOC 처리에서 고객 생애주기로 넓힌 Salesforce CRM |
+| [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 배달 지연의 원인이 주문, 이동, 조리 중 어디인지 구분하기 어려운 문제 | 공개 교통 API와 현장 확인으로 원인 가설을 비교하고 조치 전후 효과와 비용을 기록하는 도구 |
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
@@ -33,15 +35,17 @@
 | 관심 직무 | 먼저 볼 프로젝트 | 확인할 판단 |
 |---|---|---|
 | 제품 기획, 서비스 기획 | [MEMOIVE](https://github.com/jhheo51-arch/memoive), [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 사용자 입력부터 결과 확인, 저장과 오류 대응까지 이어지는 흐름 |
-| 운영 기획, CRM | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board), [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | 우선순위, 담당자, 다음 행동과 완료 기준 |
+| 디지털 서비스 기획, 데이터 분석 | [IRP 객단가 레이더](https://github.com/jhheo51-arch/irp-aov-radar) | 공시 자료와 이용자 리뷰에서 막히는 단계를 찾고 개선안으로 잇는 과정 |
+| 운영 기획 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board), [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 우선순위, 담당자, 원인 가설 검증과 조치 전후 비교 |
+| CRM, 고객 경험 | [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations), [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 고객 정보 연결, 이관 기준, 규칙과 AI 보조의 역할 구분 |
 | 브랜드 마케팅, 콘텐츠 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 자료 조사, 콘텐츠 제작, 반응 확인과 수정 과정 |
 
 ## 프로젝트를 볼 때
 
-웹 서비스에서는 직접 작성과 AI 보조의 역할, 저장 실패와 오류 이후의 흐름을 중점적으로 봤습니다. 운영 프로젝트에서는 담당자, 기한, 다음 행동과 완료 기준이 이어지는지를 확인했습니다.
+웹 서비스에서는 직접 작성과 AI 보조의 역할, 저장 실패와 오류 이후의 흐름을 중점적으로 봤습니다. 운영 프로젝트에서는 담당자, 기한, 다음 행동과 완료 기준이 이어지는지를 확인했습니다. 데이터 분석에서는 출처, 기간, 분모와 표본 수를 결과와 함께 적었습니다.
 
-코드 작성과 조사, 검사를 보조하는 도구로 Codex를 사용합니다. 프로젝트의 문제, 기능 범위와 최종 판단은 제가 정하고 결과를 검토합니다. 가상 고객과 시제품의 결과를 실제 회사의 운영 경험이나 성과로 제시하지 않습니다.
+코드 작성과 조사, 검사를 보조하는 도구로 Codex와 Claude Code를 사용합니다. 프로젝트의 문제, 기능 범위와 최종 판단은 제가 정하고 결과를 검토합니다. 가상 고객과 시제품의 결과를 실제 회사의 운영 경험이나 성과로 제시하지 않습니다.
 
 ## 질문과 제안
 
-프로젝트 관련 질문은 각 공개 저장소의 Issues에서 다룹니다. 대표 프로젝트는 모두 공개 저장소로 연결됩니다. 코드, 문서와 결과물의 이용 범위는 각 저장소의 LICENSE.md에서 확인할 수 있습니다.
+프로젝트 관련 질문은 각 공개 저장소의 Issues에서 다룹니다. 대표 프로젝트는 모두 공개 저장소로 연결됩니다. LICENSE.md가 있는 저장소는 그 파일에서 코드, 문서와 결과물의 이용 범위를 확인할 수 있습니다.
