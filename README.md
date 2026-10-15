@@ -27,6 +27,7 @@
 | [IRP 객단가 레이더](https://github.com/jhheo51-arch/irp-aov-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안. 분기 공시와 월별 리뷰를 갱신하며 운영 중 |
 | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 전기차 고객센터에서 차주 정보가 흩어지고 안전 신호가 늦게 올라가는 문제 | 가상 완성차 회사의 VOC 처리에서 고객 생애주기로 넓힌 Salesforce CRM |
 | [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 배달 지연의 원인이 주문, 이동, 조리 중 어디인지 구분하기 어려운 문제 | 공개 교통 API와 현장 확인으로 원인 가설을 비교하고 조치 전후 효과와 비용을 기록하는 도구 |
+| [새록이](https://github.com/jhheo51-arch/saeroki) | 관심 분야 정보와 낯선 산업 용어를 매번 직접 찾아 정리해야 하는 문제 | 열매 12개·뿌리 4개로 나눈 개인 AI 에이전트, [새록 사전](https://jhheo51-arch.github.io/saeroki/) 웹, 쓸수록 자라는 픽셀 캐릭터 |
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
