@@ -24,7 +24,7 @@
 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 판매 준비 과정의 지연, 오류와 담당자 누락 | 우선 신호, 다음 행동과 완료 기준을 연결한 운영표 |
 | [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | VIP 행사 전후의 고객 정보와 담당 업무가 끊기는 문제 | 가상 행사 고객 흐름, 측정 기준과 인계 구조 |
 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
-| [IRP 객단가 레이더](https://github.com/jhheo51-arch/irp-aov-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안(진행 중) |
+| [IRP 객단가 레이더](https://github.com/jhheo51-arch/irp-aov-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안. 분기 공시와 월별 리뷰를 갱신하며 운영 중 |
 | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 전기차 고객센터에서 차주 정보가 흩어지고 안전 신호가 늦게 올라가는 문제 | 가상 완성차 회사의 VOC 처리에서 고객 생애주기로 넓힌 Salesforce CRM |
 | [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 배달 지연의 원인이 주문, 이동, 조리 중 어디인지 구분하기 어려운 문제 | 공개 교통 API와 현장 확인으로 원인 가설을 비교하고 조치 전후 효과와 비용을 기록하는 도구 |
 
