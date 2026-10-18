@@ -1,12 +1,15 @@
-# 허재혁 | 제품 기획과 운영
+# 허재혁 | PM·서비스 기획
 
-문제의 이유와 판단 기준을 정리하고, 이를 직접 확인할 수 있는 웹 서비스와 운영 도구로 만듭니다.
+사용자가 어디서 멈추는지 근거로 찾고, 무엇을 먼저 만들지 기준과 함께 정합니다. 정한 기준은 직접 확인할 수 있는 화면과 시제품으로 옮겨 다시 잽니다.
 
-제품 기획, 데이터 분석, CRM과 운영 설계에 관심을 두고 프로젝트를 진행합니다. 공개 자료에서 확인한 사실, 제가 세운 가정과 아직 검증하지 못한 효과를 구분해 기록합니다.
+공개 자료에서 확인한 사실, 제가 세운 가정과 아직 검증하지 못한 효과를 구분해 기록합니다.
 
-## 포트폴리오
+연락처: jhheo5163@gmail.com
 
-- [포트폴리오 PDF](./허재혁_포트폴리오.pdf)
+## 이력서와 포트폴리오
+
+- [이력서·경력기술서 PDF](./허재혁_이력서_경력기술서_PM.pdf) (A4 2쪽)
+- [포트폴리오 PDF](./허재혁_포트폴리오_PM.pdf) (A4 5쪽: 새록이, MEMOIVE, IRP 계좌 성장 레이더, 인턴 요구정의)
 
 ## 작업하는 방식
 
@@ -19,27 +22,33 @@
 
 | 프로젝트 | 다룬 문제 | 살펴볼 내용 |
 |---|---|---|
-| [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 저장한 자료가 실제 글로 이어지지 않는 문제 | 원문, 내 생각과 글쓰기를 연결한 서비스 및 발표자료 |
+| [새록이](https://github.com/jhheo51-arch/saeroki) | 관심 정보 정리부터 PRD 점검·지원서 작성까지 반복 작업을 매번 손으로 하는 문제 | AI 에이전트 16개를 PRD부터 설계해 만드는 묶음. PRD 검사 도구 새록 검토관으로 PRD 27개를 검사해 오판을 고침. Claude Code 플러그인과 [웹 화면](https://jhheo51-arch.github.io/saeroki/)으로 공개 |
+| [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 저장한 자료를 다시 보지 않아 생각이 쌓이지 않는 문제 | 의견 16건으로 북극성 지표를 다시 정하고, 개선 7개의 우선순위를 정해 운영 중인 기록 서비스 |
+| [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안. 분기 공시와 월별 리뷰를 갱신하며 운영 중 |
+
+## 그 밖의 프로젝트
+
+| 프로젝트 | 다룬 문제 | 살펴볼 내용 |
+|---|---|---|
+| [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 리뷰·상담 음성·영상에 흩어진 고객 불만을 개선 과제로 묶기 어려운 문제 | 감정 지수와 불만 분류로 개선 과제의 우선순위를 매기는 분석 도구. 공개 실제 데이터로 정밀도·재현율을 재고 한계를 기록. [대시보드](https://voc-lens.streamlit.app/) 공개 |
 | [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 기억한 취향에 맞는 다음 음료를 고르기 어려운 문제 | 취향 해석, 조건 검사, 추천 보류와 후속 알림 시제품 |
+| [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 판매 준비 과정의 지연, 오류와 담당자 누락 | 우선 신호, 다음 행동과 완료 기준을 연결한 운영표 |
 | [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | VIP 행사 전후의 고객 정보와 담당 업무가 끊기는 문제 | 가상 행사 고객 흐름, 측정 기준과 인계 구조 |
-| [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
-| [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안. 분기 공시와 월별 리뷰를 갱신하며 운영 중 |
 | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 전기차 고객센터에서 차주 정보가 흩어지고 안전 신호가 늦게 올라가는 문제 | 가상 완성차 회사의 VOC 처리에서 고객 생애주기로 넓힌 Salesforce CRM |
 | [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 배달 지연의 원인이 주문, 이동, 조리 중 어디인지 구분하기 어려운 문제 | 공개 교통 API와 현장 확인으로 원인 가설을 비교하고 조치 전후 효과와 비용을 기록하는 도구 |
-| [새록이](https://github.com/jhheo51-arch/saeroki) | 관심 분야 정보와 낯선 산업 용어를 매번 직접 찾아 정리해야 하는 문제 | 열매 12개·뿌리 4개로 나눈 개인 AI 에이전트, [새록 사전](https://jhheo51-arch.github.io/saeroki/) 웹, 쓸수록 자라는 픽셀 캐릭터 |
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
-## 지원 직무별로 보기
+## PM·서비스 기획 관점에서 보기
 
-| 관심 직무 | 먼저 볼 프로젝트 | 확인할 판단 |
+| 기획 업무 | 먼저 볼 곳 | 확인할 판단 |
 |---|---|---|
-| 제품 기획, 서비스 기획 | [MEMOIVE](https://github.com/jhheo51-arch/memoive), [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 사용자 입력부터 결과 확인, 저장과 오류 대응까지 이어지는 흐름 |
-| 디지털 서비스 기획, 데이터 분석 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 공시 자료와 이용자 리뷰에서 막히는 단계를 찾고 개선안으로 잇는 과정 |
-| 운영 기획 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board), [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 우선순위, 담당자, 원인 가설 검증과 조치 전후 비교 |
-| CRM, 고객 경험 | [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations), [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 고객 정보 연결, 이관 기준, 규칙과 AI 보조의 역할 구분 |
-| 브랜드 마케팅, 콘텐츠 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 자료 조사, 콘텐츠 제작, 반응 확인과 수정 과정 |
+| 문제 정의, 지표 설계 | [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 사용자 의견을 묶어 문제를 다시 정하고 북극성 지표를 앞 단계로 옮긴 이유 |
+| 데이터로 우선순위 정하기 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 공시와 앱 리뷰로 막히는 단계를 찾고 개선안 1순위를 고른 과정 |
+| 요구사항 정의, AI 기능 기획 | [새록이](https://github.com/jhheo51-arch/saeroki) | PRD에 꼭 있어야 할 기준 7개, AI 없이 도는 규칙 검사와 AI 의견을 나눈 이유 |
+| 고객 의견 분석 | [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 분류 기준을 공개 데이터로 평가하고, 맞힌 비율과 놓친 비율을 함께 적은 방식 |
+| 운영 정책과 화면 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board), [Global CRM Event Operations](https://github.com/jhheo51-arch/global-crm-event-operations) | 담당자, 기한, 다음 행동과 완료 기준이 화면에서 이어지는지 |
 
 ## 프로젝트를 볼 때
 
