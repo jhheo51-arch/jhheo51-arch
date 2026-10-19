@@ -1,13 +1,13 @@
-# 허재혁 | PM·서비스 기획
+# 허재혁 | 서비스 기획, 마케팅 기획
 
-사용자가 어디서 멈추는지 근거로 찾고, 무엇을 먼저 만들지 기준과 함께 정합니다. 정한 기준은 직접 확인할 수 있는 화면과 시제품으로 옮겨 다시 잽니다.
+고객이 어디서 멈추는지 근거로 찾고, 누구에게 무엇을 먼저 할지 기준과 함께 정합니다. 정한 기준은 화면, 시제품과 캠페인 설계로 옮겨 그 판단이 맞았는지 다시 잽니다.
 
 공개 자료에서 확인한 사실, 제가 세운 가정과 아직 검증하지 못한 효과를 구분해 기록합니다.
 
 ## 이력서와 포트폴리오
 
-- [이력서·경력기술서 PDF](./허재혁_이력서_경력기술서_PM.pdf)
-- [포트폴리오 PDF](./허재혁_포트폴리오_PM.pdf)
+- [이력서와 경력기술서 PDF (PM 기준)](./허재혁_이력서_경력기술서_PM.pdf)
+- [포트폴리오 PDF (PM 기준)](./허재혁_포트폴리오_PM.pdf)
 
 ## 작업하는 방식
 
@@ -20,7 +20,7 @@
 
 | 프로젝트 | 다룬 문제 | 살펴볼 내용 |
 |---|---|---|
-| [새록이](https://github.com/jhheo51-arch/saeroki) | 관심 정보 정리부터 PRD 점검·지원서 작성까지 반복 작업을 매번 손으로 하는 문제 | AI 에이전트 16개를 PRD부터 설계해 만드는 묶음. PRD 검사 도구 새록 검토관으로 PRD 27개를 검사해 오판을 고침. Claude Code 플러그인과 [웹 화면](https://jhheo51-arch.github.io/saeroki/)으로 공개 |
+| [새록이](https://github.com/jhheo51-arch/saeroki) | 관심 정보 정리부터 PRD 점검과 지원서 작성까지 반복 작업을 매번 손으로 하는 문제 | AI 에이전트 16개를 PRD부터 설계해 만드는 묶음. PRD 검사 도구 새록 검토관으로 PRD 27개를 검사해 오판을 고침. Claude Code 플러그인과 [웹 화면](https://jhheo51-arch.github.io/saeroki/)으로 공개 |
 | [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 저장한 자료를 다시 보지 않아 생각이 쌓이지 않는 문제 | 의견 16건으로 북극성 지표를 다시 정하고, 개선 7개의 우선순위를 정해 운영 중인 기록 서비스 |
 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안. 분기 공시와 월별 리뷰를 갱신하며 운영 중 |
 
@@ -38,16 +38,25 @@
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
-## PM·서비스 기획 관점에서 보기
+## 직무별로 보기
+
+### PM, 서비스 기획
 
 | 기획 업무 | 먼저 볼 곳 | 확인할 판단 |
 |---|---|---|
 | 문제 정의, 지표 설계 | [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 사용자 의견을 묶어 문제를 다시 정하고 북극성 지표를 앞 단계로 옮긴 이유 |
 | 데이터로 우선순위 정하기 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 공시와 앱 리뷰로 막히는 단계를 찾고 개선안 1순위를 고른 과정 |
 | 요구사항 정의, AI 기능 기획 | [새록이](https://github.com/jhheo51-arch/saeroki) | PRD에 꼭 있어야 할 기준 7개, AI 없이 도는 규칙 검사와 AI 의견을 나눈 이유 |
-| 고객 의견 분석 | [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 분류 기준을 공개 데이터로 평가하고, 맞힌 비율과 놓친 비율을 함께 적은 방식 |
-| 캠페인 기획과 성과 확인 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 대상, 메시지, 발송 시점을 정한 근거와 미발송군을 남겨 그 판단이 맞았는지 확인하는 방식 |
 | 운영 정책과 화면 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 담당자, 기한, 다음 행동과 완료 기준이 화면에서 이어지는지 |
+
+### 마케팅 기획
+
+| 기획 업무 | 먼저 볼 곳 | 확인할 판단 |
+|---|---|---|
+| 캠페인 기획과 성과 확인 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 대상, 메시지, 발송 시점을 정한 근거와 미발송군을 남겨 그 판단이 맞았는지 확인하는 방식 |
+| 고객 의견 분석 | [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 분류 기준을 공개 데이터로 평가하고, 맞힌 비율과 놓친 비율을 함께 적은 방식 |
+| 콘텐츠 기획 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 카드뉴스와 채널별 제작안으로 옮기고, 반응을 확인해 고친 과정 |
+| 데이터로 고객 단계 찾기 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 가입 뒤 어느 단계에서 고객이 멈추는지 공시와 앱 리뷰로 찾은 과정 |
 
 ## 프로젝트를 볼 때
 
