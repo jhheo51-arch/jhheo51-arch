@@ -32,7 +32,7 @@
 | [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 기억한 취향에 맞는 다음 음료를 고르기 어려운 문제 | 취향 해석, 조건 검사, 추천 보류와 후속 알림 시제품 |
 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 판매 준비 과정의 지연, 오류와 담당자 누락 | 우선 신호, 다음 행동과 완료 기준을 연결한 운영표 |
-| [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 캠페인 성과를 반응률로만 말해 메시지 때문에 늘어난 반응을 구분하지 못하는 문제 | 공개 실험 데이터의 증분 측정과 업리프트, 거래 기록의 RFM과 CLV, 가상 VIP 행사 운영 설계 |
+| [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 캠페인을 누구에게, 무엇을, 언제 보낼지 근거 없이 정하고 성과를 반응률로만 말하는 문제 | 재방문 캠페인, VIP 행사, 비수기 캠페인 기획서 세 편. 공개 데이터에서 보내지 않아도 샀을 고객을 빼고 계산한 효과와 고객 가치 분석을 대상 선정 근거로 씀 |
 | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 전기차 고객센터에서 차주 정보가 흩어지고 안전 신호가 늦게 올라가는 문제 | 가상 완성차 회사의 VOC 처리에서 고객 생애주기로 넓힌 Salesforce CRM |
 | [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 배달 지연의 원인이 주문, 이동, 조리 중 어디인지 구분하기 어려운 문제 | 공개 교통 API와 현장 확인으로 원인 가설을 비교하고 조치 전후 효과와 비용을 기록하는 도구 |
 
@@ -46,7 +46,8 @@
 | 데이터로 우선순위 정하기 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 공시와 앱 리뷰로 막히는 단계를 찾고 개선안 1순위를 고른 과정 |
 | 요구사항 정의, AI 기능 기획 | [새록이](https://github.com/jhheo51-arch/saeroki) | PRD에 꼭 있어야 할 기준 7개, AI 없이 도는 규칙 검사와 AI 의견을 나눈 이유 |
 | 고객 의견 분석 | [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 분류 기준을 공개 데이터로 평가하고, 맞힌 비율과 놓친 비율을 함께 적은 방식 |
-| 운영 정책과 화면 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board), [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 담당자, 기한, 다음 행동과 완료 기준이 화면에서 이어지는지 |
+| 캠페인 기획과 성과 확인 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 대상, 메시지, 발송 시점을 정한 근거와 미발송군을 남겨 그 판단이 맞았는지 확인하는 방식 |
+| 운영 정책과 화면 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 담당자, 기한, 다음 행동과 완료 기준이 화면에서 이어지는지 |
 
 ## 프로젝트를 볼 때
 
