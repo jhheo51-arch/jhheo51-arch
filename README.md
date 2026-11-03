@@ -20,11 +20,18 @@
 
 ## 대표 프로젝트
 
-| 프로젝트 | 다룬 문제 | 살펴볼 내용 |
+처음 방문하신다면 아래 순서로 보시면 됩니다. 프로젝트의 숫자와 화면은 실제 회사 성과가 아니라, 공개 자료와 가상 사례를 구분해 만든 개인 포트폴리오입니다.
+
+| 순서 | 프로젝트 | 보여주는 판단 |
 |---|---|---|
-| [새록이](https://github.com/jhheo51-arch/saeroki) | 관심 정보 정리부터 PRD 점검과 지원서 작성까지 반복 작업을 매번 손으로 하는 문제 | AI 에이전트 16개를 PRD부터 설계해 만드는 묶음. PRD 검사 도구 새록 검토관으로 PRD 27개를 검사해 오판을 고침. Claude Code 플러그인과 [웹 화면](https://jhheo51-arch.github.io/saeroki/)으로 공개 |
-| [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 저장한 자료를 다시 보지 않아 생각이 쌓이지 않는 문제 | 의견 16건으로 북극성 지표를 다시 정하고, 개선 7개의 우선순위를 정해 운영 중인 기록 서비스 |
-| [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | IRP 계약 수는 많은데 계약 1건당 적립금이 작은 문제 | 금감원 공시 분석, 앱 리뷰 349건 분류, 가입 이후 단계 개선 제안. 분기 공시와 월별 리뷰를 갱신하며 운영 중 |
+| 1 | [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 사용자 의견으로 문제와 북극성 지표를 다시 정하고, 작동하는 서비스로 확인한 과정 |
+| 2 | [새록이](https://github.com/jhheo51-arch/saeroki) | 여러 AI 에이전트의 역할과 검사 기준을 나누고, PRD에서 실행까지 연결한 과정 |
+| 3 | [claim-relay](https://github.com/jhheo51-arch/claim-relay) | AI가 틀릴 수 있는 상황에서 인용 확인, 등급 게이트와 사람 검토를 넣은 과정 |
+| 4 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 캠페인 대상과 메시지를 정하고, 미발송 비교군으로 증분 효과를 확인하려는 설계 |
+| 5 | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 운영 신호를 우선순위, 담당자, 다음 행동과 완료 기준으로 바꾼 과정 |
+| 6 | [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 자료를 콘텐츠로 바꾸고 익명 반응을 다음 수정에 반영한 과정 |
+
+금융 서비스 분석은 [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar), 고객 의견 분석은 [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens), Salesforce CRM은 [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360)에서 확인할 수 있습니다.
 
 ## 그 밖의 프로젝트
 
