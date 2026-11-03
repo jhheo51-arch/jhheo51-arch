@@ -33,17 +33,20 @@
 
 금융 서비스 분석은 [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar), 고객 의견 분석은 [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens), Salesforce CRM은 [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360)에서 확인할 수 있습니다.
 
-## 그 밖의 프로젝트
+## 확장 프로젝트
 
-| 프로젝트 | 다룬 문제 | 살펴볼 내용 |
+대표 6개 외에도 직무와 관심사에 따라 아래 프로젝트를 볼 수 있습니다.
+
+| 프로젝트 | 분야 | 먼저 볼 이유 |
 |---|---|---|
-| [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 리뷰, 상담 음성, 영상에 흩어진 고객 불만을 개선 과제로 묶기 어려운 문제 | 감정 지수와 불만 분류로 개선 과제의 우선순위를 매기는 분석 도구. 공개 실제 데이터로 정밀도와 재현율을 재고 한계를 기록. [대시보드](https://voc-lens.streamlit.app/) 공개 |
-| [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 기억한 취향에 맞는 다음 음료를 고르기 어려운 문제 | 취향 해석, 조건 검사, 추천 보류와 후속 알림 시제품 |
-| [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | 공개 트렌드를 브랜드 콘텐츠로 연결한 뒤 수정 근거를 남기기 어려운 문제 | 카드뉴스, 채널별 제작안, 익명 반응 확인과 수정 과정 |
-| [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | 판매 준비 과정의 지연, 오류와 담당자 누락 | 우선 신호, 다음 행동과 완료 기준을 연결한 운영표 |
-| [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 캠페인을 누구에게, 무엇을, 언제 보낼지 근거 없이 정하고 성과를 반응률로만 말하는 문제 | 재방문 캠페인, VIP 행사, 비수기 캠페인 기획서 세 편. 공개 데이터에서 보내지 않아도 샀을 고객을 빼고 계산한 효과와 고객 가치 분석을 대상 선정 근거로 씀 |
-| [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 전기차 고객센터에서 차주 정보가 흩어지고 안전 신호가 늦게 올라가는 문제 | 가상 완성차 회사의 VOC 처리에서 고객 생애주기로 넓힌 Salesforce CRM |
-| [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 배달 지연의 원인이 주문, 이동, 조리 중 어디인지 구분하기 어려운 문제 | 공개 교통 API와 현장 확인으로 원인 가설을 비교하고 조치 전후 효과와 비용을 기록하는 도구 |
+| [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 금융 서비스 분석 | 공시와 앱 리뷰로 가입 이후의 개선 우선순위를 정한 과정 |
+| [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | 고객 의견 분석 | 리뷰, 음성, 영상 자료를 개선 과제로 묶고 분류 성능과 한계를 함께 기록한 도구 |
+| [NEXT CUP](https://github.com/jhheo51-arch/next-cup-ai-portfolio) | 제품 기획 | 취향 해석, 조건 검사, 추천 보류와 후속 알림을 연결한 시제품 |
+| [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | Salesforce CRM | 가상 전기차 고객센터의 VOC를 고객 생애주기 CRM으로 확장한 프로젝트 |
+| [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | 운영 실험 | 공개 교통 자료와 현장 확인으로 배달 지연 원인 가설을 비교하는 보드 |
+| [여의도 유동 분석](https://github.com/jhheo51-arch/yeouido-footfall) | 데이터 분석 | 역 승하차와 날씨 자료를 이용해 시간대와 장소별 집객 기회를 읽은 분석 |
+| [백화점 아침 점검 에이전트](https://github.com/jhheo51-arch/dept-morning-brief) | 운영 자동화 | 매출, 행사, 업무와 고객 접점을 한 장으로 점검하는 규칙 기반 도구 |
+| [exec-brief-agent](https://github.com/jhheo51-arch/exec-brief-agent) | 실험 중 | 재무 숫자와 문장을 분리하는 작은 도구이며 Claude 모드는 아직 검증 전 |
 
 각 저장소 README에 문제를 선택한 이유, 사용 흐름, 결과물과 검증 범위를 정리했습니다. 소개자료가 있는 프로젝트는 PDF를 먼저 읽고 Excel과 구현을 확인할 수 있습니다.
 
