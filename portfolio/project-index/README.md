@@ -1,9 +1,12 @@
-# 다른 프로젝트
+# 전체 프로젝트와 실험
 
-프로필의 대표 사례 세 개 이외에 만든 공개 프로젝트입니다. 각 저장소 README에서 문제, 직접 정한 판단, 결과물과 검증 범위를 확인할 수 있습니다.
+작업실에서 소개한 것과 그 밖의 공개 프로젝트를 분야별로 모았습니다. 각 저장소의 README에서 문제, 직접 정한 판단, 결과물과 검증 범위를 확인할 수 있습니다.
 
 | 분야 | 프로젝트 | 확인할 것 |
 |---|---|---|
+| CRM 기획 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 공개 거래 자료의 대상 선정과 미발송 비교군 설계 |
+| Salesforce CRM | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 가상 고객센터의 기록 연결과 안전 VOC 이관 규칙 |
+| A/B 실험 설계 | [정기 점검 재방문 실습](../salesforce-mc-crm/service_revisit_demo/) | 합성 자료의 방문 완료 차이와 전면 적용 보류 근거 |
 | 서비스 기획 | [MEMOIVE](https://github.com/jhheo51-arch/memoive) | 외부 의견을 읽고 북극성 지표를 바꾼 이유와 배포 화면 |
 | 서비스 기획 | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) | 공시와 앱 리뷰에서 가입 뒤 막히는 단계를 찾은 과정 |
 | AI 기획 | [새록이](https://github.com/jhheo51-arch/saeroki) | 에이전트의 역할과 검사 기준을 나눈 설계 |
