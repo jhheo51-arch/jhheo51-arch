@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parent
-MAIN = ROOT / "허재혁_MC_CRM_포트폴리오_본문_20261118_v15.md"
+MAIN = ROOT / "허재혁_MC_CRM_포트폴리오_본문_20261118_v16.md"
 DEMO = ROOT / "service_revisit_demo"
 text = MAIN.read_text(encoding="utf-8")
 results = json.loads((DEMO / "results.json").read_text(encoding="utf-8"))
@@ -37,6 +37,9 @@ documents = [
     ROOT / "면접_설명_준비_20261118_v3.md",
     ROOT / "비AB_항목별_근거_20261118_v1.md",
     ROOT / "전체_항목별_근거_20261118_v2.md",
+    ROOT / "MC_과제_공개요약_20261118_v1.md",
+    ROOT / "Aurora_공개_근거_20261118_v1.md",
+    ROOT / "개선_체크리스트_20261118_v9.md",
     ROOT / "service_revisit_demo/README.md",
     ROOT / "not_sent_demo/README.md",
     ROOT.parent.parent / "README.md",
