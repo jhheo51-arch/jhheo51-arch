@@ -1,0 +1,77 @@
+{
+  "status": "synthetic_education_only",
+  "plan_sha256": "b354c47d0dcdfb3eb7e832e1e0b11b403f9a0e700d227968e095bb51bf100f24",
+  "synthetic_csv_sha256": "15cdfa7bf8ca6a06dd208f407f6ff3fa11008a6f8a4b9329a72d7b3c04d2c475",
+  "population": 90000,
+  "funnel": {
+    "consent": 70139,
+    "due": 67572,
+    "existing_booking": 9023,
+    "mandatory_safety_notice": 1361,
+    "eligible": 46621
+  },
+  "by_arm": {
+    "A": {
+      "assigned": 15482,
+      "completed_28": 1416,
+      "optout_28": 129
+    },
+    "B": {
+      "assigned": 15603,
+      "completed_28": 1597,
+      "optout_28": 139
+    },
+    "H": {
+      "assigned": 15536,
+      "completed_28": 951,
+      "optout_28": 10
+    }
+  },
+  "interim_day_28": {
+    "assigned_by_day_28": 45069,
+    "mature_by_day_28": 1483
+  },
+  "primary_comparisons": {
+    "B-A": {
+      "difference_pp": 1.089106022964871,
+      "ci_level": 0.9833333333333333,
+      "ci_low_pp": 0.28565861765944783,
+      "ci_high_pp": 1.89279428749961,
+      "bonferroni_p": 0.003522387514239859
+    },
+    "A-H": {
+      "difference_pp": 3.0248384190484123,
+      "ci_level": 0.9833333333333333,
+      "ci_low_pp": 2.3047583532220943,
+      "ci_high_pp": 3.7475053624121837,
+      "bonferroni_p": 3.280310988566127e-23
+    },
+    "B-H": {
+      "difference_pp": 4.113944442013284,
+      "ci_level": 0.9833333333333333,
+      "ci_low_pp": 3.373575512255686,
+      "ci_high_pp": 4.857090090886743,
+      "bonferroni_p": 1.4958019666326332e-39
+    }
+  },
+  "primary_B_minus_A": {
+    "difference_pp": 1.089106022964871,
+    "ci_level": 0.9833333333333333,
+    "ci_low_pp": 0.28565861765944783,
+    "ci_high_pp": 1.89279428749961,
+    "bonferroni_p": 0.003522387514239859
+  },
+  "exploratory_optout_B_minus_A": {
+    "difference_pp": 0.05762864145011735,
+    "ci_level": 0.95,
+    "ci_low_pp": -0.14912699402972168,
+    "ci_high_pp": 0.26472704764933724
+  },
+  "decision": {
+    "completed_winner_evidence_in_synthetic_model": true,
+    "minimum_business_improvement_supported": false,
+    "optout_limit_ruled_out": false,
+    "capacity_verified": false,
+    "rollout": "hold; B remains a candidate for further review"
+  }
+}
