@@ -1,0 +1,9 @@
+JobID,SubscriberKey,Reason
+JOB-CASE-001,T01,Held
+JOB-CASE-001,T02,Unsubscribed Master
+JOB-CASE-001,T03,Account Level Opt Out
+JOB-CASE-001,T04,List Detective Exclusion
+JOB-CASE-001,T05,Build Email Error or Send Failure
+JOB-CASE-001,T06,Domain Exclusion
+JOB-CASE-001,T07,Unexpected Account Policy
+JOB-OTHER-002,T08,Held

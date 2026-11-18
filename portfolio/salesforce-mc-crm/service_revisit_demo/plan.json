@@ -1,0 +1,40 @@
+{
+  "status": "education_only_synthetic_plan",
+  "scenario": "Optional routine service revisit reminder for fictional OEM owners",
+  "seed": 20261118,
+  "population": 90000,
+  "eligibility": {
+    "marketing_consent_probability": 0.78,
+    "routine_service_due_30d_probability": 0.75,
+    "existing_booking_probability": 0.10,
+    "mandatory_safety_notice_probability": 0.015,
+    "rule": "Consent AND routine service due in 30 days AND no existing booking AND no mandatory safety notice"
+  },
+  "assignment": {
+    "unit": "synthetic customer",
+    "arms": ["A", "B", "H"],
+    "probabilities": [0.3333333333333333, 0.3333333333333333, 0.3333333333333333],
+    "days": "uniform integer 0 through 29",
+    "H": "No optional marketing reminder; mandatory safety notices are outside the experiment"
+  },
+  "assumed_event_probabilities": {
+    "completed_routine_service_visit_28d": {"A": 0.09, "B": 0.102, "H": 0.061},
+    "marketing_optout_28d": {"A": 0.008, "B": 0.0105, "H": 0.001}
+  },
+  "primary": {
+    "metric": "completed_routine_service_visit_28d",
+    "denominator": "all eligible assigned customers by original arm",
+    "comparisons": ["B-A", "A-H", "B-H"],
+    "family_alpha": 0.05,
+    "method": "pooled two-sided z test with Bonferroni and Newcombe-Wilson difference interval",
+    "final_maturity_day": 57
+  },
+  "decision": {
+    "illustrative_minimum_business_improvement_pp": 0.5,
+    "illustrative_optout_worsening_limit_pp": 0.2,
+    "guardrail_interval": "exploratory unadjusted 95 percent Newcombe-Wilson",
+    "capacity_data": "not generated",
+    "actual_cost_data": "not generated",
+    "rule": "Message winner and rollout approval are separate; do not approve rollout if business value, optout safety or service capacity is unresolved"
+  }
+}
