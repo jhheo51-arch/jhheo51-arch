@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parent
-MAIN = ROOT / "허재혁_MC_CRM_포트폴리오_본문_20261118_v14.md"
+MAIN = ROOT / "허재혁_MC_CRM_포트폴리오_본문_20261118_v15.md"
 DEMO = ROOT / "service_revisit_demo"
 text = MAIN.read_text(encoding="utf-8")
 results = json.loads((DEMO / "results.json").read_text(encoding="utf-8"))
@@ -26,6 +26,7 @@ assert "실제 적용 기준은 현장의 사업 가치" in text
 assert "30일 대상 조건과 28일 관측은 교육용 가정" in text
 assert "제한적 적용 여부를 재검토" in text
 assert "실제 MC 계정" in text
+assert "입력 필드 수와 매핑표는 공개 자료에서 확인할 수 없어" in text
 
 documents = [
     MAIN,
@@ -34,6 +35,7 @@ documents = [
     ROOT / "MC_JOURNEY_QA.md",
     ROOT / "본인_검토_20261118_v3.md",
     ROOT / "면접_설명_준비_20261118_v3.md",
+    ROOT / "비AB_항목별_근거_20261118_v1.md",
     ROOT / "service_revisit_demo/README.md",
     ROOT / "not_sent_demo/README.md",
     ROOT.parent.parent / "README.md",
