@@ -2,7 +2,8 @@
 
 **정보가 있어도 다음 결정을 내리기 어려운 순간을 다룹니다.**
 
-<table width="100%">
+<div align="center">
+<table>
 <tr>
 <td width="50%"><strong>01 / 문제</strong><br>누가 어디서 막혔는지 찾습니다.</td>
 <td width="50%"><strong>02 / 근거</strong><br>자료의 출처와 빈틈을 확인합니다.</td>
@@ -12,6 +13,7 @@
 <td><strong>04 / 실행</strong><br>서비스, 도구, 운영 화면과 실험으로 옮깁니다.</td>
 </tr>
 </table>
+</div>
 
 ## 작업대에 놓인 결과물
 
