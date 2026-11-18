@@ -28,6 +28,8 @@ documents = [
     ROOT / "README.md",
     ROOT / "QA.md",
     ROOT / "MC_JOURNEY_QA.md",
+    ROOT / "본인_검토_20261118_v1.md",
+    ROOT / "면접_설명_준비_20261118_v1.md",
     ROOT / "service_revisit_demo/README.md",
     ROOT / "not_sent_demo/README.md",
     ROOT.parent.parent / "README.md",
