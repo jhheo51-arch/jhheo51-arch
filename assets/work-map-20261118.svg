@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-labelledby="title desc">
+  <title id="title">허재혁의 작업 지도</title>
+  <desc id="desc">질문을 고르고 기준을 세워 결과를 남기는 작업을 노트, 컴퓨터, 그래프와 연필로 표현한 그림</desc>
+  <rect width="900" height="320" rx="18" fill="#F8F7F3"/>
+  <path d="M35 267H865" stroke="#DCDAD2" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" fill="#252B31">
+    <text x="40" y="47" font-size="14" font-weight="700" letter-spacing="2">HEO JAEHYEOK / WORK IN PROGRESS</text>
+    <text x="40" y="126" font-size="51" font-weight="800">궁금한 것을</text>
+    <text x="40" y="184" font-size="51" font-weight="800">만들어 봅니다.</text>
+    <text x="42" y="229" font-size="18" fill="#58636B">질문을 고르고, 기준을 세우고, 결과를 남깁니다.</text>
+    <text x="40" y="294" font-size="13" fill="#65717A" letter-spacing="1">SERVICES   /   TOOLS   /   ANALYSIS   /   CONTENT</text>
+  </g>
+  <g stroke="#25313B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M512 247H865"/>
+    <path d="M596 88H787V213H596Z" fill="#D5E9EE"/>
+    <path d="M604 96H779V205H604Z" fill="#FFFFFF" stroke-width="1.5"/>
+    <path d="M577 216H806L820 230H563Z" fill="#B6C9CE"/>
+    <path d="M656 220H726" stroke-width="2"/>
+    <path d="M630 178V150M659 178V135M688 178V158M717 178V123M746 178V142" stroke="#3E80CD" stroke-width="12"/>
+    <path d="M618 188H763" stroke="#96A7AF" stroke-width="2"/>
+    <path d="M517 136L560 128L570 186L527 194Z" fill="#FFDB8A"/>
+    <path d="M529 154L551 150M531 166L555 162M533 178L548 175" stroke-width="2"/>
+    <path d="M522 212L562 204L569 240L529 247Z" fill="#E5D9F2"/>
+    <path d="M534 222L555 217M536 232L559 227" stroke-width="2"/>
+    <path d="M804 104C804 88 816 78 833 78C850 78 861 88 861 104C861 118 849 128 834 128L823 138L824 125C812 122 804 114 804 104Z" fill="#F5C9C5"/>
+    <path d="M821 103H844" stroke-width="2" stroke-dasharray="1 8"/>
+    <path d="M818 212L847 185L858 196L829 223Z" fill="#BDE7CE"/>
+    <path d="M819 211L813 229L830 223Z" fill="#F4D2AA"/>
+    <path d="M813 229L819 227" stroke-width="3"/>
+  </g>
+  <circle cx="467" cy="46" r="6" fill="#FB6D4B"/>
+  <circle cx="853" cy="56" r="5" fill="#3E80CD"/>
+  <path d="M464 148l12 12m0-12l-12 12" stroke="#3E80CD" stroke-width="3" stroke-linecap="round"/>
+  <path d="M843 262l12 12m0-12l-12 12" stroke="#FB6D4B" stroke-width="3" stroke-linecap="round"/>
+</svg>
