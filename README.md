@@ -10,7 +10,7 @@
     <td align="center" width="4%">→</td>
     <td align="center" width="22%"><strong>03&nbsp;현장&nbsp;실행</strong><br><sub>정보통신 장교</sub></td>
     <td align="center" width="4%">→</td>
-    <td align="center" width="22%"><strong>04&nbsp;제작과&nbsp;실험</strong><br><sub>서비스, CRM<br>A/B 연구</sub></td>
+    <td align="center" width="22%"><strong>04&nbsp;제작</strong><br><sub>서비스, CRM<br>A/B 연구</sub></td>
   </tr>
 </table>
 
