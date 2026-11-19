@@ -11,9 +11,9 @@
   </tr>
   <tr>
     <td align="center">경영학, 마케팅</td>
-    <td align="center">정치외교학 복수전공</td>
+    <td align="center">정치외교학<br>복수전공</td>
     <td align="center">정보통신 장교</td>
-    <td align="center">서비스, CRM, A/B 연구</td>
+    <td align="center">서비스, CRM<br>A/B 연구</td>
   </tr>
 </table>
 
