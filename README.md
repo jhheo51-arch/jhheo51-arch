@@ -4,13 +4,13 @@
 
 <table width="100%">
   <tr>
-    <td align="center" width="22%"><strong>01 시장 이해</strong><br><sub>경영학, 마케팅</sub></td>
+    <td align="center" width="22%"><strong>01&nbsp;시장&nbsp;이해</strong><br><sub>경영학, 마케팅</sub></td>
     <td align="center" width="4%">→</td>
-    <td align="center" width="22%"><strong>02 관계 이해</strong><br><sub>정치외교학 복수전공</sub></td>
+    <td align="center" width="22%"><strong>02&nbsp;관계&nbsp;이해</strong><br><sub>정치외교학<br>복수전공</sub></td>
     <td align="center" width="4%">→</td>
-    <td align="center" width="22%"><strong>03 현장 실행</strong><br><sub>정보통신 장교</sub></td>
+    <td align="center" width="22%"><strong>03&nbsp;현장&nbsp;실행</strong><br><sub>정보통신 장교</sub></td>
     <td align="center" width="4%">→</td>
-    <td align="center" width="22%"><strong>04 제작과 실험</strong><br><sub>서비스, CRM, A/B 연구</sub></td>
+    <td align="center" width="22%"><strong>04&nbsp;제작과&nbsp;실험</strong><br><sub>서비스, CRM<br>A/B 연구</sub></td>
   </tr>
 </table>
 
