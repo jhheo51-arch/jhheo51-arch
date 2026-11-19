@@ -4,6 +4,7 @@
 
 - **작업 기록:** [전체 프로젝트와 실험](./portfolio/project-index/README.md)
 - **다른 자료:** [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)
+- **쓴 글:** [브런치](https://brunch.co.kr/@9d640f62bf5b485)
 
 ## 질문에서 쌓아 온 결과물
 
@@ -26,7 +27,7 @@
       <table width="100%">
         <tr><td><a href="https://github.com/jhheo51-arch/VoC-Lens"><strong>VoC Lens</strong></a><br><sub>고객 불편 분석</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/aurora-owners-360"><strong>Aurora Owners 360</strong></a><br><sub>차주 기록과 VOC 이관</sub></td></tr>
-        <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf"><strong>위플래너 Lead</strong></a><br><sub>시험 리드 PoC (PDF)</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf"><strong>Lead 객체 생성 PoC</strong></a><br><sub>위플래너 인턴 경험 (PDF 10쪽)</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/heydealer-cx"><strong>헤이딜러 CX</strong></a><br><sub>구매 후 연락 공백</sub></td></tr>
       </table>
     </td>
