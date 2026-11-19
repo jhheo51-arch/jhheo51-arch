@@ -44,10 +44,10 @@
     </td>
     <td valign="top" width="25%">
       <table width="100%">
-        <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md"><strong>MC 진단 과제</strong></a><br><sub>본인 답안의 공개 요약</sub></td></tr>
-        <tr><td><a href="https://github.com/jhheo51-arch/baemin-store-seller-ready-board"><strong>셀러 레디 보드</strong></a><br><sub>판매 준비 점검</sub></td></tr>
-        <tr><td><a href="https://github.com/jhheo51-arch/regional-ops-experiment-board"><strong>권역별 운영 실험 보드</strong></a><br><sub>교통 자료와 현장 가설 대조</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/claim-relay"><strong>claim-relay</strong></a><br><sub>가상 사고의 사람 검토 경로</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/regional-ops-experiment-board"><strong>권역별 운영 실험 보드</strong></a><br><sub>교통 자료와 현장 가설 대조</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/dept-morning-brief"><strong>백화점 아침 점검</strong></a><br><sub>공개 리뷰로 점검 규칙 검증</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md"><strong>MC 진단 과제</strong></a><br><sub>본인 답안의 공개 요약</sub></td></tr>
       </table>
     </td>
     <td valign="top" width="25%">
