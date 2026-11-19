@@ -11,18 +11,16 @@
 │
 04  고객 연결        인턴 경험, 웹 입력을 Salesforce Lead로 연결한 PoC
 │
-05  제작과 실험      서비스와 콘텐츠, 고객 경험과 CRM
-                    운영 도구, 데이터 분석과 실험
-                    독립 프로젝트 47개(공개 16 / 비공개 31, 2026-11-19 기준)
+05  제작과 실험      서비스/CRM, 운영 도구, 콘텐츠와 데이터 실험
 ```
+
+**독립 프로젝트 47개** (공개 16개, 비공개 31개, 기획 단계 포함, 2026-11-19 기준)
 
 **일하는 방식:** 막힌 지점을 찾고 성공 기준을 세웁니다. 기록과 운영 조건으로 가설을 좁혀 작게 시험하고, 다음 행동과 멈출 기준을 함께 남깁니다.
 
 **문제 정의 → 가설 → 반례 탐색 → 검증 → 판단**
 
 ## 작업 지도
-
-**먼저 읽기:** [MEMOIVE의 지표 변경](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md) / [Aurora의 안전 이관](https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md) / [claim-relay의 사람 검토](https://github.com/jhheo51-arch/claim-relay) / [CRM LOOP의 재방문 판단](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)
 
 <table width="100%">
   <tr>
@@ -64,6 +62,8 @@
     </td>
   </tr>
 </table>
+
+**사례 자세히 보기:** [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md) / [Aurora](https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md) / [claim-relay](https://github.com/jhheo51-arch/claim-relay) / [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)
 
 더 많은 프로젝트는 [공개 작업 목록](./portfolio/project-index/README.md), 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에서 보실 수 있습니다.
 
