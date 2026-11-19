@@ -22,7 +22,7 @@
 
 [![지금까지 자란 새록이 묘목](https://raw.githubusercontent.com/jhheo51-arch/saeroki/main/assets/saeroki-tree.svg)](https://github.com/jhheo51-arch/saeroki)
 
-새록이 묘목은 공개 저장소의 방문 합계, 스타, 작업량으로 자랍니다. 집계 기준과 확인 범위는 [새록이 저장소](https://github.com/jhheo51-arch/saeroki#성장-점수)에 적었습니다.
+새록이 묘목은 계정이 소유한 저장소의 방문 합계, 스타, 작업량으로 자랍니다. 공개와 비공개 저장소를 포함하는 집계 기준은 [새록이 저장소](https://github.com/jhheo51-arch/saeroki#성장-점수)에 적었습니다.
 
 **일하는 방식:** 문제를 한 문장으로 좁힙니다. 자료의 출처와 대상, 제외 조건을 확인한 뒤 직접 만들고, 결과의 적용 범위를 기록합니다.
 
