@@ -13,7 +13,7 @@
 |---|---|---|---|
 | [MEMOIVE](https://github.com/jhheo51-arch/memoive) | [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) | [MC 진단 과제](./portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md) | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) |
 | [새록이](https://github.com/jhheo51-arch/saeroki) | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | [셀러 레디 보드](https://github.com/jhheo51-arch/baemin-store-seller-ready-board) | [A/B 합성 실습](./portfolio/salesforce-mc-crm/service_revisit_demo/README.md) |
-| [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | [위플래너 시험 Lead](./portfolio/salesforce-mc-crm/README.md) | [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) |
+| [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) | [위플래너 시험 Lead (PDF 10쪽)](./허재혁_포트폴리오_PM.pdf) | [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) | [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) |
 |  | [헤이딜러 CX](https://github.com/jhheo51-arch/heydealer-cx) | [claim-relay](https://github.com/jhheo51-arch/claim-relay) |  |
 
 *서비스와 콘텐츠는 정보의 재사용을, CX/CRM은 고객 신호의 연결을, 운영은 예외와 검수를, 실험은 적용 판단을 다뤘습니다.*
