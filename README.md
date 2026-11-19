@@ -1,11 +1,10 @@
 # 허재혁 | 근거를 다음 행동으로
 
-**일하는 방식:** 자료와 경험에서 문제를 좁히고, 필요한 만큼 직접 만듭니다. 결과는 다음 작업의 기준으로 남깁니다.
+경영학과 정치외교학을 공부했고 정보통신 장교로 일했습니다. 지금은 기록을 다시 쓰는 서비스, 고객 경험과 CRM, 운영 도구, 데이터 실험을 만듭니다. 분야는 달라도 **정보가 쌓인 뒤 다음 선택이 막히는 순간**을 자주 다룹니다.
 
-- **작업 기록:** [전체 프로젝트와 실험](./portfolio/project-index/README.md)
-- **다른 자료:** [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)
+**일하는 방식:** 문제를 좁혀 필요한 만큼 만들고, 써 본 결과를 바탕으로 다음 질문을 정합니다.
 
-## 질문에서 쌓아 온 결과물
+## 대표 결과물
 
 <table width="100%">
   <tr>
@@ -47,5 +46,7 @@
     </td>
   </tr>
 </table>
+
+위에는 대표 작업을 골랐습니다. 다른 프로젝트와 진행 중인 실험은 [전체 작업 목록](./portfolio/project-index/README.md)에서 볼 수 있습니다. 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에 모았습니다.
 
 [![지금까지 자란 새록이 묘목](https://raw.githubusercontent.com/jhheo51-arch/saeroki/main/assets/saeroki-tree.svg)](https://github.com/jhheo51-arch/saeroki)
