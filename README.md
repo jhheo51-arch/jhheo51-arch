@@ -1,20 +1,17 @@
 # 허재혁 | 근거를 다음 행동으로
 
-마케팅에서 시작한 관심을 이해관계, 시스템과 운영의 문제로 넓혀 왔습니다.
+고객 가치에서 출발해 이해관계, 현장 기록, 제품과 실험으로 질문을 넓혀 왔습니다.
 
-```text
-01  시장과 고객      경영학 마케팅 트랙, 고객 가치와 시장 흐름 탐구
-│
-02  관계와 맥락      정치외교학 복수전공, 이해관계자 관점 연구
-│
-03  시스템과 운영    정보통신 장교, 시스템 연결과 인사 기록 대조
-│
-04  제작과 실험      서비스/CRM 도구 제작, A/B 방법론 연구
-```
+| 관심의 확장 | 공부와 실무에서 한 일 |
+|---|---|
+| **01 시장과 고객** | 경영학 마케팅 트랙, 고객 가치와 시장 흐름 탐구 |
+| **02 관계와 맥락** | 정치외교학 복수전공, 이해관계자 관점 연구 |
+| **03 시스템과 운영** | 정보통신 장교, 시스템 연결과 인사 기록 대조 |
+| **04 제작과 실험** | 서비스와 CRM 도구 제작, A/B 방법론 연구 |
 
-**일하는 방식:** 막연한 문제를 구체적인 질문으로 바꾸고, 직접 써볼 결과물로 답합니다.
+**일하는 방식:** 자료의 출처를 대조해 기준을 세우고, 화면과 코드로 옮긴 뒤 확인한 범위를 기록합니다.
 
-## 대표 결과물
+## 작업 지도
 
 <table width="100%">
   <tr>
@@ -26,15 +23,15 @@
   <tr>
     <td valign="top" width="25%">
       <table width="100%">
-        <tr><td><a href="https://github.com/jhheo51-arch/memoive"><strong>MEMOIVE</strong></a><br><sub>기록 서비스</sub></td></tr>
-        <tr><td><a href="https://github.com/jhheo51-arch/saeroki"><strong>새록이</strong></a><br><sub>질문에 맞는 자료 찾기</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/memoive"><strong>MEMOIVE</strong></a><br><sub>저장한 기록 다시 쓰기</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/saeroki"><strong>새록이</strong></a><br><sub>근거를 보여 주는 도구 모음</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/trend-to-trust"><strong>Trend to Trust</strong></a><br><sub>콘텐츠 실험</sub></td></tr>
       </table>
     </td>
     <td valign="top" width="25%">
       <table width="100%">
+        <tr><td><a href="https://github.com/jhheo51-arch/aurora-owners-360"><strong>Aurora Owners 360</strong></a><br><sub>안전 VOC 이관과 차주 기록</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/VoC-Lens"><strong>VoC Lens</strong></a><br><sub>고객 불편 분석</sub></td></tr>
-        <tr><td><a href="https://github.com/jhheo51-arch/aurora-owners-360"><strong>Aurora Owners 360</strong></a><br><sub>차주 기록과 VOC 이관</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf"><strong>Lead 객체 생성 PoC</strong></a><br><sub>인턴 경험 (PDF 10쪽)</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/heydealer-cx"><strong>헤이딜러 CX</strong></a><br><sub>구매 후 연락 공백</sub></td></tr>
       </table>
@@ -49,7 +46,7 @@
     </td>
     <td valign="top" width="25%">
       <table width="100%">
-        <tr><td><a href="https://github.com/jhheo51-arch/crm-loop"><strong>CRM LOOP</strong></a><br><sub>재방문 대상 선정</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/crm-loop"><strong>CRM LOOP</strong></a><br><sub>재방문 대상과 적용 판단</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md"><strong>A/B 합성 실습</strong></a><br><sub>적용 보류 기준</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/irp-growth-radar"><strong>IRP 계좌 성장 레이더</strong></a><br><sub>가입 후 마찰 분석</sub></td></tr>
       </table>
