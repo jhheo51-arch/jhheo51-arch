@@ -57,6 +57,6 @@
   </tr>
 </table>
 
-위에는 대표 작업을 골랐습니다. 다른 프로젝트와 진행 중인 실험은 [전체 작업 목록](./portfolio/project-index/README.md)에서 볼 수 있습니다. 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에 모았습니다.
+더 많은 프로젝트는 [전체 작업 목록](./portfolio/project-index/README.md), 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에서 보실 수 있습니다.
 
 [![지금까지 자란 새록이 묘목](https://raw.githubusercontent.com/jhheo51-arch/saeroki/main/assets/saeroki-tree.svg)](https://github.com/jhheo51-arch/saeroki)
