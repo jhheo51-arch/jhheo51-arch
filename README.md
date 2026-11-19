@@ -16,6 +16,8 @@
 
 **일하는 방식:** 막힌 지점을 찾고 성공 기준을 세웁니다. 기록과 운영 조건으로 가설을 좁혀 작게 시험하고, 다음 행동과 멈출 기준을 함께 남깁니다.
 
+**문제 정의 → 가설 → 검증 → 판단**
+
 ## 작업 지도
 
 **먼저 읽기:** [MEMOIVE의 지표 변경](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md) / [Aurora의 안전 이관](https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md) / [claim-relay의 사람 검토](https://github.com/jhheo51-arch/claim-relay) / [CRM LOOP의 재방문 판단](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)
