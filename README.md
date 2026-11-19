@@ -2,20 +2,15 @@
 
 마케팅에 대한 관심을 조직과 현장의 문제로 넓히고, 지금은 직접 쓸 수 있는 결과물로 만듭니다.
 
-<table width="100%">
-  <tr>
-    <th align="center" width="25%">01 시장 이해</th>
-    <th align="center" width="25%">02 관계 이해</th>
-    <th align="center" width="25%">03 현장 실행</th>
-    <th align="center" width="25%">04 제작과 실험</th>
-  </tr>
-  <tr>
-    <td align="center">경영학, 마케팅</td>
-    <td align="center">정치외교학<br>복수전공</td>
-    <td align="center">정보통신 장교</td>
-    <td align="center">서비스, CRM<br>A/B 연구</td>
-  </tr>
-</table>
+```text
+01  시장 이해      경영학, 마케팅
+│
+02  관계 이해      정치외교학 복수전공
+│
+03  현장 실행      정보통신 장교, 인사 운영
+│
+04  제작과 실험    서비스, CRM, A/B 연구
+```
 
 **일하는 방식:** 문제를 좁혀 필요한 만큼 만들고, 써 본 결과를 바탕으로 다음 질문을 정합니다.
 
