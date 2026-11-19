@@ -4,9 +4,9 @@
 
 ```mermaid
 flowchart LR
-    market["01 고객과 시장<br/>경영학, 마케팅"] --> macro["02 관점 확장<br/>정치외교학"]
+    market["01 시장 이해<br/>경영학"] --> macro["02 관계 이해<br/>정치외교학"]
     macro --> field["03 현장 실행<br/>정보통신 장교"]
-    field --> build["04 제작과 실험<br/>서비스, CRM, A/B"]
+    field --> build["04 제작과 실험<br/>서비스, CRM<br/>A/B 연구"]
 ```
 
 **일하는 방식:** 문제를 좁혀 필요한 만큼 만들고, 써 본 결과를 바탕으로 다음 질문을 정합니다.
