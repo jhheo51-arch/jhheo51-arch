@@ -555,7 +555,7 @@
       <div class="masthead-copy"><p class="masthead-kicker">PROJECT 01</p><h2 id="chapter-name-crm-loop">CRM LOOP</h2><p>고객군 분석과 캠페인 설계</p></div>
       <div class="masthead-side"><a href="https://github.com/jhheo51-arch/crm-loop" target="_blank" rel="noopener noreferrer">프로젝트 저장소 ↗</a><span aria-hidden="true">↓</span></div>
     </div></div><div class="wrap"><p class="scope">회사 PoC에서 시작한 질문 · 공개 데이터 기반 개인 설계</p><h3 class="chapter-title">연락할 고객을 고르기 전에, 보내지 않을 고객도 정했습니다.</h3><dl class="chapter-lead crm-evidence">
-  <div><dt>캠페인 설계</dt><dd>UCI 공개 거래 데이터에서 이탈 위험 고객 <strong>666명</strong>을 설계 대상으로 선정했습니다. 실제 발송은 없었습니다.</dd></div>
+  <div><dt>캠페인 설계</dt><dd>UCI 공개 거래 데이터에서 2011년 12월 1일 기준 이탈 위험 고객 <strong>666명</strong>을 설계 대상으로 선정했습니다. 실제 발송은 없었습니다.</dd></div>
   <div><dt>효과 분석</dt><dd>별도의 Hillstrom 공개 이메일 실험 <strong>64,000명</strong>을 분석해 발송군과 미발송군을 비교하는 방법을 검토했습니다.</dd></div>
 </dl><div class="story-row poc-row" id="lead-poc"><div class="story-copy"><p class="small-label">출발점 / Lead 레코드 생성 PoC</p><h3>화면의 완료 다음에, 레코드가 남는지.</h3><p>웹 문의 입력 항목과 개인정보 동의값을 정리하고 Web-to-Lead로 보낼 값을 Lead 필드에 대응시켰습니다. 시험 문의를 제출한 뒤 Lead 목록과 상세 화면에서 레코드 생성과 저장값을 확인했습니다.</p></div><figure class="story-image poc-visual">
   <img src="assets/lead_poc_redacted.png" width="850" height="531" loading="lazy" decoding="async" alt="시험 문의로 생성된 Salesforce Lead 상세 화면. 주소창, 레코드 ID와 사람 이름은 가림 처리했습니다.">
@@ -677,7 +677,7 @@
 <section id="not-sent" aria-labelledby="not-sent-title" tabindex="-1">
 <p class="scope">진단 절차 설계와 별도 가상 CSV 예시</p>
 <h3 class="chapter-title" id="not-sent-title">Not Sent 진단과 후속 조치 기준을 설계했습니다.</h3>
-<p class="chapter-lead">발송 대상보다 실제 발송 건수가 적을 때, 어떤 미발송을 그대로 두고 어떤 건을 다시 확인해야 할까요? Salesforce 공식 안내를 참고해 수신거부 등 보호 제외는 유지하고 주소와 콘텐츠 오류는 다시 확인하는 미발송 진단 기준을 설계했습니다. 별도 가상 CSV 8행 중 대상 발송 7행에 분류 기준을 적용했습니다. 실제 Marketing Cloud 계정에서 추출하거나 발송한 기록은 없습니다.</p>
+<p class="chapter-lead">발송 대상보다 실제 발송 건수가 적을 때, 어떤 미발송을 그대로 두고 어떤 건을 다시 확인해야 할까요? Salesforce 공식 안내를 참고해 수신거부 등 보호 제외는 유지하고 주소와 콘텐츠 오류는 다시 확인하는 미발송 진단 기준을 설계했습니다. 별도 가상 CSV 예시는 8행 중 같은 발송에 해당하는 7행의 분류를 보여 줍니다. 실제 Marketing Cloud 계정에서 추출하거나 발송한 기록은 없습니다.</p>
 <p class="not-sent-reason"><strong>먼저 확인할 것</strong> 같은 발송의 고객 키와 미발송 사유를 먼저 대조합니다. 수신거부에 따른 제외는 유지하고, 주소나 콘텐츠 오류는 수정 필요 여부를 확인합니다.</p>
 <div class="not-sent-evidence">
   <section class="not-sent-flow" aria-labelledby="not-sent-flow-title">
