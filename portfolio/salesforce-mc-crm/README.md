@@ -6,6 +6,8 @@
 
 ## 웹 포트폴리오
 
+[CRM 웹 포트폴리오 바로 보기](https://jhheo51-arch.github.io/jhheo51-arch/)
+
 [배포 ZIP 다운로드](./web/crm-portfolio-html-20261119-v9.zip) 후 압축을 풀고 index.html을 브라우저로 엽니다. 설치나 빌드 없이 볼 수 있습니다. [HTML 소스](./web/index.html)와 [다운로드용 원문](./web/portfolio-source.md)도 함께 보관합니다.
 
 웹 포트폴리오는 CRM LOOP의 공개 데이터 분석과 설계, Aurora Owners 360의 Salesforce 개발 환경 시험, 정기 점검 안내의 합성 A/B를 소개합니다. Not Sent는 독학과 로컬 가상 데이터 검증 사례입니다. 인턴 PoC 사진은 식별 정보를 가린 배포용 화면입니다.
