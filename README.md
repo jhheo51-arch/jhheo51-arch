@@ -4,9 +4,9 @@
 
 <table width="100%">
   <tr>
-    <th align="center" width="25%">01 시장 이해 →</th>
-    <th align="center" width="25%">02 관계 이해 →</th>
-    <th align="center" width="25%">03 현장 실행 →</th>
+    <th align="center" width="25%">01 시장 이해</th>
+    <th align="center" width="25%">02 관계 이해</th>
+    <th align="center" width="25%">03 현장 실행</th>
     <th align="center" width="25%">04 제작과 실험</th>
   </tr>
   <tr>
