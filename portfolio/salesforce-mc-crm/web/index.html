@@ -449,9 +449,7 @@
     .crm-app-visual .story-image{margin:0}
     .poc-visual figcaption a{color:var(--blue);text-decoration:underline;text-underline-offset:.2em}
     .poc-visual img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
-    .about-context,.about-qualifier{font-size:14px;line-height:1.8;letter-spacing:-.015em;color:var(--muted)}
-    .about-context{margin-top:5px}.about-qualifier{margin:14px 0 0 52px}
-    @media(max-width:560px){.poc-visual img{aspect-ratio:1.2;object-fit:cover;object-position:left center}.about-qualifier{margin-left:48px}}
+    @media(max-width:560px){.poc-visual img{aspect-ratio:1.2;object-fit:cover;object-position:left center}}
     .visit-chart{--value-room:66px;display:grid;gap:16px;margin-top:20px}
     .visit-group{padding-bottom:10px;border-bottom:1px solid var(--line)}
     .visit-group h6{font-size:14px;font-weight:650;color:var(--navy);margin:0 0 7px}
@@ -467,9 +465,18 @@
     .visit-comparison span{display:block}
     .not-sent-reason{font-size:15px;line-height:1.8;max-width:740px;margin:18px 0 24px;color:var(--muted)}
     .not-sent-reason strong{display:block;color:var(--navy)}
-    .not-sent-visual{max-width:760px;margin:0}
-    .not-sent-visual img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
-    .not-sent-visual a{color:var(--blue);text-decoration:underline;text-underline-offset:.2em}
+    .not-sent-evidence{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;max-width:920px;align-items:start}
+    .not-sent-flow{border:1px solid var(--line);border-radius:14px;padding:18px}
+    .not-sent-flow h4{font-size:16px;line-height:1.5;margin:0 0 10px;color:var(--navy)}
+    .not-sent-input{background:var(--evidence);border-radius:8px;padding:10px 12px;font-size:14px;line-height:1.6;color:var(--navy)}
+    .not-sent-flow ul{list-style:none;padding:0 0 0 12px;margin:10px 0 0 12px;border-left:1px solid var(--line);display:grid;gap:5px}
+    .not-sent-flow li{position:relative;display:grid;grid-template-columns:4.5em minmax(0,1fr);align-items:baseline;gap:8px;padding:8px 0 8px 5px;font-size:13px;line-height:1.7;color:var(--muted)}
+    .not-sent-flow li::before{content:"";position:absolute;left:-13px;top:19px;width:11px;background:var(--line);height:1px}
+    .not-sent-flow strong{color:var(--navy)}
+    .not-sent-official{margin:0;min-width:0}
+    .not-sent-official a{display:grid;gap:10px;font-size:14px;font-weight:650;color:var(--blue);text-decoration:underline;text-underline-offset:.2em}
+    .not-sent-official img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--evidence);border:1px solid var(--line);border-radius:12px}
+    @media(max-width:690px){.not-sent-evidence{grid-template-columns:1fr;gap:20px}}
   </style>
 </head>
 <body>
@@ -521,11 +528,10 @@
     <ol class="about-timeline" aria-label="학력, 경력, 교육 및 프로젝트 흐름">
       <li><span class="about-step" aria-hidden="true">01</span><div><p class="about-step-label">학력 / 2020.03–2024.02</p><h3>연세대학교</h3><p class="about-keywords">경영학 마케팅 트랙, 정치외교학 복수전공</p></div></li>
       <li><span class="about-step" aria-hidden="true">02</span><div><p class="about-step-label">경력 / 2024.03–2026.06</p><h3>육군 정보통신단 중위</h3><p class="about-keywords">노드소대장, 인사과장, 미지급 수당 9명 확인</p></div></li>
-      <li><span class="about-step" aria-hidden="true">03</span><div><p class="about-step-label">경력 / 2026.07–2026.09</p><h3>인턴 경험</h3><p class="about-keywords">위플래너 서비스 기획, Salesforce Lead 연결</p></div></li>
+      <li><span class="about-step" aria-hidden="true">03</span><div><p class="about-step-label">경력 / 2026.07–2026.09</p><h3>인턴 경험</h3><p class="about-keywords">서비스 기획, 웹 문의와 Salesforce Lead 연결</p></div></li>
       <li><span class="about-step" aria-hidden="true">04</span><div><p class="about-step-label">교육 / 2026.09–2026.12</p><h3>Salesforce S.T.A Track 3기</h3><p class="about-keywords">청년취업사관학교, 2026년 12월 수료 예정</p></div></li>
       <li><span class="about-step" aria-hidden="true">05</span><div><p class="about-step-label">프로젝트</p><h3>CRM 설계와 구현</h3><p class="about-keywords">CRM LOOP, Aurora Owners 360, CRM A/B Test</p></div></li>
     </ol>
-    <p class="about-qualifier">장교 시절의 통신 경로 비교는 통제군과 무작위 배정을 갖춘 CRM A/B 실험과 구분합니다.</p>
     </div>
     <section class="about-credentials" aria-labelledby="about-credentials">
       <h3 id="about-credentials">자격</h3>
@@ -558,13 +564,13 @@
 <div class="image-chapter"><div class="story-heading"><p class="small-label">효과 측정 / 별도의 Hillstrom 공개 실험</p><h3>방문을 늘리는 메일과, 이익을 남기는 발송은 다릅니다.</h3><p>고객군별 효과와 발송 비용을 함께 보고, 전원 발송을 당연한 답으로 두지 않았습니다.</p></div><div class="crm-app-visual"><figure class="story-image "><div class="mockup-stage mockup-crm"><div class="mockup-device"><div class="app-window">
       <div class="window-chrome" aria-hidden="true"><span class="window-controls"><i></i><i></i><i></i></span><span class="window-title">CRM LOOP</span><span class="window-context">CAMPAIGN MEASUREMENT</span></div>
       <div class="screen-crop" style="--crop-ratio:1104/670;--source-width:122.826087%;--source-left:-22.826087%;--source-top:-10.746269%"><img src="assets/crm_loop_app_measurement.png" alt="CRM LOOP 측정 앱 · 여성 상품 안내 탭(+4.52%p). 본문의 남성 상품 안내 분석값과 다른 비교입니다." width="1356" height="742" loading="lazy" decoding="async"></div>
-    </div></div></div><figcaption>CRM LOOP 앱의 Hillstrom 측정 화면. 여성 상품 안내 탭의 방문률 차이는 미발송군 대비 +4.52%p입니다.</figcaption></figure></div><figure class="story-image native-report" id="hillstrom-native-chart"><div class="report-card hillstrom-report">
+    </div></div></div><figcaption>CRM LOOP 앱의 Hillstrom 측정 화면. 두 탭은 메일에 소개한 상품군입니다. 선택된 여성 상품 안내의 방문률 차이는 미발송군 대비 +4.52%p입니다.</figcaption></figure></div><figure class="story-image native-report" id="hillstrom-native-chart"><div class="report-card hillstrom-report">
   <h4 class="report-title">사례 A. 같은 메일도 받는 고객에 따라 효과가 달랐습니다</h4>
   <div class="report-legend" aria-label="메일 종류"><span><i class="legend-mark is-mens" aria-hidden="true"></i>남성 상품 안내</span><span><i class="legend-mark is-womens" aria-hidden="true"></i>여성 상품 안내</span></div>
   <div class="report-panels">
     <section class="report-panel" aria-labelledby="customer-effect-title">
       <h5 id="customer-effect-title">어떤 메일이 방문률을 더 높였나요?</h5>
-      <p class="report-subtitle visit-comparison"><span>최근 12개월 구매 품목으로 나눈 세 고객군에서 발송군과 미발송군의 2주 방문률을 비교했습니다.</span><span>발송군이 15%, 미발송군이 10%라면 차이는 +5%p(퍼센트포인트)입니다.</span></p>
+      <p class="report-subtitle visit-comparison"><span>최근 12개월 구매 품목으로 고객군을 나누고, 상품 안내별 2주 방문률을 각 고객군의 미발송군과 비교했습니다.</span><span>발송군이 15%, 미발송군이 10%라면 차이는 +5%p(퍼센트포인트)입니다.</span></p>
       <div class="visit-chart">
       <div class="visit-group"><h6>남성 상품만 구매한 고객</h6>
         <div class="visit-series men"><span>남성 상품 안내</span><div class="visit-track" style="--bar:38.444444%"><i aria-hidden="true"></i><strong>+6.92%p</strong></div></div>
@@ -673,10 +679,24 @@
 <h3 class="chapter-title" id="not-sent-title">Not Sent 진단과 후속 조치 기준을 설계했습니다.</h3>
 <p class="chapter-lead">발송 대상보다 실제 발송 건수가 적을 때, 어떤 미발송을 그대로 두고 어떤 건을 다시 확인해야 할까요? 과제에서 Salesforce 공식 안내를 참고해 미발송 진단 절차를 설계했습니다. 아래 분류는 별도 가상 CSV 예시입니다. 수신거부는 계속 제외하고, 주소나 콘텐츠 오류는 수정 가능성을 확인하며, 알 수 없는 사유는 담당자 확인 전까지 보류하도록 기준을 정했습니다.</p>
 <p class="not-sent-reason"><strong>먼저 확인할 것</strong> 같은 발송의 고객 키와 미발송 사유를 먼저 대조합니다. 수신거부에 따른 제외는 유지하고, 주소나 콘텐츠 오류는 수정 필요 여부를 확인합니다.</p>
-<figure class="story-image not-sent-visual">
-  <picture><source media="(max-width: 560px)" srcset="assets/not_sent_decision_flow_mobile.png" width="640" height="550"><img src="assets/not_sent_decision_flow.png" width="960" height="304" loading="lazy" decoding="async" alt="같은 발송 ID의 미발송 사유를 확인하고 수신거부는 제외 유지, 주소와 콘텐츠 오류는 확인, 알 수 없는 사유는 판단 보류로 분류하는 흐름"></picture>
-  <figcaption>가상 검증에 사용한 판단 흐름. <a href="assets/not_sent_decision_flow.png" target="_blank" rel="noopener noreferrer">이미지 크게 보기</a></figcaption>
-</figure>
+<div class="not-sent-evidence">
+  <section class="not-sent-flow" aria-labelledby="not-sent-flow-title">
+    <h4 id="not-sent-flow-title">미발송 사유별 판단 기준</h4>
+    <p class="not-sent-input">같은 발송 ID의 행을 골라 사유를 확인합니다.</p>
+    <ul>
+      <li><strong>제외 유지</strong><span>수신거부와 보호 정책에 따른 제외는 그대로 둡니다.</span></li>
+      <li><strong>오류 확인</strong><span>주소와 콘텐츠를 점검한 뒤 발송 자격을 다시 확인합니다.</span></li>
+      <li><strong>판단 보류</strong><span>처음 보는 사유는 담당자가 확인할 때까지 보류합니다.</span></li>
+    </ul>
+  </section>
+  <figure class="story-image not-sent-official">
+    <a href="https://www.youtube.com/watch?v=uzKdG24ctCs" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">
+      <img src="https://i.ytimg.com/vi/uzKdG24ctCs/hq2.jpg" width="480" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="Salesforce Support 공식 시연의 Automation Studio 추출 설정 화면">
+      <span>Salesforce 공식 시연 보기 <span aria-hidden="true">↗</span></span>
+    </a>
+    <figcaption>공식 제품 화면. Salesforce Support의 Not Sent 추출 설정 시연입니다.</figcaption>
+  </figure>
+</div>
 <div class="not-sent-proof">
   <table>
     <caption>가상 입력 8행 중 대상 발송 7행의 분류 결과</caption>
