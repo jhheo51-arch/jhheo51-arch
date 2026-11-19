@@ -68,6 +68,8 @@
 
 **사례 자세히 보기:** [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md) / [Aurora](https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md) / [claim-relay](https://github.com/jhheo51-arch/claim-relay) / [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)
 
+[CRM 웹 포트폴리오 다운로드](./portfolio/salesforce-mc-crm/web/crm-portfolio-html-20261119-v9.zip)에서 대표 프로젝트와 Not Sent 가상 검증 사례를 보실 수 있습니다.
+
 더 많은 프로젝트는 [공개 작업 목록](./portfolio/project-index/README.md), 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에서 보실 수 있습니다.
 
 [![지금까지 자란 새록이 묘목](https://raw.githubusercontent.com/jhheo51-arch/saeroki/main/assets/saeroki-tree.svg)](https://github.com/jhheo51-arch/saeroki)
