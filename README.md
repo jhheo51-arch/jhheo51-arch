@@ -1,10 +1,9 @@
 # 허재혁 | 근거를 다음 행동으로
 
-**일하는 방식:** 문제를 좁히고 자료의 출처와 한계를 확인합니다. 직접 만든 뒤에는 어디까지 확인했는지 기록합니다.
+**일하는 방식:** 자료와 경험에서 문제를 좁히고, 필요한 만큼 직접 만듭니다. 결과는 다음 작업의 기준으로 남깁니다.
 
 - **작업 기록:** [전체 프로젝트와 실험](./portfolio/project-index/README.md)
 - **다른 자료:** [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)
-- **쓴 글:** [브런치](https://brunch.co.kr/@9d640f62bf5b485)
 
 ## 질문에서 쌓아 온 결과물
 
@@ -27,7 +26,7 @@
       <table width="100%">
         <tr><td><a href="https://github.com/jhheo51-arch/VoC-Lens"><strong>VoC Lens</strong></a><br><sub>고객 불편 분석</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/aurora-owners-360"><strong>Aurora Owners 360</strong></a><br><sub>차주 기록과 VOC 이관</sub></td></tr>
-        <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf"><strong>Lead 객체 생성 PoC</strong></a><br><sub>위플래너 인턴 경험 (PDF 10쪽)</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf"><strong>Lead 객체 생성 PoC</strong></a><br><sub>인턴 경험 (PDF 10쪽)</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/heydealer-cx"><strong>헤이딜러 CX</strong></a><br><sub>구매 후 연락 공백</sub></td></tr>
       </table>
     </td>
