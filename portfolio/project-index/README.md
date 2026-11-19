@@ -4,6 +4,7 @@
 
 | 분야 | 프로젝트 | 확인할 것 |
 |---|---|---|
+| CRM 포트폴리오 | [웹 포트폴리오 안내](../salesforce-mc-crm/README.md#웹-포트폴리오) | 대표 프로젝트 3개와 Not Sent 가상 검증, 배포 ZIP |
 | CRM 기획 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop) | 공개 거래 자료의 대상 선정과 미발송 비교군 설계 |
 | Salesforce CRM | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360) | 가상 고객센터의 기록 연결과 안전 VOC 이관 규칙 |
 | A/B 실험 설계 | [정기 점검 재방문 실습](../salesforce-mc-crm/service_revisit_demo/) | 합성 자료의 방문 완료 차이와 전면 적용 보류 근거 |
