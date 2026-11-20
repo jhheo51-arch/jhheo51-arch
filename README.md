@@ -26,17 +26,18 @@
   <tr>
     <td valign="top" width="25%">
       <table width="100%">
-        <tr><td><a href="https://github.com/jhheo51-arch/memoive"><strong>MEMOIVE</strong></a><br><sub>저장한 기록 다시 쓰기</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md"><strong>MEMOIVE</strong></a><br><sub>저장한 기록 다시 쓰기</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/saeroki"><strong>새록이</strong></a><br><sub>근거를 보여 주는 도구 모음</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/trend-to-trust"><strong>Trend to Trust</strong></a><br><sub>공개 트렌드로 만든 카드 수정</sub></td></tr>
       </table>
     </td>
     <td valign="top" width="25%">
       <table width="100%">
-        <tr><td><a href="https://github.com/jhheo51-arch/aurora-owners-360"><strong>Aurora Owners 360</strong></a><br><sub>안전 VOC 이관과 차주 기록</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md"><strong>Aurora Owners 360</strong></a><br><sub>안전 VOC 이관과 차주 기록</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/VoC-Lens"><strong>VoC Lens</strong></a><br><sub>리뷰에서 불편 분류</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf"><strong>Lead 객체 생성 PoC</strong></a><br><sub>인턴 경험 (PDF 10쪽)</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/heydealer-cx"><strong>헤이딜러 CX</strong></a><br><sub>구매 후 연락 공백</sub></td></tr>
+        <tr><td><a href="https://jhheo51-arch.github.io/jhheo51-arch/"><strong>CRM 웹 포트폴리오</strong></a><br><sub>대표 사례와 공개 이력서</sub></td></tr>
       </table>
     </td>
     <td valign="top" width="25%">
@@ -49,17 +50,13 @@
     </td>
     <td valign="top" width="25%">
       <table width="100%">
-        <tr><td><a href="https://github.com/jhheo51-arch/crm-loop"><strong>CRM LOOP</strong></a><br><sub>재방문 대상과 적용 판단</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md"><strong>CRM LOOP</strong></a><br><sub>재방문 대상과 적용 판단</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md"><strong>A/B 합성 실습</strong></a><br><sub>적용 보류 기준</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/irp-growth-radar"><strong>IRP 계좌 성장 레이더</strong></a><br><sub>가입 후 마찰 분석</sub></td></tr>
       </table>
     </td>
   </tr>
 </table>
-
-**사례 자세히 보기:** [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md) / [Aurora](https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md) / [claim-relay](https://github.com/jhheo51-arch/claim-relay) / [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)
-
-[Salesforce 및 CRM 이력서](https://jhheo51-arch.github.io/jhheo51-arch/resume.html) / [CRM 웹 포트폴리오](https://jhheo51-arch.github.io/jhheo51-arch/)
 
 더 많은 프로젝트는 [공개 작업 목록](./portfolio/project-index/README.md), 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에서 보실 수 있습니다.
 
