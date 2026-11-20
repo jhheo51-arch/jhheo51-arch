@@ -323,8 +323,8 @@
     .cover-heading{text-align:center;padding-top:58px;padding-bottom:48px}
     .cover-discipline{font-size:1rem;line-height:1.7;font-weight:550;color:var(--blue);letter-spacing:-.01em;margin-bottom:12px}
     .cover-heading h1{font-size:clamp(2.75rem,5.6vw,4.75rem);line-height:1.2;font-weight:730;letter-spacing:-.055em;color:var(--navy);text-wrap:pretty}
-    .cover-author{display:flex;align-items:center;justify-content:center;gap:14px;font-size:1.125rem;line-height:1.7;color:var(--navy);font-weight:600;margin-top:20px}
-    .cover-author>span{border-left:1px solid var(--line);padding-left:14px;font-size:1rem;font-weight:450;color:var(--muted)}
+    .cover-author{display:flex;align-items:center;justify-content:center;gap:14px;font-size:1.5rem;line-height:1.5;color:var(--navy);font-weight:650;margin-top:20px}
+    .cover-author>span{border-left:1px solid var(--line);padding-left:14px;font-size:1.125rem;font-weight:500;color:var(--muted)}
     .project-catalog{padding-bottom:66px;scroll-margin-top:100px}
     .project-catalog h2{font-size:1.5rem;line-height:1.5;color:var(--navy);letter-spacing:-.03em;font-weight:650;margin-bottom:23px}
     .catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
@@ -349,7 +349,7 @@
     .catalog-link-label{align-self:flex-start;font-size:.875rem;line-height:1.7;font-weight:550;margin-top:18px;text-underline-offset:5px}
     .catalog-card:hover .catalog-link-label{text-decoration:underline}.catalog-card:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
     @media(max-width:1050px) and (min-width:761px){.catalog-grid{gap:16px}.catalog-card{padding:24px 19px 21px}.catalog-card h3{font-size:1.375rem}.catalog-description{font-size:1rem;min-height:3.4em}.catalog-scope{min-height:3.4em}.catalog-rings{gap:8px;padding:8px 10px 0}.catalog-ring b{font-size:.75rem}.catalog-preview{height:140px}}
-    @media(max-width:760px){.cover-heading{padding-top:44px;padding-bottom:39px}.cover-discipline{font-size:.875rem;margin-bottom:14px}.cover-heading h1{font-size:2.75rem;line-height:1.25}.cover-author{font-size:1rem;margin-top:17px}.cover-author>span{font-size:.875rem}.project-catalog{padding-bottom:46px;scroll-margin-top:86px}.project-catalog h2{font-size:1.25rem;margin-bottom:18px}.catalog-grid{grid-template-columns:1fr;gap:16px}.catalog-card{padding:24px;border-radius:20px}.catalog-card h3{font-size:1.625rem}.catalog-preview{height:auto;margin-top:23px}.catalog-screen{aspect-ratio:2.2}.catalog-screen-aurora img{top:-34%}.catalog-rings{padding-top:12px;padding-bottom:7px;gap:16px}.catalog-ring{max-width:84px}.catalog-link-label{margin-top:20px}}
+    @media(max-width:760px){.cover-heading{padding-top:44px;padding-bottom:39px}.cover-discipline{font-size:.875rem;margin-bottom:14px}.cover-heading h1{font-size:2.75rem;line-height:1.25}.cover-author{font-size:1.25rem;margin-top:17px}.cover-author>span{font-size:1rem}.project-catalog{padding-bottom:46px;scroll-margin-top:86px}.project-catalog h2{font-size:1.25rem;margin-bottom:18px}.catalog-grid{grid-template-columns:1fr;gap:16px}.catalog-card{padding:24px;border-radius:20px}.catalog-card h3{font-size:1.625rem}.catalog-preview{height:auto;margin-top:23px}.catalog-screen{aspect-ratio:2.2}.catalog-screen-aurora img{top:-34%}.catalog-rings{padding-top:12px;padding-bottom:7px;gap:16px}.catalog-ring{max-width:84px}.catalog-link-label{margin-top:20px}}
     @media print{.cover-heading{padding-top:25px;padding-bottom:30px}.cover-heading h1{font-size:44px}.project-catalog{padding-bottom:35px}.catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.catalog-card{break-inside:avoid;padding:18px;print-color-adjust:exact;-webkit-print-color-adjust:exact}.catalog-card h3{font-size:20px}.catalog-scope,.catalog-description{font-size:12px}.catalog-preview{height:auto}.catalog-link-label{display:none}}
     /* Cover typography: solid navy, open tracking, one short entrance. */
     .portfolio-cover{--ease-out:cubic-bezier(0.23,1,0.32,1)}
@@ -425,7 +425,7 @@
     .crm-evidence dd{margin:0}
     @media(max-width:600px){.crm-evidence div{grid-template-columns:1fr;gap:2px}}
 
-    .not-sent-proof{margin-top:30px;max-width:920px}
+    .not-sent-proof{min-width:0}
     .not-sent-proof table{width:100%;border-collapse:collapse;color:var(--navy);font-size:14px;line-height:1.6}
     .not-sent-proof caption{text-align:left;font-weight:650;font-size:16px;margin-bottom:12px}
     .not-sent-proof th,.not-sent-proof td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
@@ -469,14 +469,15 @@
     .scope-result .screen-crop{--crop-ratio:380/280;--source-width:378.947368%;--source-left:-263.684211%;--source-top:-102.5%;border:1px solid var(--line);border-radius:9px}
     .scope-result .screen-crop>img{border-radius:0}
     @media(max-width:760px){#crm-loop .project-resources{margin-top:40px}.scope-evidence{grid-template-columns:1fr}}
-    .catalog-supplement{display:flex;flex-wrap:wrap;align-items:center;column-gap:12px;margin-top:18px;padding:8px 0}
-    .catalog-supplement>span{font-size:13px;font-weight:650;color:var(--muted)}
+    .catalog-supplement{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:18px;padding:8px 0}
+    .catalog-supplement>div>span{display:block;font-size:13px;font-weight:650;color:var(--muted)}
+    .not-sent-preview{display:block;width:min(100%,292px);height:auto;border:1px solid var(--line);border-radius:10px}
     .catalog-supplement .catalog-assignment{margin-top:0}
     .masthead-side a{gap:6px;max-width:none}
     .experiment-lead{max-width:none}
     .experiment-lead span{display:block}
     .visit-method{font-size:11px}
-    @media(max-width:760px){.crm-app-visual{grid-template-columns:1fr}.catalog-supplement{display:block}.catalog-supplement>span,.catalog-supplement .catalog-assignment{display:flex}}
+    @media(max-width:760px){.crm-app-visual{grid-template-columns:1fr}.catalog-supplement{align-items:flex-start;gap:8px}.catalog-supplement .catalog-assignment{display:flex}}
     @media(max-width:560px){.journey-steps{grid-template-columns:1fr}.journey-steps li+li{border-left:0;border-top:1px solid var(--line)}}
     .crm-app-visual .story-image{margin:0}
     .poc-visual figcaption a{color:var(--blue);text-decoration:underline;text-underline-offset:.2em}
@@ -495,12 +496,15 @@
     .visit-intervals ul{margin:6px 0 0;padding-left:20px}
     @media(max-width:760px){.about-timeline>li{gap:12px;padding-bottom:20px}}
     .visit-comparison span{display:block}
-    .not-sent-reason{font-size:15px;line-height:1.8;max-width:740px;margin:18px 0 24px;color:var(--muted)}
-    .not-sent-reason strong{display:block;color:var(--navy)}
-    .not-sent-evidence{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;max-width:920px;align-items:start}
-    .not-sent-flow{border:1px solid var(--line);border-radius:14px;padding:18px}
+    .not-sent-intro,.not-sent-evidence{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:start}
+    .not-sent-intro{margin:24px 0 36px}
+    .not-sent-summary .chapter-lead{margin:0}
+    .not-sent-reason{font-size:15px;line-height:1.8;margin:12px 0 0;color:var(--navy);font-weight:600}
+    .not-sent-scope{font-size:13px;line-height:1.7;margin:8px 0 0;color:var(--muted)}
+    .footer-top{flex-wrap:wrap}
+    .footer-resume{color:var(--blue);text-decoration:underline;text-underline-offset:.2em}
+    .not-sent-flow{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--evidence)}
     .not-sent-flow h4{font-size:16px;line-height:1.5;margin:0 0 10px;color:var(--navy)}
-    .not-sent-input{background:var(--evidence);border-radius:8px;padding:10px 12px;font-size:14px;line-height:1.6;color:var(--navy)}
     .not-sent-flow ul{list-style:none;padding:0 0 0 12px;margin:10px 0 0 12px;border-left:1px solid var(--line);display:grid;gap:5px}
     .not-sent-flow li{position:relative;display:grid;grid-template-columns:4.5em minmax(0,1fr);align-items:baseline;gap:8px;padding:8px 0 8px 5px;font-size:13px;line-height:1.7;color:var(--muted)}
     .not-sent-flow li::before{content:"";position:absolute;left:-13px;top:19px;width:11px;background:var(--line);height:1px}
@@ -508,14 +512,14 @@
     .not-sent-official{margin:0;min-width:0}
     .not-sent-official a{display:grid;gap:10px;font-size:14px;font-weight:650;color:var(--blue);text-decoration:underline;text-underline-offset:.2em}
     .not-sent-official img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--evidence);border:1px solid var(--line);border-radius:12px}
-    @media(max-width:690px){.not-sent-evidence{grid-template-columns:1fr;gap:20px}}
+    @media(max-width:760px){.not-sent-intro,.not-sent-evidence{grid-template-columns:1fr;gap:20px}.not-sent-intro{margin:20px 0 28px}}
   </style>
 </head>
 <body>
 <a class="skip" href="#main">본문 바로가기</a>
 <header class="site-header" id="top"><div class="wrap header-inner">
   <a class="brand" href="#top" aria-label="허재혁 포트폴리오 처음으로">허재혁</a>
-  <nav class="header-links" aria-label="주 메뉴"><a href="#about">ABOUT ME</a><a href="#work">프로젝트</a><a href="resume.html">이력서</a><a class="nav-external" href="https://github.com/jhheo51-arch" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg>GitHub <span aria-hidden="true">↗</span></a></nav>
+  <nav class="header-links" aria-label="주 메뉴"><a href="#about">ABOUT ME</a><a href="#work">프로젝트</a><a class="nav-external" href="https://github.com/jhheo51-arch" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg>GitHub <span aria-hidden="true">↗</span></a></nav>
 </div></header>
 <main id="main">
   <section class="portfolio-cover" aria-labelledby="hero-title">
@@ -543,7 +547,7 @@
           <span class="catalog-link-label">프로젝트 보기</span>
         </a>
       </div>
-      <aside class="catalog-supplement" aria-label="Marketing Cloud 직무 과제"><span>별도 직무 과제</span><a class="catalog-assignment" href="#not-sent">Marketing Cloud Not Sent 진단과 가상 검증 보기 <span aria-hidden="true">↓</span></a></aside>
+      <aside class="catalog-supplement" aria-label="Marketing Cloud 직무 과제"><div><span>별도 직무 과제</span><a class="catalog-assignment" href="#not-sent">Marketing Cloud Not Sent 진단과 가상 검증 보기 <span aria-hidden="true">↓</span></a></div><img class="not-sent-preview" src="assets/not_sent_table_preview.png" width="584" height="188" alt="가상 분류 결과 7행 중 3행 미리보기. T02 보호 유지, T05 콘텐츠 확인, T07 사람 확인." loading="lazy" decoding="async"></aside>
     </section>
 </section>
 
@@ -585,7 +589,7 @@
 <section class="chapter green-bg" id="crm-loop" aria-labelledby="chapter-name-crm-loop"><div class="chapter-masthead is-light"><div class="wrap masthead-inner">
       <span class="chapter-ordinal" aria-hidden="true">01</span>
       <div class="masthead-copy"><p class="masthead-kicker">PROJECT 01</p><h2 id="chapter-name-crm-loop">CRM LOOP</h2><p>고객군 분석과 캠페인 설계</p></div>
-      <div class="masthead-side"><a href="https://github.com/jhheo51-arch/crm-loop" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>프로젝트 저장소</span></a><span aria-hidden="true">↓</span></div>
+      <div class="masthead-side"><a href="https://github.com/jhheo51-arch/crm-loop" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>프로젝트 저장소</span></a></div>
     </div></div><div class="wrap"><p class="scope">회사 PoC에서 시작한 공개 데이터 기반 개인 설계</p><h3 class="chapter-title">연락할 고객을 고르기 전에, 보내지 않을 고객도 정했습니다.</h3><dl class="chapter-lead crm-evidence">
   <div><dt>문제와 원인</dt><dd>구매가 뜸해진 고객에게 다시 연락할 필요가 있었지만, 발송 뒤 재구매만 세면 원래 돌아올 고객과 메일로 돌아온 고객을 구분하기 어려웠습니다.</dd></div>
   <div><dt>캠페인 설계</dt><dd>UCI 공개 거래 데이터에서 2011년 12월 1일 기준 이탈 위험 고객 <strong>666명</strong>을 설계 대상으로 선정했습니다. 마케팅 메일 수신에 동의하지 않았거나, 최근 14일 이내에 구매했거나, 발송 횟수 상한에 도달한 고객은 발송 대상에서 제외하도록 설계했습니다. 실제 발송은 없었습니다.</dd></div>
@@ -655,7 +659,7 @@
 </div></details></aside></div></section><section class="chapter purple-bg" id="aurora" aria-labelledby="chapter-name-aurora"><div class="chapter-masthead is-dark"><div class="wrap masthead-inner">
       <span class="chapter-ordinal" aria-hidden="true">02</span>
       <div class="masthead-copy"><p class="masthead-kicker">PROJECT 02</p><h2 id="chapter-name-aurora">Aurora Owners 360</h2><p>고객 기록을 상담의 실행 규칙으로</p></div>
-      <div class="masthead-side"><a href="https://github.com/jhheo51-arch/aurora-owners-360" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>프로젝트 저장소</span></a><span aria-hidden="true">↓</span></div>
+      <div class="masthead-side"><a href="https://github.com/jhheo51-arch/aurora-owners-360" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>프로젝트 저장소</span></a></div>
     </div></div><div class="wrap"><p class="scope">가상 고객을 사용한 Salesforce 개발 환경, AI 협업 구현</p><h3 class="chapter-title">안전 VOC 이관 규칙을 설계하고 검증했습니다.</h3><p class="chapter-lead">가상의 고객센터에서는 안전 문의에 응답 기한이나 담당자가 빠지면 우선 처리하기 어려웠습니다. 제가 PRD에서 표준 Case를 쓰고 차주와 차량을 연결한 뒤, 안전 문의의 이관 조건과 완료 기준을 정했습니다. Claude Code와 구현한 뒤 Salesforce 개발 환경에서 예상 동작과 조회 결과를 대조했습니다.</p><div class="rule-strip"><div class="rule-item"><small>T4 / 기한</small><strong>생성 +2시간</strong><p>안전 결함의 기한을 자동 설정</p></div><div class="rule-item"><small>T4 / 이관</small><strong>팀장에게 먼저</strong><p>유효한 담당자와 사유 확인</p></div><div class="rule-item"><small>T3 / 재저장</small><strong>이관 유지</strong><p>중복 이관 방지</p></div><div class="rule-item"><small>T8 / 정보 부족</small><strong>생성 0건</strong><p>팀장 정보 없으면 저장 차단</p></div></div><p class="quiet-note">Salesforce 개발 환경의 수용 테스트 결과입니다. +2시간은 응답 기한 설정값입니다.</p><div class="feature-screen"><figure class="story-image "><div class="mockup-stage mockup-aurora"><div class="mockup-device"><div class="app-window">
       <div class="window-chrome" aria-hidden="true"><span class="window-controls"><i></i><i></i><i></i></span><span class="window-title">Aurora Owners 360</span><span class="window-context">VOC / CASE</span></div>
       <div class="screen-crop" style="--crop-ratio:1502/522;--source-width:102.263648%;--source-left:-1.065246%;--source-top:-27.586207%"><img src="assets/aurora_voc_record.jpg" alt="VOC-C 시연 화면, T3, T4, T8 수용 테스트와 별도의 시연 기록입니다." width="1536" height="674" loading="lazy" decoding="async"></div>
@@ -678,7 +682,7 @@
     </div></div></div><figcaption>접수 폼과 담당 현황, 유형별, 상담원별 집계는 시연 레코드이며 운영 성과가 아닙니다.</figcaption></figure></div></details></aside></div></section><section class="chapter experiment-section" id="experiment" aria-labelledby="chapter-name-experiment"><div class="chapter-masthead is-light"><div class="wrap masthead-inner">
       <span class="chapter-ordinal" aria-hidden="true">03</span>
       <div class="masthead-copy"><p class="masthead-kicker">PROJECT 03</p><h2 id="chapter-name-experiment">CRM A/B Test</h2><p>실험의 결과와 적용 판단</p></div>
-      <div class="masthead-side"><a href="https://github.com/jhheo51-arch/jhheo51-arch/tree/main/portfolio/salesforce-mc-crm/service_revisit_demo" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>합성 실습 저장소</span></a><span aria-hidden="true">↓</span></div>
+      <div class="masthead-side"><a href="https://github.com/jhheo51-arch/jhheo51-arch/tree/main/portfolio/salesforce-mc-crm/service_revisit_demo" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>합성 실습 저장소</span></a></div>
     </div></div><div class="wrap"><p class="scope">AI와 함께한 교육용 합성 실습</p><h3 class="chapter-title">방문 완료율이 높아도 전면 적용을 보류했습니다.</h3><p class="chapter-lead experiment-lead"><span>합성 실습에서 예약 편의안의 28일 방문 완료율은 차량 관리 필요성 안내보다 <strong>1.09%p</strong> 높았습니다.</span><span>개선 폭과 수신 철회 위험이 기준을 충족하는지 불확실했고, 수용량과 비용도 확인되지 않아 전면 적용을 보류했습니다.</span></p><div class="feature-screen ab-screen"><figure class="story-image native-report" id="revisit-native-chart"><div class="report-card revisit-report">
   <h4 class="report-title">안내 방식별 28일 방문 완료율</h4>
   <p class="report-subtitle revisit-subtitle">AI 협업 합성 실습 | 적격 차주 46,621명 | 배정 후 28일 서비스 방문 완료</p>
@@ -712,31 +716,27 @@
 <p class="decision-ending">전면 적용을 보류하고, 추가 확인 후 제한적 적용 여부를 재검토하기로 했습니다.</p><aside class="project-resources" aria-labelledby="resources-title-3"><header class="resources-heading"><h3 id="resources-title-3">프로젝트 Q&amp;A</h3></header><details class="source-details"><summary><span class="faq-question">실험의 비교 조건과 확대 판정 기준은 무엇이었나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>마케팅 동의, 30일 내 점검 시기, 기존 예약 없음, 필수 안전 고지 대상 아님이라는 조건을 적용했습니다. 배정 뒤 예약, 열람 여부와 관계없이 처음 배정된 군 전체를 분모에 남겼습니다. 안전 고지와 법적 의무 안내는 모든 군에서 별도로 처리해야 합니다. H는 동의 범위와 법적 의무를 확인한 경우에만 제한적으로 운영하는 조건입니다.</p><p>가상 시작 28일째 배정 45,069명 중 각자 28일을 채운 고객은 1,483명뿐이어서 중간 화면으로 최종 판정하지 않았습니다. 최종 완료 인원은 A 1,416명, B 1,597명, H 951명입니다. 사전에 정한 방문 완료율 비교 3건을 반영한 보정 p값은 0.00352입니다.</p><p>방문 완료율 차이의 보정 구간 하한은 +0.29%p로 최소 개선 기준인 +0.5%p보다 낮았습니다. 수신 철회 차이의 탐색 구간 상한은 +0.26%p로 허용 악화 한도 +0.2%p를 넘었습니다. 두 기준은 합성 자료 생성 전에 정한 교육용 예시입니다. 실제 기준은 사업 가치, 고객 보호, 운영 자료로 합의해야 합니다. 제한적 적용을 승인한 결과도 아닙니다.</p><p>합성 계획, 고객별 가상 원장, 코드, 계산 결과로 집계를 재현할 수 있습니다.</p><div class="source-links"><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md" target="_blank" rel="noopener noreferrer">합성 실습 재현 방법 <span aria-hidden="true">↗</span></a><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/results.json" target="_blank" rel="noopener noreferrer">계산 결과 <span aria-hidden="true">↗</span></a></div></div></details><details class="source-details"><summary><span class="faq-question">전자책과 A/B 분석 도구는 어디까지 만들었나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>통신망 경로를 바꿔 시험하고 실패 원인을 기록한 경험을 바탕으로, CRM 실험에서 무엇을 비교하고 언제 적용할지 정리했습니다.</p><p>전자책 『그래서, 이 캠페인 계속할까요?』는 97쪽 분량의 비공개 저자 검토본입니다. PDF, 검색 가능한 웹 읽기본과 실험 판단 기록 양식을 만들었습니다. 별도 통계 검수와 실제 독자 시험은 남아 있습니다.</p><p>A/B 분석 작업실은 실행 가능한 비공개 로컬 앱입니다. CSV의 군, 성공 수, 분모를 연결해 두 군의 결과를 비교하고, 확대 여부와 근거, 적용 전 확인할 조건을 기록해 HTML이나 PDF로 내보낼 수 있습니다.</p><p>비공개 개발 기록에는 새 화면 흐름 브라우저 검사 37개 통과가 남아 있습니다. 실제 CRM 연동과 실무자 사용성 검증은 남아 있습니다. 아래 공개 자료는 별도로 작성한 정기 점검 재방문 합성 실습입니다.</p><p><a href="https://github.com/jhheo51-arch/jhheo51-arch/tree/main/portfolio/salesforce-mc-crm/service_revisit_demo" target="_blank" rel="noopener noreferrer">공개 합성 실습 자료 보기</a></p></div></details></aside></div></section><section class="chapter mc-section" id="mc" aria-labelledby="chapter-name-mc"><div class="chapter-masthead is-dark"><div class="wrap masthead-inner">
       <span class="chapter-ordinal" aria-hidden="true">04</span>
       <div class="masthead-copy"><p class="masthead-kicker">ROLE EVIDENCE</p><h2 id="chapter-name-mc">Marketing Cloud</h2><p>진단 순서와 중단 조건</p></div>
-      <div class="masthead-side"><span aria-hidden="true">↓</span></div>
+
     </div></div><div class="wrap">
 <section id="not-sent" aria-labelledby="not-sent-title" tabindex="-1">
 <p class="scope">진단 절차 설계와 별도 가상 CSV 예시</p>
 <h3 class="chapter-title" id="not-sent-title">Not Sent 진단과 후속 조치 기준을 설계했습니다.</h3>
-<p class="chapter-lead">발송 대상보다 실제 발송 건수가 적을 때, 어떤 미발송을 그대로 두고 어떤 건을 다시 확인해야 할까요? Salesforce 공식 안내를 참고해 수신거부 등 보호 제외는 유지하고 주소와 콘텐츠 오류는 다시 확인하는 미발송 진단 기준을 설계했습니다. 별도 가상 CSV 예시는 8행 중 같은 발송에 해당하는 7행의 분류를 보여 줍니다. 실제 Marketing Cloud 계정에서 추출하거나 발송한 기록은 없습니다.</p>
-<p class="not-sent-reason"><strong>먼저 확인할 것</strong> 같은 발송의 고객 키와 미발송 사유를 먼저 대조합니다. 수신거부에 따른 제외는 유지하고, 주소나 콘텐츠 오류는 수정 필요 여부를 확인합니다.</p>
-<div class="not-sent-evidence">
+<div class="not-sent-intro">
+  <div class="not-sent-summary">
+    <p class="chapter-lead">발송 대상보다 실제 발송 건수가 적을 때, 제외를 유지할 건과 다시 확인할 건을 나누는 기준을 설계했습니다.</p>
+    <p class="not-sent-reason">같은 발송의 고객 키와 미발송 사유를 대조해 후속 조치를 정합니다.</p>
+    <p class="not-sent-scope">가상 CSV 8행 중 같은 발송의 7행을 분류했습니다. 실제 계정 추출이나 발송은 하지 않았습니다.</p>
+  </div>
   <section class="not-sent-flow" aria-labelledby="not-sent-flow-title">
     <h4 id="not-sent-flow-title">미발송 사유별 판단 기준</h4>
-    <p class="not-sent-input">같은 발송 ID의 행을 골라 사유를 확인합니다.</p>
     <ul>
       <li><strong>제외 유지</strong><span>수신거부와 보호 정책에 따른 제외는 그대로 둡니다.</span></li>
       <li><strong>오류 확인</strong><span>주소와 콘텐츠를 점검한 뒤 발송 자격을 다시 확인합니다.</span></li>
-      <li><strong>판단 보류</strong><span>처음 보는 사유는 담당자가 확인할 때까지 보류합니다.</span></li>
+      <li><strong>판단 보류</strong><span>알 수 없는 사유는 담당자가 확인할 때까지 보류합니다.</span></li>
     </ul>
   </section>
-  <figure class="story-image not-sent-official">
-    <a href="https://www.youtube.com/watch?v=uzKdG24ctCs" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">
-      <img src="https://i.ytimg.com/vi/uzKdG24ctCs/hq2.jpg" width="480" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="Salesforce Support 공식 시연의 Automation Studio 추출 설정 화면">
-      <span>Salesforce 공식 시연 보기 <span aria-hidden="true">↗</span></span>
-    </a>
-    <figcaption>공식 제품 화면. Salesforce Support의 Not Sent 추출 설정 시연입니다.</figcaption>
-  </figure>
 </div>
+<div class="not-sent-evidence">
 <div class="not-sent-proof">
   <table>
     <caption>가상 입력 8행 중 대상 발송 7행의 분류 결과</caption>
@@ -754,12 +754,20 @@
   <p>보호 유지 4건, 원천 확인 1건, 콘텐츠 확인 1건, 담당자 확인 1건입니다. 자동 재발송은 0건입니다. T07은 알 수 없는 사유의 처리 경로를 확인하기 위해 만든 값입니다. 검증 범위는 가상 데이터의 로컬 분류이며, 계정에서 추출하거나 발송한 기록은 없습니다.</p>
   <div class="source-links"><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/not_sent_demo/sample_not_sent.csv" target="_blank" rel="noopener noreferrer">가상 입력 CSV <span aria-hidden="true">↗</span></a><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/not_sent_demo/results/reviewed_rows.csv" target="_blank" rel="noopener noreferrer">행별 분류 결과 CSV <span aria-hidden="true">↗</span></a><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/not_sent_demo/test_not_sent_review.py" target="_blank" rel="noopener noreferrer">자동 검사 코드 <span aria-hidden="true">↗</span></a></div>
 </div>
+  <figure class="story-image not-sent-official">
+    <a href="https://www.youtube.com/watch?v=uzKdG24ctCs" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">
+      <img src="https://i.ytimg.com/vi/uzKdG24ctCs/hq2.jpg" width="480" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="Salesforce Support 공식 시연의 Automation Studio 추출 설정 화면">
+      <span>Salesforce 공식 시연 보기 <span aria-hidden="true">↗</span></span>
+    </a>
+    <figcaption>공식 제품 화면. Salesforce Support의 Not Sent 추출 설정 시연입니다.</figcaption>
+  </figure>
+</div>
 </section>
 <div class="assignment-list">
 <aside class="project-resources" aria-labelledby="resources-title-4"><header class="resources-heading"><h3 id="resources-title-4">프로젝트 Q&amp;A</h3></header><details class="source-details"><summary><span class="faq-question">열람률의 한계를 고려해 어떤 지표를 제안했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>Apple Mail Privacy Protection으로 열람률이 부풀 수 있어 클릭률과 링크 정상 동작을 먼저 확인하도록 제안했습니다. 예약이나 방문을 추적할 수 있을 때는 해당 행동 지표로 효과를 판단합니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=sf.mc_jb_marketing_cloud_email_privacy.htm&language=en_US&type=5" target="_blank" rel="noopener noreferrer">Salesforce 지표 안내 ↗</a></div></div></details><details class="source-details"><summary><span class="faq-question">Not Sent는 원인별로 어떻게 처리했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>가상 CSV에서 JobID로 같은 발송을 고르고 SubscriberKey와 Reason으로 보호 제외, 원천 오류, 콘텐츠 오류, 담당자 확인을 구분했습니다. 별도 가상 입력 8행 중 대상 발송 7행을 분류한 결과는 보호 유지 4건, 원천, 콘텐츠, 사람 확인 각 1건, 자동 재발송 0건이었습니다. 실제 계정 발송 결과가 아닙니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=000392619&language=en_US&type=1" target="_blank" rel="noopener noreferrer">Not Sent 추출 안내 ↗</a></div></div></details><details class="source-details"><summary><span class="faq-question">감사 로그는 어떻게 보관하도록 제안했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>장기 조회가 필요하면 Audit Trail의 계정별 보관 기간을 확인하고 정기 추출과 외부 보관을 계획합니다. SFTP도 영구 보관소로 보지 않고, 파일 건수, 자동화 실패 알림, 시간대, 조회 권한을 함께 확인합니다. 실제 적용 시 최신 정책과 계정 조건을 재확인해야 합니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=mc_overview_audit_trail.htm&language=en_US&type=5" target="_blank" rel="noopener noreferrer">Audit Trail 공식 안내 ↗</a></div></div></details><details class="source-details"><summary><span class="faq-question">장기 비활동 고객을 삭제 후보로 어떻게 검토했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>Contact Key 통일, 보호 대상 제외, 삭제 후보를 나누는 2단계 SQL 초안을 썼습니다. 재검토에서는 최근 7일 기록과 365일 비활동 비교의 기간 불일치를 바로잡았습니다. 공식 안내상 일반적인 Data View 조회 범위는 최근 180일입니다. 365일 비활동을 판단하려면 별도 보관 이력과 원천 시스템을 대조한 뒤 삭제 승인을 받도록 설계했습니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=mktg.mc_overview_limits_data_retention.htm&language=en_US&type=5" target="_blank" rel="noopener noreferrer">Data View 보관 안내 ↗</a></div></div></details></aside></div></div></section>
 
   <section class="closing" aria-labelledby="closing-title"><div class="wrap closing-inner"><div><h2 id="closing-title">고객 기록에서 실행 판단까지.</h2><p>Lead 연결, 고객군, Journey 설계, 상담 Flow 구현과 실험 결과 검토.</p></div><div class="closing-actions"><a class="button dark" href="https://github.com/jhheo51-arch" target="_blank" rel="noopener noreferrer"><svg class="github-mark" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg>GitHub에서 작업 더 보기 <span aria-hidden="true">↗</span></a><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_%EA%B3%BC%EC%A0%9C_%EA%B3%B5%EA%B0%9C%EC%9A%94%EC%95%BD_20261118_v1.md">SFMC 과제 공개 요약 <span aria-hidden="true">↗</span></a></div></div></section>
 </main>
-<footer class="footer wrap"><div class="footer-top"><a class="footer-name" href="#top">허재혁 <span style="font-size:11px;font-weight:450;margin-left:7px;color:#72776b">CRM Portfolio</span></a><span>기록에서 실행 검증까지</span><a class="back-top" href="#top">처음으로 <span aria-hidden="true">↑</span></a></div><p class="footer-note">회사 업무에서 확인한 범위는 Lead 레코드 생성 PoC입니다. CRM LOOP는 공개 데이터 분석과 캠페인 설계, Not Sent는 과제 진단 설계와 별도 가상 CSV 예시, Aurora는 개발 환경 구현, 정기 점검 A/B는 AI 협업 합성 실습입니다. 실제 MC 발송 성과나 고객센터 운영 성과는 포함하지 않습니다. (2026.11)</p></footer>
+<footer class="footer wrap"><div class="footer-top"><a class="footer-name" href="#top">허재혁 <span style="font-size:11px;font-weight:450;margin-left:7px;color:#72776b">CRM Portfolio</span></a><span>기록에서 실행 검증까지</span><a class="footer-resume" href="resume.html">공개 이력서</a><a class="back-top" href="#top">처음으로 <span aria-hidden="true">↑</span></a></div><p class="footer-note">회사 업무에서 확인한 범위는 Lead 레코드 생성 PoC입니다. CRM LOOP는 공개 데이터 분석과 캠페인 설계, Not Sent는 과제 진단 설계와 별도 가상 CSV 예시, Aurora는 개발 환경 구현, 정기 점검 A/B는 AI 협업 합성 실습입니다. 실제 MC 발송 성과나 고객센터 운영 성과는 포함하지 않습니다. (2026.11)</p></footer>
 
 </body></html>
