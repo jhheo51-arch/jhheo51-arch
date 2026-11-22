@@ -520,6 +520,9 @@
     .ab-material-figure{margin:0;aspect-ratio:2;overflow:hidden;background:var(--evidence)}
     .ab-material-figure img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
     .ab-material-book img{object-position:50% 14%}
+    .ab-material-tool{aspect-ratio:auto}
+    .ab-material-tool img{height:auto;aspect-ratio:2}
+    .ab-material-tool figcaption{padding:10px clamp(16px,2.5vw,25px);font-size:.875rem;line-height:1.6;color:var(--muted);background:#fff;border-bottom:1px solid var(--line)}
     .ab-material-copy{display:grid;align-content:start;gap:8px;padding:clamp(16px,2.5vw,25px)}
     .ab-material-copy h4{font-size:1.2rem;line-height:1.4;margin:0;color:var(--navy)}
     .ab-material-copy>p:not(.small-label){font-size:14px;line-height:1.75;color:var(--muted)}
@@ -739,7 +742,7 @@
       </div>
     </article>
     <article class="ab-material">
-      <figure class="ab-material-figure ab-material-tool"><img src="assets/ab_tool_preview.png" width="1440" height="2196" alt="가상 예시로 통계 판정과 실제 적용 조건을 나눠 보여주는 A/B 테스트 작업실 결과 화면" loading="lazy" decoding="async"></figure>
+      <figure class="ab-material-figure ab-material-tool"><img src="assets/ab_tool_preview.png" width="1440" height="2196" alt="가상 예시로 통계 판정과 실제 적용 조건을 나눠 보여주는 A/B 테스트 작업실 결과 화면" loading="lazy" decoding="async"><figcaption>위 정기 점검 실습과 별개로, 가상 입력을 사용한 Tool 시연 화면입니다.</figcaption></figure>
       <div class="ab-material-copy">
         <p class="small-label">Tool / 실행 가능한 로컬 앱</p>
         <h4>CRM A/B 테스트 작업실</h4>
