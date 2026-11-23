@@ -16,6 +16,12 @@
 
 **문제 정의 → 가설 → 반례 탐색 → 검증 → 판단**
 
+## 먼저 볼 작업 3개
+
+- [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md)에서 저장한 기록을 다시 쓰게 만드는 문제를 어떻게 정의하고 화면으로 옮겼는지 볼 수 있습니다.
+- [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)에서 재방문 캠페인의 대상을 고르고, 한 회차로는 판단하기 어려워 적용을 보류한 근거를 볼 수 있습니다.
+- [OptiMesh](https://jhheo51-arch.github.io/jhheo51-arch/optimesh-demo-20261123-v1.html)에서 가상 설정을 선택해 승인하고, 바뀐 값을 확인한 뒤 복구해 볼 수 있습니다.
+
 ## 작업 지도
 
 | 분야 | 프로젝트 |
