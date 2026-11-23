@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>커리어 플로우 | 허재혁</title>
+  <style>
+    :root { color-scheme: light; --paper: #f7faf7; --ink: #192923; --muted: #445c51; --accent: #245c48; --line: #cfddd4; }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; max-width: 52rem; padding: 0 clamp(1rem, 5vw, 2.5rem) 2rem; background: var(--paper); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+    a { color: var(--accent); font-weight: 700; text-underline-offset: .2em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+    nav { display: flex; flex-wrap: wrap; gap: 0 1rem; align-items: center; border-bottom: 1px solid var(--line); }
+    nav a, .examples a { display: inline-flex; align-items: center; min-height: 44px; }
+    header { padding: 1.6rem 0 1.25rem; }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.15; letter-spacing: -.045em; }
+    header p { max-width: 38rem; margin-top: .65rem; color: var(--muted); }
+    .flow { list-style: none; margin: 0 0 1.4rem; padding: 0; counter-reset: stage; }
+    .flow li { position: relative; counter-increment: stage; padding: 0 0 1rem 2.75rem; }
+    .flow li:last-child { padding-bottom: 0; }
+    .flow li::before { content: ''; position: absolute; top: 1rem; bottom: -1rem; left: 1rem; width: 2px; background: var(--line); }
+    .flow li:last-child::before { display: none; }
+    .number { position: absolute; top: .55rem; left: 0; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--accent); color: #fff; font: 700 .75rem/1 system-ui, sans-serif; }
+    .number::after { content: counter(stage, decimal-leading-zero); }
+    .stage { border: 1px solid var(--line); border-radius: .65rem; background: #fff; padding: .8rem clamp(.8rem, 3vw, 1.3rem); }
+    .stage > p + p { margin-top: .55rem; }
+    .stage-label { color: var(--accent); font-size: .8rem; font-weight: 750; }
+    h2 { font-size: clamp(1.13rem, 4.4vw, 1.4rem); letter-spacing: -.025em; line-height: 1.4; }
+    .question { margin: .4rem 0; font-weight: 730; }
+    .examples { display: flex; flex-wrap: wrap; gap: 0 1rem; margin-top: .3rem; font-size: .9rem; }
+    .message { padding: 1.15rem; border-radius: .65rem; background: #204838; color: #fff; }
+    .message p { margin-top: .35rem; }
+  </style>
+</head>
+<body>
+  <nav aria-label="다른 페이지">
+    <a href="https://github.com/jhheo51-arch">GitHub 프로필</a>
+    <a href="./">CRM 포트폴리오</a>
+  </nav>
+  <main>
+    <header>
+      <h1>커리어 플로우</h1>
+      <p>고객이 무엇을 선택하는지 묻는 일에서 출발해, 조직에서 무엇을 확인해야 실행을 결정할 수 있는지 묻는 일로 이어졌습니다.</p>
+    </header>
+    <ol class="flow" role="list" aria-label="네 단계의 커리어 흐름">
+      <li>
+        <span class="number" aria-hidden="true"></span>
+        <section class="stage" aria-labelledby="market">
+          <p class="stage-label" lang="en">Market Insight</p>
+          <h2 id="market">마케팅과 CRM</h2>
+          <p class="question">고객은 왜 이 선택을 할까?</p>
+          <p>마케팅에 대한 흥미로 경영학에 입문하고 마케팅 트랙을 수강했습니다. 고객이 가치를 느끼는 이유와 시장의 흐름을 배웠습니다. 고객의 선택을 이해하고 관계를 이어가는 CRM으로 관심이 넓어졌습니다.</p>
+        </section>
+      </li>
+      <li>
+        <span class="number" aria-hidden="true"></span>
+        <section class="stage" aria-labelledby="macro">
+          <p class="stage-label" lang="en">Macro Vision</p>
+          <h2 id="macro">정치외교학 복수전공</h2>
+          <p class="question">같은 상황을 왜 다르게 판단할까?</p>
+          <p>개별 마케팅 활동을 둘러싼 더 큰 맥락이 궁금해 정치외교학을 복수전공했습니다. 이해관계자마다 가진 목표와 제약, 힘의 관계, 각자의 선택 뒤에 있는 이야기를 살피는 관점을 익혔습니다.</p>
+        </section>
+      </li>
+      <li>
+        <span class="number" aria-hidden="true"></span>
+        <section class="stage" aria-labelledby="operations">
+          <p class="stage-label" lang="en">Execution &amp; Tech Depth</p>
+          <h2 id="operations">육군 정보통신 장교와 인사과장</h2>
+          <p class="question">변수가 많은 운영에서 무엇부터 확인할까?</p>
+          <p>원인을 따라가며 답을 확인할 수 있는 IT 기술에 끌려 정보통신 병과를 선택했습니다. 시스템을 연결하는 일을 경험했고, 인사과장으로서는 인사와 통신 등 부대의 여러 업무 기록을 함께 관리하고 대조했습니다.</p>
+          <p>실무에서는 결과에 영향을 주는 변수가 여러 개였습니다. 조건과 변수를 나눠 기록을 비교하는 접근을 시도하면서, A/B 테스트처럼 변화의 영향을 따로 확인하는 실험 설계가 왜 필요한지 체감했습니다.</p>
+        </section>
+      </li>
+      <li>
+        <span class="number" aria-hidden="true"></span>
+        <section class="stage" aria-labelledby="building">
+          <p class="stage-label" lang="en">Vision &amp; Product Building</p>
+          <h2 id="building">A/B 테스트와 CRM 도구 제작</h2>
+          <p class="question">어떤 근거가 쌓이면 실행을 결정할 수 있을까?</p>
+          <p>마케팅과 CRM에 대한 관심을 데이터 기반 실험과 결합했습니다. A/B 테스트 방법론을 연구해 전자책으로 정리했고, 실험을 설계하고 결과를 분석하는 도구를 만들었습니다. 경영진이 캠페인의 적용, 보류, 추가 검증을 판단하는 데 쓰는 A/B 테스트와 CRM 분석 도구를 SaaS로 발전시키는 것이 목표입니다.</p>
+          <p>CRM LOOP에서는 재방문 캠페인의 후보를 고른 뒤, 한 회차로는 관심 있는 효과 차이를 판단하기 어려워 적용을 보류한 근거를 남겼습니다.</p>
+          <div class="examples">
+            <a href="https://github.com/jhheo51-arch/AB-Test">A/B 테스트 전자책과 도구</a>
+            <a href="https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md">CRM LOOP 사례</a>
+          </div>
+        </section>
+      </li>
+    </ol>
+    <section class="message" aria-labelledby="message">
+      <h2 id="message">핵심 메시지</h2>
+      <p>정치외교학으로 익힌 거시적 이해관계 분석, 정보통신 장교로 기른 시스템과 데이터 감각, 마케팅에 대한 관심을 결합합니다. 경영진이 실행과 보류를 판단할 근거를 만드는 A/B 테스트와 CRM 전문가이자, 그 판단에 쓰이는 도구를 직접 만드는 사람을 지향합니다.</p>
+    </section>
+  </main>
+</body>
+</html>
