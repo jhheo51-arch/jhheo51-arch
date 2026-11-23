@@ -5,24 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>커리어 플로우 | 허재혁</title>
   <style>
-    :root { color-scheme: light; --paper: #f7faf7; --ink: #192923; --muted: #445c51; --accent: #245c48; --line: #cfddd4; }
+    :root { color-scheme: light; --paper: #edf3fb; --ink: #142942; --muted: #425a73; --accent: #1358a8; --line: #ccd9ea; --panel: #fff; --selected: #e8f2ff; --navy: #142e55; }
     * { box-sizing: border-box; }
-    body { margin: 0 auto; max-width: 52rem; padding: 0 clamp(1rem, 5vw, 2.5rem) 2rem; background: var(--paper); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+    .wrap { width: min(56rem, calc(100% - clamp(1.5rem, 7vw, 4rem))); margin-inline: auto; }
     a { color: var(--accent); font-weight: 700; text-underline-offset: .2em; }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-    .site-nav { display: flex; flex-wrap: wrap; gap: 0 1rem; align-items: center; border-bottom: 1px solid var(--line); }
-    .site-nav a, .examples a, .plan-link { display: inline-flex; align-items: center; min-height: 44px; }
-    header { padding: 1.6rem 0 1.25rem; }
+    .topbar { background: var(--panel); border-bottom: 1px solid var(--line); }
+    .site-nav, .page-nav { display: flex; flex-wrap: wrap; gap: 0 .8rem; align-items: center; }
+    .site-nav a, .page-nav a, .examples a, .plan-link { display: inline-flex; align-items: center; min-height: 44px; }
+    .site-nav a { font-size: .88rem; }
+    .site-nav a + a { margin-left: auto; }
+    main { padding-block: .8rem 2rem; }
+    header { padding: clamp(.85rem, 3.5vw, 1.55rem); border-radius: .75rem .75rem 0 0; background: linear-gradient(115deg, var(--navy) 15%, #205eaa); color: #fff; }
     h1, h2, h3, p { margin: 0; }
-    h1 { font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.15; letter-spacing: -.045em; }
-    header p { max-width: 38rem; margin-top: .65rem; color: var(--muted); }
-    .overview { margin-bottom: 1.4rem; }
+    h1 { font-size: clamp(1.85rem, 7vw, 3.1rem); line-height: 1.12; letter-spacing: -.045em; }
+    header .owner { margin: 0 0 .2rem; color: #e4efff; font-size: .82rem; font-weight: 700; }
+    header p { max-width: 38rem; margin-top: .45rem; color: #f4f8ff; font-size: .94rem; }
+    .page-nav { padding: 0 .65rem; background: var(--panel); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 .65rem .65rem; }
+    .page-nav a { padding: 0 .35rem; font-size: .86rem; }
+    .overview { margin: .85rem 0 1.2rem; padding: .75rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--panel); }
     .overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; margin: .55rem 0 0; padding: 0; list-style: none; }
-    .overview-grid a { display: grid; gap: .15rem; align-content: start; height: 100%; min-height: 74px; padding: .6rem .7rem; border: 1px solid var(--line); border-radius: .55rem; background: #fff; line-height: 1.35; }
-    .overview-grid a:hover { border-color: var(--accent); }
+    .overview-grid a { display: grid; gap: .2rem; align-content: start; height: 100%; min-height: 66px; padding: .5rem .55rem; border: 1px solid var(--line); border-left: 3px solid #4a88d3; border-radius: .45rem; background: #f6faff; line-height: 1.35; text-decoration: none; }
+    .overview-grid a:hover, .overview-grid a:focus-visible { border-color: var(--accent); background: var(--selected); }
     .overview-grid span { font-size: .75rem; color: var(--muted); }
-    .overview-grid strong { font-size: .94rem; }
-    .plan-link { font-size: .9rem; }
+    .overview-grid strong { font-size: .92rem; text-decoration: underline; text-underline-offset: .16em; }
+    .plan-link { margin-top: .2rem; font-size: .87rem; }
     .detail-title { margin-bottom: .55rem; }
     [id] { scroll-margin-top: .8rem; }
     .stage:target { outline: 2px solid var(--accent); }
@@ -33,30 +41,41 @@
     .flow li:last-child::before { display: none; }
     .number { position: absolute; top: .55rem; left: 0; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--accent); color: #fff; font: 700 .75rem/1 system-ui, sans-serif; }
     .number::after { content: counter(stage, decimal-leading-zero); }
-    .stage { border: 1px solid var(--line); border-radius: .65rem; background: #fff; padding: .8rem clamp(.8rem, 3vw, 1.3rem); }
+    .stage { border: 1px solid var(--line); border-radius: .65rem; background: var(--panel); padding: .8rem clamp(.8rem, 3vw, 1.3rem); box-shadow: 0 1px 2px #142e5510; }
     .stage > p + p { margin-top: .55rem; }
     .stage-label { color: var(--accent); font-size: .8rem; font-weight: 750; }
     h2 { font-size: clamp(1.13rem, 4.4vw, 1.4rem); letter-spacing: -.025em; line-height: 1.4; }
     .question { margin: .4rem 0; font-weight: 730; }
-    .examples { display: flex; flex-wrap: wrap; gap: 0 1rem; margin-top: .3rem; font-size: .9rem; }
-    .message { padding: 1.15rem; border-radius: .65rem; background: #204838; color: #fff; }
+    .examples { display: flex; flex-wrap: wrap; gap: .35rem .65rem; margin-top: .55rem; font-size: .9rem; }
+    .examples a { padding: 0 .65rem; border: 1px solid #b8d1ee; border-radius: .45rem; background: #f1f7ff; }
+    .examples a:hover { background: var(--selected); }
+    .message { padding: 1.15rem; border-radius: .65rem; background: var(--navy); color: #fff; }
     .message p { margin-top: .35rem; }
     .plan { margin-top: 1.65rem; }
     .plan > p { margin: .3rem 0 .85rem; color: var(--muted); }
     .plan h3 { font-size: 1.05rem; line-height: 1.45; }
     .plan .stage p { margin-top: .25rem; }
+    @media (min-width: 48rem) { .overview-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   </style>
 </head>
 <body>
-  <nav class="site-nav" aria-label="다른 페이지">
-    <a href="https://github.com/jhheo51-arch">GitHub 프로필</a>
-    <a href="./">CRM 포트폴리오</a>
-  </nav>
-  <main>
+  <div class="topbar">
+    <nav class="site-nav wrap" aria-label="다른 페이지">
+      <a href="https://github.com/jhheo51-arch">GitHub 프로필</a>
+      <a href="./">CRM 포트폴리오</a>
+    </nav>
+  </div>
+  <main class="wrap">
     <header>
+      <p class="owner">허재혁</p>
       <h1>커리어 플로우</h1>
       <p>고객이 무엇을 선택하는지 묻는 일에서 출발해, 조직에서 무엇을 확인해야 실행을 결정할 수 있는지 묻는 일로 이어졌습니다.</p>
     </header>
+    <nav class="page-nav" aria-label="커리어 플로우 내 이동">
+      <a href="#overview-title">요약</a>
+      <a href="#details">단계별 이야기</a>
+      <a href="#career-plan">커리어 계획</a>
+    </nav>
     <nav class="overview" aria-labelledby="overview-title">
       <h2 id="overview-title">네 단계 한눈에 보기</h2>
       <ol class="overview-grid" role="list">
