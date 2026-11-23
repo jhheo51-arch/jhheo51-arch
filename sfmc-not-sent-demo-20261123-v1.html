@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFMC 미발송 판단 데모</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #22233a;
+      --muted: #555c73;
+      --accent: #4338a0;
+      --line: #dcddec;
+      --soft: #eeedfb;
+      --paper: #fff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f5fb; color: var(--ink); font: 1rem/1.55 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+    .wrap { width: min(58rem, calc(100% - 2rem)); margin-inline: auto; }
+    header { background: #242344; color: #fff; padding: 1.1rem 0 1.65rem; }
+    header a { color: #eeedff; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    h1 { font-size: clamp(1.7rem, 4vw, 2.55rem); margin: .55rem 0 .3rem; letter-spacing: -.045em; line-height: 1.2; }
+    header p { margin: 0; color: #deddf5; }
+    main { padding-block: 1.2rem 1.75rem; }
+    nav { display: flex; gap: .5rem; margin-bottom: 1rem; }
+    button { min-height: 44px; border-radius: .55rem; border: 1px solid var(--line); padding: .45rem .85rem; background: var(--paper); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+    button:hover:not(:disabled), button[aria-current="true"] { background: var(--soft); border-color: var(--accent); }
+    button[aria-current="true"] { color: var(--accent); }
+    button:disabled { color: var(--muted); background: #f1f1f6; cursor: default; }
+    :focus-visible { outline: 3px solid #8061cc; outline-offset: 3px; }
+    .panels { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .88fr); gap: 1rem; align-items: start; }
+    .card { min-width: 0; background: var(--paper); padding: 1.15rem; border: 1px solid var(--line); border-radius: .9rem; }
+    h2 { margin: 0; font-size: 1.28rem; }
+    .meta, .hint { color: var(--muted); margin: .2rem 0 .8rem; }
+    .reason { margin: .25rem 0 .75rem; font-weight: 700; color: var(--accent); }
+    fieldset { min-inline-size: 0; margin: 0; padding: 0; border: 0; }
+    legend { padding: 0; margin-bottom: .35rem; font-weight: 750; }
+    label { display: flex; align-items: center; gap: .6rem; min-height: 44px; padding: .35rem .6rem; border: 1px solid var(--line); border-radius: .5rem; margin-bottom: .35rem; cursor: pointer; }
+    label:has(input:checked) { background: var(--soft); border-color: var(--accent); }
+    input { accent-color: var(--accent); width: 1rem; height: 1rem; flex: none; margin: 0; }
+    form button { margin-top: .4rem; }
+    #confirm:enabled { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .result { border-top: .25rem solid var(--accent); }
+    .verdict { background: var(--soft); border-radius: .45rem; padding: .45rem .65rem; margin: .65rem 0 .9rem; font-weight: 700; }
+    dl { margin: 0; }
+    dt { margin-top: .55rem; font-weight: 750; }
+    dd { margin: .1rem 0 0; color: var(--muted); }
+    .sources { color: var(--muted); margin-top: .9rem; font-size: .87rem; }
+    .sources a { display: inline-block; margin-right: .7rem; padding: .45rem 0; }
+    @media (max-width: 43rem) { .panels { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md">SFMC 공개 사례로 돌아가기</a>
+      <h1>어떤 미발송을 고쳐야 할까?</h1>
+      <p>가상 사례 세 건의 사유를 읽고 다음 조치를 골라보세요.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <nav aria-label="가상 사례 선택">
+      <button type="button" data-case="0" aria-current="true">T02</button>
+      <button type="button" data-case="1">T05</button>
+      <button type="button" data-case="2">T07</button>
+    </nav>
+    <div class="panels">
+      <section class="card" aria-labelledby="case-title">
+        <p class="meta"><code>JOB-CASE-001</code> 가상 발송</p>
+        <h2 id="case-title"></h2>
+        <p id="reason" class="reason" lang="en"></p>
+        <form id="decision">
+          <fieldset>
+            <legend>다음 조치로 무엇을 고르시겠어요?</legend>
+            <label><input type="radio" name="action" value="protect"> 상업성 발송 대상에서 계속 제외</label>
+            <label><input type="radio" name="action" value="content"> 콘텐츠를 점검하고 수정 후 시험</label>
+            <label><input type="radio" name="action" value="review"> 담당자 확인까지 재발송 보류</label>
+          </fieldset>
+          <button id="confirm" type="submit" disabled>분류 결과 확인</button>
+        </form>
+      </section>
+      <section class="card result" aria-labelledby="result-title">
+        <h2 id="result-title" tabindex="-1">분류 결과</h2>
+        <p id="hint" class="hint">조치를 고른 뒤 가상 CSV의 로컬 분류와 비교해 보세요.</p>
+        <div id="feedback" hidden>
+          <p class="verdict" id="verdict"></p>
+          <dl>
+            <dt>내가 고른 조치</dt><dd id="my-action"></dd>
+            <dt>로컬 분류</dt><dd id="classification"></dd>
+            <dt>판단 이유</dt><dd id="rationale"></dd>
+            <dt>다음 조치</dt><dd id="next"></dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+    <footer class="sources">
+      가상 데이터 실습입니다. 브라우저에서 조치를 비교합니다.
+      <div>
+        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/not_sent_demo/sample_not_sent.csv">가상 입력 CSV</a>
+        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/not_sent_demo/results/reviewed_rows.csv">로컬 분류 결과 CSV</a>
+        <a href="https://help.salesforce.com/s/articleView?id=000392619&amp;language=en_US&amp;type=1">Salesforce 미발송 추출 안내</a>
+      </div>
+    </footer>
+    <noscript>이 데모를 실행하려면 브라우저에서 자바스크립트를 켜 주세요.</noscript>
+  </main>
+  <script>
+    const cases = [
+      {
+        title: 'T02 수신거부',
+        reason: 'Unsubscribed Master',
+        action: 'protect',
+        classification: '보호 유지',
+        why: '구독자의 상업성 메일 수신거부 선택을 보호해야 합니다.',
+        next: '상업성 발송 대상에서 계속 제외합니다.'
+      },
+      {
+        title: 'T05 이메일 생성 또는 발송 오류',
+        reason: 'Build Email Error or Send Failure',
+        action: 'content',
+        classification: '콘텐츠 확인',
+        why: '템플릿과 개인화 변수를 먼저 점검할 단서입니다. 콘텐츠를 확인하면 세부 원인을 좁힐 수 있습니다.',
+        next: '오류를 확인해 수정하고 시험한 뒤, 발송 자격을 충족하는 대상만 다시 검토합니다.'
+      },
+      {
+        title: 'T07 분류표에 없는 가상 사유',
+        reason: 'Unexpected Account Policy',
+        action: 'review',
+        classification: '사람 확인',
+        why: '현재 기준으로는 보호 목적의 제외인지 수정할 오류인지 판단할 근거가 부족합니다.',
+        next: '담당자가 사유와 발송 설정을 확인할 때까지 재발송을 보류합니다.'
+      }
+    ];
+    const get = id => document.getElementById(id);
+    const nav = [...document.querySelectorAll('[data-case]')];
+    const form = get('decision');
+    const inputs = [...form.querySelectorAll('input')];
+    const saved = [];
+    let index = 0;
+
+    function show() {
+      const current = cases[index];
+      const answer = saved[index];
+      get('case-title').textContent = current.title;
+      get('reason').textContent = current.reason;
+      nav.forEach((button, position) => {
+        if (position === index) button.setAttribute('aria-current', 'true');
+        else button.removeAttribute('aria-current');
+      });
+      for (const input of inputs) input.checked = input.value === answer;
+      get('confirm').disabled = !answer;
+      get('hint').hidden = Boolean(answer);
+      get('feedback').hidden = !answer;
+      if (!answer) return;
+      get('verdict').textContent = answer === current.action ? '로컬 분류의 조치와 일치합니다.' : '로컬 분류에서는 다른 조치를 골랐습니다.';
+      get('my-action').textContent = inputs.find(input => input.value === answer).labels[0].textContent.trim();
+      get('classification').textContent = current.classification;
+      get('rationale').textContent = current.why;
+      get('next').textContent = current.next;
+    }
+
+    nav.forEach(button => button.addEventListener('click', () => {
+      index = Number(button.dataset.case);
+      show();
+    }));
+
+    form.addEventListener('change', () => {
+      get('confirm').disabled = false;
+      get('hint').hidden = false;
+      get('feedback').hidden = true;
+    });
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      saved[index] = new FormData(form).get('action');
+      show();
+      if (saved[index]) get('result-title').focus();
+    });
+    show();
+  </script>
+</body>
+</html>
