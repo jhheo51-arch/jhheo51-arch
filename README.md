@@ -29,41 +29,42 @@
     <tr>
       <td>
         <strong>서비스와 콘텐츠</strong><br>
-        <a href="https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md">MEMOIVE</a><br>
-        <a href="https://github.com/jhheo51-arch/saeroki">새록이</a><br>
-        <a href="https://github.com/jhheo51-arch/trend-to-trust">Trend to Trust</a><br>
-        <a href="https://github.com/jhheo51-arch/PRX-917">PRX-917</a><br>
-        <a href="https://vision-delta-hazel.vercel.app/">VISION</a>
+        <a href="https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md" aria-label="MEMOIVE">MEMOIVE</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/saeroki" aria-label="새록이">새&#8288;록&#8288;이</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/trend-to-trust" aria-label="Trend to Trust">Trend&nbsp;to&nbsp;Trust</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/PRX-917" aria-label="PRX-917">PRX&#8288;-&#8288;917</a> &ensp;
+        <a href="https://vision-delta-hazel.vercel.app/" aria-label="VISION">VISION</a>
       </td>
     </tr>
     <tr>
       <td>
         <strong>고객 경험과 CRM</strong><br>
-        <a href="https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md">Aurora Owners 360</a><br>
-        <a href="https://github.com/jhheo51-arch/VoC-Lens">VoC Lens</a><br>
-        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf">Lead 객체 생성 PoC</a><br>
-        <a href="https://github.com/jhheo51-arch/heydealer-cx">헤이딜러 CX</a><br>
-        <a href="https://jhheo51-arch.github.io/jhheo51-arch/">CRM 웹 포트폴리오</a>
+        <a href="https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md" aria-label="Aurora Owners 360">Aurora&nbsp;Owners&nbsp;360</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/VoC-Lens" aria-label="VoC Lens">VoC&nbsp;Lens</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf" aria-label="Lead 객체 생성 PoC">Lead&nbsp;객&#8288;체&nbsp;생&#8288;성&nbsp;PoC</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/heydealer-cx" aria-label="헤이딜러 CX">헤&#8288;이&#8288;딜&#8288;러&nbsp;CX</a> &ensp;
+        <a href="https://jhheo51-arch.github.io/jhheo51-arch/" aria-label="CRM 웹 포트폴리오">CRM&nbsp;웹&nbsp;포&#8288;트&#8288;폴&#8288;리&#8288;오</a>
       </td>
     </tr>
     <tr>
       <td>
         <strong>운영 설계</strong><br>
-        <a href="https://github.com/jhheo51-arch/claim-relay">claim-relay</a><br>
-        <a href="./portfolio/optimesh/CASE-APPROVAL-RECOVERY-20261123-v1.md">OptiMesh</a><br>
-        <a href="https://github.com/jhheo51-arch/regional-ops-experiment-board">권역별 운영 실험 보드</a><br>
-        <a href="https://github.com/jhheo51-arch/dept-morning-brief">백화점 아침 점검</a><br>
-        <a href="https://github.com/jhheo51-arch/workflow-atlas-public">Workflow Atlas</a><br>(Codex와 Claude Code 작업 스킬 모음)<br>
-        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md">SFMC 미발송 독학</a><br>“어떤 미발송을 고쳐야 할까?” 공개 자료로 공부하고 가상 CSV로 검증
+        <a href="https://github.com/jhheo51-arch/claim-relay" aria-label="claim-relay">claim&#8288;-&#8288;relay</a> &ensp;
+        <a href="./portfolio/optimesh/CASE-APPROVAL-RECOVERY-20261123-v1.md" aria-label="OptiMesh">OptiMesh</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/regional-ops-experiment-board" aria-label="권역별 운영 실험 보드">권&#8288;역&#8288;별&nbsp;운&#8288;영&nbsp;실&#8288;험&nbsp;보&#8288;드</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/dept-morning-brief" aria-label="백화점 아침 점검">백&#8288;화&#8288;점&nbsp;아&#8288;침&nbsp;점&#8288;검</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/workflow-atlas-public" aria-label="Workflow Atlas">Workflow&nbsp;Atlas</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md" aria-label="SFMC 미발송 독학">SFMC&nbsp;미&#8288;발&#8288;송&nbsp;독&#8288;학</a><br>
+        <sub>Workflow Atlas는 Codex와 Claude Code 작업 스킬 모음입니다.<br>SFMC 미발송 독학은 공개 자료와 가상 CSV로 미발송 판단 기준을 검증한 사례입니다.</sub>
       </td>
     </tr>
     <tr>
       <td>
         <strong>데이터와 실험</strong><br>
-        <a href="https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md">CRM LOOP</a><br>
-        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md">A/B 합성 실습</a><br>
-        <a href="https://github.com/jhheo51-arch/irp-growth-radar">IRP 계좌 성장 레이더</a><br>
-        <a href="https://mood-radar.vercel.app/?v=pey3E47eSc8&amp;t=150">Mood - radar</a>
+        <a href="https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md" aria-label="CRM LOOP">CRM&nbsp;LOOP</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md" aria-label="A/B 합성 실습">A&#8288;/&#8288;B&nbsp;합&#8288;성&nbsp;실&#8288;습</a> &ensp;
+        <a href="https://github.com/jhheo51-arch/irp-growth-radar" aria-label="IRP 계좌 성장 레이더">IRP&nbsp;계&#8288;좌&nbsp;성&#8288;장&nbsp;레&#8288;이&#8288;더</a> &ensp;
+        <a href="https://mood-radar.vercel.app/?v=pey3E47eSc8&amp;t=150" aria-label="Mood - radar">Mood&nbsp;&#8288;-&#8288;&nbsp;radar</a>
       </td>
     </tr>
   </tbody>
