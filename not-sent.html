@@ -24,8 +24,20 @@ main{width:min(100% - 36px,1020px);margin:auto;padding:32px 0 60px}a{color:var(-
 .official-screens figure{min-width:0;padding:14px;border:1px solid var(--line);border-radius:12px}
 .official-screens h3{font-size:1rem;margin:0 0 8px}
 .official-screens img{width:auto;max-width:100%}
+.image-zoom{display:block;width:fit-content;max-width:100%;cursor:zoom-in}
+.image-zoom:focus-visible,.image-viewer :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .official-screens figcaption{margin-top:10px}
 .official-screens figcaption a{display:inline-flex;align-items:center;min-height:44px}
+.image-viewer{width:min(calc(100% - 24px),960px);max-height:calc(100dvh - 24px);padding:14px;border:1px solid var(--line);border-radius:12px;color:var(--navy)}
+.image-viewer::backdrop{background:#10233bcc}
+.viewer-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;margin-bottom:8px}
+.viewer-header h2{font-size:1.1rem;margin:0}
+.viewer-controls{display:flex;gap:8px;margin:0}
+.viewer-controls button{min-height:44px;padding:4px 10px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--blue);font:inherit;cursor:pointer}
+.viewer-scroll{max-height:calc(100dvh - 11rem);overflow:auto;overscroll-behavior:contain;background:#f3f7fc;border:1px solid var(--line);border-radius:6px}
+.viewer-scroll img{display:block;width:min(100%,var(--source-width));height:auto;max-width:none}
+.viewer-scroll.zoomed img{width:calc(2 * min(100%,var(--source-width)))}
+.viewer-hint{font-size:.875rem;margin-bottom:8px}
 .mock-entry{margin-bottom:14px}
 @media(max-width:700px){.not-sent-intro,.official-screens{grid-template-columns:1fr;gap:14px}.not-sent-proof table{font-size:13px}}
 </style>
@@ -60,10 +72,13 @@ main{width:min(100% - 36px,1020px);margin:auto;padding:32px 0 60px}a{color:var(-
 <section class="case-section" id="official-not-sent" aria-labelledby="official-not-sent-title">
   <h2 id="official-not-sent-title">Salesforce 공식 Not Sent 추출 화면</h2>
   <p>Salesforce Support 시연에서 추출 설정부터 결과 확인까지 필요한 부분을 발췌했습니다. <a href="https://help.salesforce.com/s/articleView?id=000392619&amp;language=en_US&amp;type=1">Salesforce 공식 추출 가이드</a></p>
+  <p>이미지를 누르면 확대해서 볼 수 있습니다.</p>
   <div class="official-screens">
     <figure>
       <h3>추출 유형과 파일 이름</h3>
-      <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/01-tracking-extract.png" width="529" height="175" loading="lazy" decoding="async" alt="Data Extract Activity에서 Tracking Extract 유형과 파일 이름 패턴을 강조한 화면">
+      <a class="image-zoom" href="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/01-tracking-extract.png" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/01-tracking-extract.png" width="529" height="175" loading="lazy" decoding="async" alt="Data Extract Activity에서 Tracking Extract 유형과 파일 이름 패턴을 강조한 화면">
+      </a>
       <figcaption>
         <p><code>Extract Type</code>이 <strong>Tracking Extract</strong>인지 확인하고, 전송 단계에서 사용할 <code>File Naming Pattern</code>을 확인합니다.</p>
         <a href="https://www.youtube.com/watch?v=uzKdG24ctCs&amp;t=60s">Salesforce Support 영상 1:00</a>
@@ -71,7 +86,9 @@ main{width:min(100% - 36px,1020px);margin:auto;padding:32px 0 60px}a{color:var(-
     </figure>
     <figure>
       <h3>미발송 추출 옵션과 기간</h3>
-      <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/02-extract-not-sent.png" width="456" height="278" loading="lazy" decoding="async" alt="Configuration에서 Extract Not Sent가 선택되어 있고 Rolling Range가 표시된 화면">
+      <a class="image-zoom" href="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/02-extract-not-sent.png" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/02-extract-not-sent.png" width="456" height="278" loading="lazy" decoding="async" alt="Configuration에서 Extract Not Sent가 선택되어 있고 Rolling Range가 표시된 화면">
+      </a>
       <figcaption>
         <p><strong>Extract Not Sent</strong>가 선택됐는지, 조회 기간에 조사할 발송이 포함되는지 확인합니다.</p>
         <a href="https://www.youtube.com/watch?v=uzKdG24ctCs&amp;t=110s">Salesforce Support 영상 1:50</a>
@@ -79,7 +96,9 @@ main{width:min(100% - 36px,1020px);margin:auto;padding:32px 0 60px}a{color:var(-
     </figure>
     <figure>
       <h3>추출 파일 전송</h3>
-      <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/03-file-transfer.png" width="456" height="113" loading="lazy" decoding="async" alt="File Transfer 설정에서 파일 이름 패턴과 Destination이 강조된 화면">
+      <a class="image-zoom" href="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/03-file-transfer.png" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/03-file-transfer.png" width="456" height="113" loading="lazy" decoding="async" alt="File Transfer 설정에서 파일 이름 패턴과 Destination이 강조된 화면">
+      </a>
       <figcaption>
         <p><code>Move a File From Safehouse</code>에서 추출 단계와 같은 이름 패턴을 쓰는지, <code>Destination</code>이 파일을 받을 위치인지 확인합니다.</p>
         <a href="https://www.youtube.com/watch?v=uzKdG24ctCs&amp;t=170s">Salesforce Support 영상 2:50</a>
@@ -87,7 +106,9 @@ main{width:min(100% - 36px,1020px);margin:auto;padding:32px 0 60px}a{color:var(-
     </figure>
     <figure>
       <h3>결과 CSV의 미발송 사유</h3>
-      <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/04-not-sent-reason.png" width="156" height="90" loading="lazy" decoding="async" alt="NotSent 결과 CSV의 Reason 열에 Account Level Opt Out이 표시된 부분">
+      <a class="image-zoom" href="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/04-not-sent-reason.png" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/jhheo51-arch/jhheo51-arch/107be412181cbf39f157fc9b397cebdb0c9c1b35/portfolio/salesforce-mc-crm/assets/sfmc-official-not-sent-20261123-v1/04-not-sent-reason.png" width="156" height="90" loading="lazy" decoding="async" alt="NotSent 결과 CSV의 Reason 열에 Account Level Opt Out이 표시된 부분">
+      </a>
       <figcaption>
         <p><code>NotSent.csv</code>에서 <code>SubscriberKey</code>로 대상 행을 찾고 <code>Reason</code>으로 사유를 확인합니다. 발췌 화면에는 <strong>Account Level Opt Out</strong>이 보입니다.</p>
         <a href="https://www.youtube.com/watch?v=uzKdG24ctCs&amp;t=236s">Salesforce Support 영상 3:56</a>
@@ -118,5 +139,45 @@ main{width:min(100% - 36px,1020px);margin:auto;padding:32px 0 60px}a{color:var(-
 </section>
 <aside class="project-resources" aria-labelledby="resources-title-4"><header class="resources-heading"><h3 id="resources-title-4">관련 질문</h3></header><details class="source-details"><summary><span class="faq-question">열람률의 한계를 고려해 어떤 지표를 제안했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>Apple Mail Privacy Protection으로 열람률이 부풀 수 있어 클릭률과 링크 정상 동작을 먼저 확인하도록 제안했습니다. 예약이나 방문을 추적할 수 있을 때는 해당 행동 지표로 효과를 판단합니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=sf.mc_jb_marketing_cloud_email_privacy.htm&language=en_US&type=5" target="_blank" rel="noopener noreferrer">Salesforce 지표 안내 ↗</a></div></div></details><details class="source-details"><summary><span class="faq-question">Not Sent는 원인별로 어떻게 처리했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>가상 CSV에서 JobID로 같은 발송을 고르고 SubscriberKey와 Reason으로 보호 제외, 원천 오류, 콘텐츠 오류, 담당자 확인을 구분했습니다. 별도 가상 입력 8행 중 대상 발송 7행을 분류한 결과는 보호 유지 4건, 원천, 콘텐츠, 사람 확인 각 1건, 자동 재발송 0건이었습니다. 실제 계정 발송 결과가 아닙니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=000392619&language=en_US&type=1" target="_blank" rel="noopener noreferrer">Not Sent 추출 안내 ↗</a></div></div></details><details class="source-details"><summary><span class="faq-question">감사 로그는 어떻게 보관하도록 제안했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>장기 조회가 필요하면 Audit Trail의 계정별 보관 기간을 확인하고 정기 추출과 외부 보관을 계획합니다. SFTP도 영구 보관소로 보지 않고, 파일 건수, 자동화 실패 알림, 시간대, 조회 권한을 함께 확인합니다. 실제 적용 시 최신 정책과 계정 조건을 재확인해야 합니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=mc_overview_audit_trail.htm&language=en_US&type=5" target="_blank" rel="noopener noreferrer">Audit Trail 공식 안내 ↗</a></div></div></details><details class="source-details"><summary><span class="faq-question">장기 비활동 고객을 삭제 후보로 어떻게 검토했나요?</span><span class="faq-toggle" aria-hidden="true"></span></summary><div class="details-body"><p>Contact Key 통일, 보호 대상 제외, 삭제 후보를 나누는 2단계 SQL 초안을 썼습니다. 재검토에서는 최근 7일 기록과 365일 비활동 비교의 기간 불일치를 바로잡았습니다. 공식 안내상 일반적인 Data View 조회 범위는 최근 180일입니다. 365일 비활동을 판단하려면 별도 보관 이력과 원천 시스템을 대조한 뒤 삭제 승인을 받도록 설계했습니다.</p><div class="source-links"><a href="https://help.salesforce.com/s/articleView?id=mktg.mc_overview_limits_data_retention.htm&language=en_US&type=5" target="_blank" rel="noopener noreferrer">Data View 보관 안내 ↗</a></div></div></details></aside>
 </main>
+<dialog class="image-viewer" id="official-image-viewer" aria-labelledby="image-viewer-title">
+  <div class="viewer-header">
+    <h2 id="image-viewer-title"></h2>
+    <form class="viewer-controls" method="dialog">
+      <button type="button" id="image-viewer-zoom">화면에 맞추기</button>
+      <button autofocus>닫기</button>
+    </form>
+  </div>
+  <p class="viewer-hint" id="image-viewer-hint">이미지가 화면보다 크면 밀어서 다른 부분을 볼 수 있습니다.</p>
+  <div class="viewer-scroll" role="region" tabindex="0" aria-label="공식 화면 이미지" aria-describedby="image-viewer-hint"></div>
+</dialog>
+<script>
+  const viewer = document.getElementById('official-image-viewer');
+  const viewport = viewer.querySelector('.viewer-scroll');
+  const zoomButton = document.getElementById('image-viewer-zoom');
+
+  function setZoom(zoomed) {
+    viewport.classList.toggle('zoomed', zoomed);
+    zoomButton.textContent = zoomed ? '화면에 맞추기' : '두 배 확대';
+    viewport.scrollTo(0, 0);
+  }
+
+  for (const link of document.querySelectorAll('.image-zoom')) {
+    link.addEventListener('click', event => {
+      if (typeof viewer.showModal !== 'function' || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      const preview = link.querySelector('img');
+      const photo = new Image();
+      viewer.querySelector('h2').textContent = link.closest('figure').querySelector('h3').textContent;
+      photo.src = link.href;
+      photo.alt = preview.alt;
+      photo.style.setProperty('--source-width', preview.getAttribute('width') + 'px');
+      viewport.replaceChildren(photo);
+      viewer.showModal();
+      setZoom(true);
+    });
+  }
+
+  zoomButton.addEventListener('click', () => setZoom(!viewport.classList.contains('zoomed')));
+</script>
 </body>
 </html>
