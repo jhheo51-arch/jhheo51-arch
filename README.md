@@ -29,6 +29,8 @@
         <tr><td><a href="https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md"><strong>MEMOIVE</strong></a><br><sub>저장한 기록 다시 쓰기</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/saeroki"><strong>새록이</strong></a><br><sub>근거를 보여 주는 도구 모음</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/trend-to-trust"><strong>Trend to Trust</strong></a><br><sub>공개 트렌드로 만든 카드 수정</sub></td></tr>
+        <tr><td><a href="https://github.com/jhheo51-arch/PRX-917"><strong>PRX-917</strong></a><br><sub>인터넷 없이 메시지를 주고받는 모바일 시제품</sub></td></tr>
+        <tr><td><a href="https://vision-delta-hazel.vercel.app/"><strong>VISION</strong></a><br><sub>음성으로 작업을 맡기고 결과를 확인하는 개인 작업실</sub></td></tr>
       </table>
     </td>
     <td valign="top" width="25%">
@@ -53,6 +55,7 @@
         <tr><td><a href="https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md"><strong>CRM LOOP</strong></a><br><sub>재방문 대상과 적용 판단</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md"><strong>A/B 합성 실습</strong></a><br><sub>적용 보류 기준</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/irp-growth-radar"><strong>IRP 계좌 성장 레이더</strong></a><br><sub>가입 후 마찰 분석</sub></td></tr>
+        <tr><td><a href="https://mood-radar.vercel.app/?v=pey3E47eSc8&amp;t=150"><strong>Mood - radar</strong></a><br><sub>영상 속 발화 시간과 표정 예측 비교</sub></td></tr>
       </table>
     </td>
   </tr>
