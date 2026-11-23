@@ -4,7 +4,7 @@
 
 마케팅에서 시작한 관심을 이해관계, 시스템과 운영의 문제로 넓혀 왔습니다.
 
-> **[CRM 및 SFMC 웹 포트폴리오 열기 ↗](https://jhheo51-arch.github.io/jhheo51-arch/)**
+> **[CRM 및 SFMC 웹 포트폴리오 열기 ↗](https://jhheo51-arch.github.io/jhheo51-arch/)** &ensp; **[커리어 플로우](docs/CAREER-FLOW-20261123-v1.md)**
 
 **1. 시장과 고객:** 경영학 마케팅 트랙, 고객 가치와 시장 흐름 탐구<br>
 **2. 관계와 맥락:** 정치외교학 복수전공, 이해관계자 관점 연구<br>
@@ -17,12 +17,6 @@
 **일하는 방식:** 막힌 지점을 찾고 성공 기준을 세웁니다. 기록과 운영 조건으로 가설을 좁혀 작게 시험하고, 다음 행동과 멈출 기준을 함께 남깁니다.
 
 **문제 정의 → 가설 → 반례 탐색 → 검증 → 판단**
-
-## 먼저 볼 작업 3개
-
-- [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md)는 저장한 기록을 다시 쓰는 화면을 설계한 사례입니다.
-- [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)는 재방문 캠페인의 대상을 고르고 적용을 보류한 사례입니다.
-- [OptiMesh](https://jhheo51-arch.github.io/jhheo51-arch/optimesh-demo-20261123-v1.html)에서 가상 설정의 승인, 검증, 복구를 체험할 수 있습니다.
 
 ## 작업 지도
 
