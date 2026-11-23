@@ -43,7 +43,7 @@
         <strong>고객 경험과 CRM</strong><br>
         <a href="https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md" aria-label="Aurora Owners 360">Aurora&nbsp;Owners&nbsp;360</a> &ensp;
         <a href="https://github.com/jhheo51-arch/VoC-Lens" aria-label="VoC Lens">VoC&nbsp;Lens</a> &ensp;
-        <a href="https://jhheo51-arch.github.io/jhheo51-arch/assets/lead-poc-p10-20261123-v1.pdf" aria-label="Lead 객체 생성 PoC">Lead&nbsp;객&#8288;체&nbsp;생&#8288;성&nbsp;PoC</a> &ensp;
+        <a href="https://jhheo51-arch.github.io/jhheo51-arch/lead-poc.html" aria-label="Lead 객체 생성 PoC">Lead&nbsp;객&#8288;체&nbsp;생&#8288;성&nbsp;PoC</a> &ensp;
         <a href="https://github.com/jhheo51-arch/heydealer-cx" aria-label="헤이딜러 CX">헤&#8288;이&#8288;딜&#8288;러&nbsp;CX</a> &ensp;
         <a href="https://jhheo51-arch.github.io/jhheo51-arch/" aria-label="CRM 웹 포트폴리오">CRM&nbsp;웹&nbsp;포&#8288;트&#8288;폴&#8288;리&#8288;오</a>
       </td>
