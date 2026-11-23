@@ -10,12 +10,22 @@
     body { margin: 0 auto; max-width: 52rem; padding: 0 clamp(1rem, 5vw, 2.5rem) 2rem; background: var(--paper); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
     a { color: var(--accent); font-weight: 700; text-underline-offset: .2em; }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-    nav { display: flex; flex-wrap: wrap; gap: 0 1rem; align-items: center; border-bottom: 1px solid var(--line); }
-    nav a, .examples a { display: inline-flex; align-items: center; min-height: 44px; }
+    .site-nav { display: flex; flex-wrap: wrap; gap: 0 1rem; align-items: center; border-bottom: 1px solid var(--line); }
+    .site-nav a, .examples a, .plan-link { display: inline-flex; align-items: center; min-height: 44px; }
     header { padding: 1.6rem 0 1.25rem; }
-    h1, h2, p { margin: 0; }
+    h1, h2, h3, p { margin: 0; }
     h1 { font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.15; letter-spacing: -.045em; }
     header p { max-width: 38rem; margin-top: .65rem; color: var(--muted); }
+    .overview { margin-bottom: 1.4rem; }
+    .overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; margin: .55rem 0 0; padding: 0; list-style: none; }
+    .overview-grid a { display: grid; gap: .15rem; align-content: start; height: 100%; min-height: 74px; padding: .6rem .7rem; border: 1px solid var(--line); border-radius: .55rem; background: #fff; line-height: 1.35; }
+    .overview-grid a:hover { border-color: var(--accent); }
+    .overview-grid span { font-size: .75rem; color: var(--muted); }
+    .overview-grid strong { font-size: .94rem; }
+    .plan-link { font-size: .9rem; }
+    .detail-title { margin-bottom: .55rem; }
+    [id] { scroll-margin-top: .8rem; }
+    .stage:target { outline: 2px solid var(--accent); }
     .flow { list-style: none; margin: 0 0 1.4rem; padding: 0; counter-reset: stage; }
     .flow li { position: relative; counter-increment: stage; padding: 0 0 1rem 2.75rem; }
     .flow li:last-child { padding-bottom: 0; }
@@ -31,10 +41,14 @@
     .examples { display: flex; flex-wrap: wrap; gap: 0 1rem; margin-top: .3rem; font-size: .9rem; }
     .message { padding: 1.15rem; border-radius: .65rem; background: #204838; color: #fff; }
     .message p { margin-top: .35rem; }
+    .plan { margin-top: 1.65rem; }
+    .plan > p { margin: .3rem 0 .85rem; color: var(--muted); }
+    .plan h3 { font-size: 1.05rem; line-height: 1.45; }
+    .plan .stage p { margin-top: .25rem; }
   </style>
 </head>
 <body>
-  <nav aria-label="다른 페이지">
+  <nav class="site-nav" aria-label="다른 페이지">
     <a href="https://github.com/jhheo51-arch">GitHub 프로필</a>
     <a href="./">CRM 포트폴리오</a>
   </nav>
@@ -43,30 +57,41 @@
       <h1>커리어 플로우</h1>
       <p>고객이 무엇을 선택하는지 묻는 일에서 출발해, 조직에서 무엇을 확인해야 실행을 결정할 수 있는지 묻는 일로 이어졌습니다.</p>
     </header>
-    <ol class="flow" role="list" aria-label="네 단계의 커리어 흐름">
+    <nav class="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">네 단계 한눈에 보기</h2>
+      <ol class="overview-grid" role="list">
+        <li><a href="#market"><span>01 시장과 고객</span><strong>마케팅과 CRM</strong></a></li>
+        <li><a href="#macro"><span>02 이해관계와 맥락</span><strong>정치외교학 복수전공</strong></a></li>
+        <li><a href="#operations"><span>03 시스템과 운영</span><strong>정보통신 장교와 인사과장</strong></a></li>
+        <li><a href="#building"><span>04 실험과 제작</span><strong>A/B 테스트와 CRM 도구</strong></a></li>
+      </ol>
+      <a class="plan-link" href="#career-plan">앞으로의 커리어 계획 보기</a>
+    </nav>
+    <h2 class="detail-title" id="details">단계별 이야기</h2>
+    <ol class="flow" role="list" aria-labelledby="details">
       <li>
         <span class="number" aria-hidden="true"></span>
-        <section class="stage" aria-labelledby="market">
+        <section class="stage" id="market" aria-labelledby="market-title" tabindex="-1">
           <p class="stage-label" lang="en">Market Insight</p>
-          <h2 id="market">마케팅과 CRM</h2>
+          <h3 id="market-title">마케팅과 CRM</h3>
           <p class="question">고객은 왜 이 선택을 할까?</p>
           <p>마케팅에 대한 흥미로 경영학에 입문하고 마케팅 트랙을 수강했습니다. 고객이 가치를 느끼는 이유와 시장의 흐름을 배웠습니다. 고객의 선택을 이해하고 관계를 이어가는 CRM으로 관심이 넓어졌습니다.</p>
         </section>
       </li>
       <li>
         <span class="number" aria-hidden="true"></span>
-        <section class="stage" aria-labelledby="macro">
+        <section class="stage" id="macro" aria-labelledby="macro-title" tabindex="-1">
           <p class="stage-label" lang="en">Macro Vision</p>
-          <h2 id="macro">정치외교학 복수전공</h2>
+          <h3 id="macro-title">정치외교학 복수전공</h3>
           <p class="question">같은 상황을 왜 다르게 판단할까?</p>
           <p>개별 마케팅 활동을 둘러싼 더 큰 맥락이 궁금해 정치외교학을 복수전공했습니다. 이해관계자마다 가진 목표와 제약, 힘의 관계, 각자의 선택 뒤에 있는 이야기를 살피는 관점을 익혔습니다.</p>
         </section>
       </li>
       <li>
         <span class="number" aria-hidden="true"></span>
-        <section class="stage" aria-labelledby="operations">
+        <section class="stage" id="operations" aria-labelledby="operations-title" tabindex="-1">
           <p class="stage-label" lang="en">Execution &amp; Tech Depth</p>
-          <h2 id="operations">육군 정보통신 장교와 인사과장</h2>
+          <h3 id="operations-title">육군 정보통신 장교와 인사과장</h3>
           <p class="question">변수가 많은 운영에서 무엇부터 확인할까?</p>
           <p>원인을 따라가며 답을 확인할 수 있는 IT 기술에 끌려 정보통신 병과를 선택했습니다. 시스템을 연결하는 일을 경험했고, 인사과장으로서는 인사와 통신 등 부대의 여러 업무 기록을 함께 관리하고 대조했습니다.</p>
           <p>실무에서는 결과에 영향을 주는 변수가 여러 개였습니다. 조건과 변수를 나눠 기록을 비교하는 접근을 시도하면서, A/B 테스트처럼 변화의 영향을 따로 확인하는 실험 설계가 왜 필요한지 체감했습니다.</p>
@@ -74,9 +99,9 @@
       </li>
       <li>
         <span class="number" aria-hidden="true"></span>
-        <section class="stage" aria-labelledby="building">
+        <section class="stage" id="building" aria-labelledby="building-title" tabindex="-1">
           <p class="stage-label" lang="en">Vision &amp; Product Building</p>
-          <h2 id="building">A/B 테스트와 CRM 도구 제작</h2>
+          <h3 id="building-title">A/B 테스트와 CRM 도구 제작</h3>
           <p class="question">어떤 근거가 쌓이면 실행을 결정할 수 있을까?</p>
           <p>마케팅과 CRM에 대한 관심을 데이터 기반 실험과 결합했습니다. A/B 테스트 방법론을 연구해 전자책으로 정리했고, 실험을 설계하고 결과를 분석하는 도구를 만들었습니다. 경영진이 캠페인의 적용, 보류, 추가 검증을 판단하는 데 쓰는 A/B 테스트와 CRM 분석 도구를 SaaS로 발전시키는 것이 목표입니다.</p>
           <p>CRM LOOP에서는 재방문 캠페인의 후보를 고른 뒤, 한 회차로는 관심 있는 효과 차이를 판단하기 어려워 적용을 보류한 근거를 남겼습니다.</p>
@@ -90,6 +115,42 @@
     <section class="message" aria-labelledby="message">
       <h2 id="message">핵심 메시지</h2>
       <p>정치외교학으로 익힌 거시적 이해관계 분석, 정보통신 장교로 기른 시스템과 데이터 감각, 마케팅에 대한 관심을 결합합니다. 경영진이 실행과 보류를 판단할 근거를 만드는 A/B 테스트와 CRM 전문가이자, 그 판단에 쓰이는 도구를 직접 만드는 사람을 지향합니다.</p>
+    </section>
+    <section class="plan" id="career-plan" aria-labelledby="plan-title" tabindex="-1">
+      <h2 id="plan-title">앞으로의 커리어 계획</h2>
+      <p>CRM 캠페인 운영에서 시작해, AI 에이전트와 애플리케이션 설계를 거쳐 여러 시스템을 연결하는 역할로 넓혀 가고 싶습니다.</p>
+      <ol class="flow" role="list" aria-labelledby="plan-title">
+        <li>
+          <span class="number" aria-hidden="true"></span>
+          <div class="stage">
+            <h3 lang="en">Marketing Cloud Consultant</h3>
+            <p>SFMC 미발송 진단과 CRM 실험 설계를 출발점으로, 캠페인의 대상 선정부터 여정 설계, 발송 전후 점검과 효과 측정까지 맡아 보는 것이 첫 목표입니다.</p>
+            <div class="examples"><a href="not-sent.html">SFMC 미발송 진단 사례</a></div>
+          </div>
+        </li>
+        <li>
+          <span class="number" aria-hidden="true"></span>
+          <div class="stage">
+            <h3 lang="en">Agentforce Consultant</h3>
+            <p>한 가지 CRM 업무를 골라 에이전트가 참고할 데이터와 수행할 작업을 정하고, 답변의 근거와 사람에게 넘기는 조건까지 시험하는 시범 사례를 만들고 싶습니다.</p>
+          </div>
+        </li>
+        <li>
+          <span class="number" aria-hidden="true"></span>
+          <div class="stage">
+            <h3 lang="en">Application Architect</h3>
+            <p>웹 입력을 Salesforce에 연결한 Lead PoC 경험을 넓혀, 한 애플리케이션의 데이터 구조, 권한과 공유, 자동화, 외부 연동을 함께 설계하고 선택 근거를 문서로 남기고 싶습니다.</p>
+            <div class="examples"><a href="lead-poc.html">Salesforce Lead 연결 PoC</a></div>
+          </div>
+        </li>
+        <li>
+          <span class="number" aria-hidden="true"></span>
+          <div class="stage">
+            <h3 lang="en">Solution Architect</h3>
+            <p>여러 시스템이 걸친 업무를 맡아, 이해관계자와 성공 기준을 정하고 비용, 보안, 운영 부담을 비교해 도입 순서와 장애 대응까지 설명할 수 있는 설계를 목표로 합니다.</p>
+          </div>
+        </li>
+      </ol>
     </section>
   </main>
 </body>
