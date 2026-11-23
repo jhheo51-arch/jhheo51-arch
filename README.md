@@ -4,7 +4,7 @@
 
 마케팅에서 시작한 관심을 이해관계, 시스템과 운영의 문제로 넓혀 왔습니다.
 
-> **[CRM 및 SFMC 웹 포트폴리오 열기 ↗](https://jhheo51-arch.github.io/jhheo51-arch/)** &ensp; **[커리어 플로우](docs/CAREER-FLOW-20261123-v1.md)**
+> **[CRM/SFMC&nbsp;웹&nbsp;포트폴리오&nbsp;↗](https://jhheo51-arch.github.io/jhheo51-arch/)** &ensp; **[커리어&nbsp;플로우](https://jhheo51-arch.github.io/jhheo51-arch/career-flow.html)**
 
 **1. 시장과 고객:** 경영학 마케팅 트랙, 고객 가치와 시장 흐름 탐구<br>
 **2. 관계와 맥락:** 정치외교학 복수전공, 이해관계자 관점 연구<br>
