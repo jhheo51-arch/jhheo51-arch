@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lead 접수 흐름 | Application Architect 데모</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root { color-scheme: light; --paper: #f7faf7; --ink: #192923; --accent: #245c48; --muted: #445c51; --line: #cfddd4; --soft: #e9f3eb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.55 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+    .wrap { width: min(55rem, calc(100% - 2rem)); margin-inline: auto; }
+    header { background: #204838; color: #fff; padding-bottom: 1.1rem; }
+    header a { color: inherit; }
+    nav { display: flex; flex-wrap: wrap; gap: 0 1rem; }
+    a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); text-underline-offset: .2em; }
+    h1, h2, h3, p, dl, dd { margin: 0; }
+    h1 { margin: .3rem 0 .45rem; font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.2; letter-spacing: -.035em; }
+    h2 { font-size: 1.12rem; }
+    h3 { font-size: 1rem; }
+    main { padding: 1rem 0 1.5rem; }
+    .controls { display: flex; flex-wrap: wrap; align-items: end; gap: .6rem; margin-bottom: .6rem; }
+    label { flex: 1 1 13rem; font-weight: 700; }
+    select, button { min-height: 44px; padding: .4rem .6rem; border: 1px solid var(--line); border-radius: .5rem; background: #fff; color: var(--ink); font: inherit; }
+    select { display: block; width: 100%; margin-top: .25rem; }
+    button { cursor: pointer; font-weight: 700; }
+    button:disabled { cursor: default; color: var(--muted); background: #f4f6f4; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    header :focus-visible { outline-color: #fff; }
+    .context { margin-bottom: .8rem; color: var(--muted); }
+    .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; margin: .4rem 0 .8rem; padding: 0; list-style: none; }
+    .steps button { width: 100%; min-height: 64px; }
+    .steps button[aria-current="step"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .steps small { display: block; font-weight: 600; }
+    .summary { padding: .8rem; border: 1px solid var(--line); border-radius: .65rem; background: var(--soft); }
+    dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; margin-top: .45rem; }
+    dt, footer { color: var(--muted); font-size: .88rem; }
+    dd { font-weight: 700; }
+    .log { margin: .6rem 0 0; padding: 0; list-style: none; }
+    .log li { margin-top: .5rem; padding: .75rem; border: 1px solid var(--line); border-radius: .6rem; background: #fff; }
+    .log p { margin-top: .25rem; }
+    .values { display: block; margin: .3rem 0 0; color: var(--accent); white-space: pre-wrap; }
+    footer { margin-top: .9rem; }
+    @media (max-width: 34rem) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="관련 페이지">
+        <a href="career-flow.html#application-architect">커리어 플로우</a>
+        <a href="lead-poc.html">기존 Lead PoC</a>
+      </nav>
+      <h1>웹 상담 요청이 Lead가 되기까지</h1>
+      <p>공개 Lead PoC의 웹 입력을 바탕으로, 데이터 구조부터 외부 상담 시스템까지 이어지는 설계를 시험합니다.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="controls">
+      <label for="scenario">가상 사례
+        <select id="scenario">
+          <option value="normal">정상 상담 요청</option>
+          <option value="blocked">Lead 생성 권한 없음</option>
+          <option value="timeout">외부 응답 시간 초과</option>
+        </select>
+      </label>
+      <button id="reset" type="button">처음부터</button>
+    </div>
+    <p class="context" id="context">가상 기업의 도입 상담을 접수해 신규 상담 큐를 거쳐 외부 상담 도구로 전달합니다.</p>
+    <h2 id="steps-title">단계를 순서대로 실행</h2>
+    <ol class="steps" role="list" aria-labelledby="steps-title">
+      <li><button type="button" data-step="0" aria-current="step">1. 데이터 구조<small>필드 연결</small></button></li>
+      <li><button type="button" data-step="1" disabled>2. 권한<small>저장 자격 확인</small></button></li>
+      <li><button type="button" data-step="2" disabled>3. 자동화<small>담당 큐와 작업 배정</small></button></li>
+      <li><button type="button" data-step="3" disabled>4. 외부 연동<small id="send-label">상담 도구로 전달</small></button></li>
+    </ol>
+    <section class="summary" aria-labelledby="status-title">
+      <h2 id="status-title">현재 상태</h2>
+      <p id="status" role="status" tabindex="-1">1단계에서 웹폼 값을 Lead 필드에 맞춰 보세요.</p>
+      <dl>
+        <div><dt>Lead 레코드</dt><dd id="lead">0건</dd></div>
+        <div><dt>자동화 작업</dt><dd id="task">0건</dd></div>
+        <div><dt>연동 요청</dt><dd id="attempts">0회</dd></div>
+        <div><dt>확인된 외부 접수</dt><dd id="receipt">미확인</dd></div>
+      </dl>
+    </section>
+    <section aria-label="실행 기록"><ol class="log" id="log" role="list"></ol></section>
+    <footer>
+      <p>가상 데이터로 브라우저 안에서만 실행됩니다. 필드, 업무 규칙, 외부 접수 시스템을 예시로 구성했습니다.</p>
+      <nav aria-label="설계 참고 자료">
+        <a href="https://trailhead.salesforce.com/content/learn/modules/data-and-actions-in-flows/work-sf-records-flows">Trailhead 레코드 자동화</a>
+        <a href="https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/grant-flow-permissions-and-context">Trailhead 권한과 실행 컨텍스트</a>
+      </nav>
+    </footer>
+    <noscript><p>단계를 실행하려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+  </main>
+  <script>
+    const get = id => document.getElementById(id);
+    const buttons = [...document.querySelectorAll('[data-step]')];
+    const scenarios = {
+      normal: '가상 기업의 도입 상담을 접수해 신규 상담 큐를 거쳐 외부 상담 도구로 전달합니다.',
+      blocked: '같은 상담을 Lead 조회만 허용된 연동 사용자로 접수해 봅니다.',
+      timeout: '외부 상담 도구는 접수했지만 첫 응답이 돌아오지 않는 상황을 재현합니다.'
+    };
+    const input = { company: '예시상사', contact: '가상 담당자', inquiry: '도입 상담', requestId: 'DEMO-REQ-001' };
+    let leadFields, leadId, taskId, payload, attempts, acknowledged, nextStep, outside;
+
+    function record(title, explanation, values) {
+      const li = document.createElement('li');
+      const h3 = document.createElement('h3');
+      const p = document.createElement('p');
+      h3.textContent = title;
+      p.textContent = explanation;
+      li.append(h3, p);
+      if (values) {
+        const code = document.createElement('code');
+        code.className = 'values';
+        code.textContent = values;
+        li.append(code);
+      }
+      get('log').prepend(li);
+    }
+
+    function show(status) {
+      get('status').textContent = status;
+      get('lead').textContent = leadId ? `1건 (${leadId})` : '0건';
+      get('task').textContent = taskId ? `1건 (${taskId})` : '0건';
+      get('attempts').textContent = `${attempts}회`;
+      get('receipt').textContent = acknowledged ? `1건 (${acknowledged})` : attempts ? '응답 미확인' : '요청 전';
+      get('send-label').textContent = nextStep === 3 && attempts ? '같은 요청 다시 보내기' : '상담 도구로 전달';
+      buttons.forEach((button, index) => {
+        button.disabled = nextStep !== index;
+        if (nextStep === index) button.setAttribute('aria-current', 'step');
+        else button.removeAttribute('aria-current');
+      });
+    }
+
+    function reset() {
+      leadFields = leadId = taskId = payload = acknowledged = null;
+      outside = new Map();
+      attempts = nextStep = 0;
+      get('context').textContent = scenarios[get('scenario').value];
+      get('log').replaceChildren();
+      show('1단계에서 웹폼 값을 Lead 필드에 맞춰 보세요.');
+    }
+
+    function runStep(index) {
+      if (index !== nextStep) return;
+      const scenario = get('scenario').value;
+      switch (index) {
+        case 0:
+          leadFields = { Company: input.company, LastName: input.contact, LeadSource: 'Web', Inquiry_Type__c: input.inquiry };
+          record('1. 필드 연결 완료', '웹폼 값을 Lead 필드에 맞추고, 상담 유형과 요청 식별자를 남겼습니다. 다음 단계는 이 필드를 저장할 권한을 확인합니다.',
+            `회사 → Company = ${leadFields.Company}\n담당자 → LastName = ${leadFields.LastName}\n접수 채널 → LeadSource = ${leadFields.LeadSource}\n문의 유형 → Inquiry_Type__c = ${leadFields.Inquiry_Type__c}\n요청 식별자 = ${input.requestId}`);
+          nextStep = 1;
+          return show('필드 연결 완료. Lead 저장 전 권한을 확인합니다.');
+        case 1:
+          if (scenario === 'blocked') {
+            record('2. Lead 생성 차단', '이 연동 사용자에게는 Lead 조회만 허용됩니다. 저장을 차단했으므로 이후 자동화와 외부 전송은 실행 조건을 충족하지 않습니다.');
+            nextStep = null;
+            return show('권한 부족으로 중단했습니다. Lead 생성, 자동화, 연동 요청은 모두 0건입니다.');
+          }
+          leadId = 'DEMO-LEAD-001';
+          record('2. 권한 확인 후 Lead 생성', '가상 연동 사용자가 Lead를 만들고 매핑한 네 필드에 쓸 수 있는지 확인했습니다. 생성된 Lead가 다음 단계의 실행 조건이 됩니다.',
+            `Lead = ${leadId}`);
+          nextStep = 2;
+          return show('Lead 1건이 생성됐습니다. 생성된 레코드로 자동화를 실행합니다.');
+        case 2:
+          taskId = 'DEMO-TASK-001';
+          payload = { requestId: input.requestId, leadId, inquiryType: leadFields.Inquiry_Type__c };
+          record('3. 신규 상담 큐와 후속 작업 배정', `${leadFields.LeadSource} 채널의 ${leadFields.Inquiry_Type__c} 조건에 해당해 신규 상담 큐와 작업을 배정했습니다. 외부 접수에 필요한 세 값만 전송 대상으로 준비합니다.`,
+            `작업 = ${taskId}\n전달 값 = ${payload.requestId}, ${payload.leadId}, ${payload.inquiryType}`);
+          nextStep = 3;
+          return show('작업 1건을 만들었습니다. 준비한 정보로 외부 접수를 요청할 수 있습니다.');
+        case 3: {
+          attempts += 1;
+          const key = payload.requestId;
+          if (!outside.has(key)) outside.set(key, 'DEMO-TICKET-001');
+          if (scenario === 'timeout' && attempts === 1) {
+            record('4. 외부 응답 시간 초과', '상대가 접수했는지 응답으로 확인하지 못했습니다. Lead와 작업은 유지하고, 같은 요청 식별자로 한 번 더 보내 결과를 확인합니다.', `요청 식별자 = ${key}`);
+            return show('응답을 받지 못했습니다. 4단계를 다시 눌러 같은 요청을 재시도할 수 있습니다.');
+          }
+          acknowledged = outside.get(key);
+          record(attempts > 1 ? '4. 재시도로 기존 접수 확인' : '4. 외부 상담 접수 확인',
+            attempts > 1 ? '외부 시스템이 요청 식별자로 기존 접수를 찾아 같은 접수 번호를 돌려줬습니다. Lead와 작업, 외부 접수는 각각 1건입니다.' : '외부 상담 도구가 요청 식별자와 연결된 접수 번호를 반환했습니다.',
+            `외부 접수 = ${acknowledged} / 요청 식별자 = ${key}`);
+          nextStep = null;
+          return show('흐름 완료. Lead, 작업, 외부 접수가 각각 1건입니다.');
+        }
+      }
+    }
+
+    buttons.forEach((button, index) => button.addEventListener('click', () => {
+      runStep(index);
+      if (nextStep !== null) buttons[nextStep].focus({ preventScroll: true });
+      else get('status').focus();
+    }));
+    get('scenario').addEventListener('change', reset);
+    get('reset').addEventListener('click', reset);
+    reset();
+  </script>
+</body>
+</html>
