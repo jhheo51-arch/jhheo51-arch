@@ -18,18 +18,38 @@
 
 ## 먼저 볼 작업 3개
 
-- [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md)에서 저장한 기록을 다시 쓰게 만드는 문제를 어떻게 정의하고 화면으로 옮겼는지 볼 수 있습니다.
-- [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)에서 재방문 캠페인의 대상을 고르고, 한 회차로는 판단하기 어려워 적용을 보류한 근거를 볼 수 있습니다.
-- [OptiMesh](https://jhheo51-arch.github.io/jhheo51-arch/optimesh-demo-20261123-v1.html)에서 가상 설정을 선택해 승인하고, 바뀐 값을 확인한 뒤 복구해 볼 수 있습니다.
+- [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md)는 저장한 기록을 다시 쓰는 화면을 설계한 사례입니다.
+- [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md)는 재방문 캠페인의 대상을 고르고 적용을 보류한 사례입니다.
+- [OptiMesh](https://jhheo51-arch.github.io/jhheo51-arch/optimesh-demo-20261123-v1.html)에서 가상 설정의 승인, 검증, 복구를 체험할 수 있습니다.
 
 ## 작업 지도
 
-| 분야 | 프로젝트 |
-| --- | --- |
-| 서비스와 콘텐츠 | [MEMOIVE](https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md) / [새록이](https://github.com/jhheo51-arch/saeroki) / [Trend to Trust](https://github.com/jhheo51-arch/trend-to-trust) / [PRX-917](https://github.com/jhheo51-arch/PRX-917) / [VISION](https://vision-delta-hazel.vercel.app/) |
-| 고객 경험과 CRM | [Aurora Owners 360](https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md) / [VoC Lens](https://github.com/jhheo51-arch/VoC-Lens) / [Lead 객체 생성 PoC](https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf) / [헤이딜러 CX](https://github.com/jhheo51-arch/heydealer-cx) / [CRM 웹 포트폴리오](https://jhheo51-arch.github.io/jhheo51-arch/) |
-| 운영 설계 | [claim-relay](https://github.com/jhheo51-arch/claim-relay) / [OptiMesh](./portfolio/optimesh/CASE-APPROVAL-RECOVERY-20261123-v1.md) / [권역별 운영 실험 보드](https://github.com/jhheo51-arch/regional-ops-experiment-board) / [백화점 아침 점검](https://github.com/jhheo51-arch/dept-morning-brief)<br>[Workflow Atlas](https://github.com/jhheo51-arch/workflow-atlas-public) (Codex와 Claude Code 작업 스킬 모음)<br>[SFMC 미발송 독학](https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md) “어떤 미발송을 고쳐야 할까?” 공개 자료로 공부하고 가상 CSV로 검증 |
-| 데이터와 실험 | [CRM LOOP](https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md) / [A/B 합성 실습](https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md) / [IRP 계좌 성장 레이더](https://github.com/jhheo51-arch/irp-growth-radar) / [Mood - radar](https://mood-radar.vercel.app/?v=pey3E47eSc8&t=150) |
+<table>
+  <thead>
+    <tr>
+      <th scope="col" width="108">분야</th>
+      <th scope="col">프로젝트</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" align="left">서비스와<br>콘텐츠</th>
+      <td><a href="https://github.com/jhheo51-arch/memoive/blob/main/docs/CASE-RETURN-TO-RECORD.md">MEMOIVE</a> / <a href="https://github.com/jhheo51-arch/saeroki">새록이</a> / <a href="https://github.com/jhheo51-arch/trend-to-trust">Trend to Trust</a> / <a href="https://github.com/jhheo51-arch/PRX-917">PRX-917</a> / <a href="https://vision-delta-hazel.vercel.app/">VISION</a></td>
+    </tr>
+    <tr>
+      <th scope="row" align="left">고객&nbsp;경험과<br>CRM</th>
+      <td><a href="https://github.com/jhheo51-arch/aurora-owners-360/blob/main/docs/CASE-SAFETY-VOC.md">Aurora Owners 360</a> / <a href="https://github.com/jhheo51-arch/VoC-Lens">VoC Lens</a> / <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/허재혁_포트폴리오_PM.pdf">Lead 객체 생성 PoC</a> / <a href="https://github.com/jhheo51-arch/heydealer-cx">헤이딜러 CX</a> / <a href="https://jhheo51-arch.github.io/jhheo51-arch/">CRM 웹 포트폴리오</a></td>
+    </tr>
+    <tr>
+      <th scope="row" align="left">운영&nbsp;설계</th>
+      <td><a href="https://github.com/jhheo51-arch/claim-relay">claim-relay</a> / <a href="./portfolio/optimesh/CASE-APPROVAL-RECOVERY-20261123-v1.md">OptiMesh</a> / <a href="https://github.com/jhheo51-arch/regional-ops-experiment-board">권역별 운영 실험 보드</a> / <a href="https://github.com/jhheo51-arch/dept-morning-brief">백화점 아침 점검</a><br><a href="https://github.com/jhheo51-arch/workflow-atlas-public">Workflow Atlas</a> (Codex와 Claude Code 작업 스킬 모음)<br><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md">SFMC 미발송 독학</a> “어떤 미발송을 고쳐야 할까?” 공개 자료로 공부하고 가상 CSV로 검증</td>
+    </tr>
+    <tr>
+      <th scope="row" align="left">데이터와<br>실험</th>
+      <td><a href="https://github.com/jhheo51-arch/crm-loop/blob/main/docs/CASE-REVISIT-DECISION.md">CRM LOOP</a> / <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/service_revisit_demo/README.md">A/B 합성 실습</a> / <a href="https://github.com/jhheo51-arch/irp-growth-radar">IRP 계좌 성장 레이더</a> / <a href="https://mood-radar.vercel.app/?v=pey3E47eSc8&amp;t=150">Mood - radar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 더 많은 프로젝트는 [공개 작업 목록](./portfolio/project-index/README.md), 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에서 보실 수 있습니다.
 
