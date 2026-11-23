@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OptiMesh | 설정 변경 모의 데모</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #122927;
+      --muted: #475e5a;
+      --surface: #fff;
+      --line: #d3e1dc;
+      --accent: #14624f;
+      --soft: #e8f4ef;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f2f7f4; color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+    .wrap { width: min(68rem, calc(100% - 2rem)); margin-inline: auto; }
+    header { background: #102f29; color: #fff; padding: 1.75rem 0 2.5rem; }
+    header p { margin: .5rem 0 0; color: #cee5dd; }
+    header a { color: #e1f1ea; }
+    a { display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: .24em; }
+    h1 { margin: .9rem 0 0; font-size: clamp(1.85rem, 5vw, 3.3rem); line-height: 1.15; letter-spacing: -.045em; }
+    h2, legend { margin: 0; font-size: 1.18rem; font-weight: 750; }
+    main { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: start; gap: 1rem; padding-block: 1.5rem 3rem; }
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 1rem; padding: clamp(1rem, 3vw, 1.5rem); min-width: 0; }
+    fieldset { border: 0; margin: 0; padding: 0; min-inline-size: 0; }
+    legend { padding: 0; }
+    .hint { color: var(--muted); margin: .25rem 0 1rem; }
+    .row { border-top: 1px solid var(--line); padding: .65rem 0; }
+    label { display: flex; align-items: center; gap: .65rem; min-height: 44px; }
+    label:has(input:enabled) { cursor: pointer; }
+    input { accent-color: var(--accent); width: 1.15rem; height: 1.15rem; flex: none; margin: 0; }
+    .name { flex: 1; font-weight: 700; }
+    .state { font-size: .8rem; color: var(--muted); text-align: right; }
+    .state[data-changed="true"] { color: var(--accent); font-weight: 700; }
+    dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem .7rem; margin: .12rem 0 .25rem 1.8rem; }
+    dt { font-size: .8rem; color: var(--muted); }
+    dd { margin: 0; font-size: .88rem; }
+    .current { font-weight: 700; }
+    .status { background: var(--soft); color: var(--ink); padding: .8rem 1rem; border-radius: .65rem; margin: .7rem 0 1rem; font-weight: 650; }
+    .controls { display: grid; gap: .55rem; }
+    button { min-height: 44px; padding: .55rem .75rem; border: 1px solid var(--line); border-radius: .55rem; background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+    button:enabled:hover { background: var(--soft); }
+    button[data-active="true"] { background: var(--accent); border-color: var(--accent); color: white; }
+    button[data-active="true"]:hover { background: #104f40; }
+    button:disabled { background: #f1f5f3; color: #526560; cursor: default; }
+    :focus-visible { outline: 3px solid #b06612; outline-offset: 3px; }
+    .history { margin-top: 1.3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+    .history ol { padding-left: 1.3rem; margin: .5rem 0 0; }
+    .history li { margin-bottom: .45rem; }
+    @media (max-width: 44rem) { main { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/optimesh/CASE-APPROVAL-RECOVERY-20261123-v1.md">OptiMesh 공개 사례로 돌아가기</a>
+      <h1>OptiMesh 설정 변경 데모</h1>
+      <p>가상 작업공간입니다. 선택한 변경은 이 브라우저에서만 적용됩니다.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="panel">
+      <fieldset id="selection" aria-describedby="selection-hint">
+        <legend>변경 제안</legend>
+        <p class="hint" id="selection-hint">적용할 항목을 선택하고 원래 값과 제안 값을 비교해 보세요.</p>
+        <div id="proposals"></div>
+      </fieldset>
+      <noscript>데모를 실행하려면 브라우저에서 자바스크립트를 켜 주세요.</noscript>
+    </section>
+    <section class="panel" aria-labelledby="flow-heading">
+      <h2 id="flow-heading">승인, 검증, 복구</h2>
+      <p id="status" class="status" role="status">선택한 항목 0개</p>
+      <div class="controls">
+        <button id="approve" type="button" disabled>선택 항목 승인 및 적용</button>
+        <button id="verify" type="button" disabled>결과 검증</button>
+        <button id="restore" type="button" disabled>승인 항목 복구</button>
+        <button id="reset" type="button">처음부터 다시</button>
+      </div>
+      <div class="history">
+        <h2>실행 기록</h2>
+        <p class="hint" id="empty">아직 실행한 작업이 없습니다.</p>
+        <ol id="history"></ol>
+      </div>
+    </section>
+  </main>
+  <script>
+    const proposals = [
+      { name: 'GitHub 변경 요청 A', original: '검토 대기', proposed: '보관' },
+      { name: 'GitHub 변경 요청 B', original: '검토 대기', proposed: '보관' },
+      { name: 'Supabase 테이블 A', original: '행 수준 접근 통제 꺼짐', proposed: '행 수준 접근 통제 켜짐' },
+      { name: 'Supabase 테이블 B', original: '행 수준 접근 통제 꺼짐', proposed: '행 수준 접근 통제 켜짐' },
+      { name: 'Notion 운영 문서', original: '담당자 없음', proposed: '운영팀' }
+    ];
+    const element = id => document.getElementById(id);
+    const selection = element('selection');
+    const approve = element('approve');
+    const verify = element('verify');
+    const restore = element('restore');
+    const reset = element('reset');
+    const history = element('history');
+    let phase = 'select';
+    let approved = [];
+    let current = proposals.map(proposal => proposal.original);
+
+    element('proposals').innerHTML = proposals.map(({ name, original, proposed }, index) => `
+      <div class="row">
+        <label>
+          <input type="checkbox" value="${index}" aria-labelledby="name-${index}" aria-describedby="values-${index}">
+          <span id="name-${index}" class="name">${name}</span>
+          <span id="state-${index}" class="state">변경 없음</span>
+        </label>
+        <dl id="values-${index}">
+          <div><dt>원래 값</dt><dd>${original}</dd></div>
+          <div><dt>제안 값</dt><dd>${proposed}</dd></div>
+          <div><dt>현재 값</dt><dd id="current-${index}" class="current">${original}</dd></div>
+        </dl>
+      </div>
+    `).join('');
+
+    const checkboxes = [...selection.querySelectorAll('input')];
+    const selected = () => checkboxes.filter(box => box.checked).map(box => Number(box.value));
+
+    function render(message) {
+      const count = selected().length;
+      element('status').textContent = message ?? `선택한 항목 ${count}개`;
+      selection.disabled = phase !== 'select';
+      approve.textContent = count ? `선택한 ${count}개 승인 및 적용` : '선택 항목 승인 및 적용';
+      approve.disabled = phase !== 'select' || count === 0;
+      verify.disabled = phase !== 'applied';
+      restore.disabled = phase !== 'verified';
+      for (const button of [approve, verify, restore]) button.dataset.active = String(!button.disabled);
+      proposals.forEach((proposal, index) => {
+        const state = element(`state-${index}`);
+        const changed = current[index] !== proposal.original;
+        element(`current-${index}`).textContent = current[index];
+        state.dataset.changed = String(changed);
+        state.textContent = changed
+          ? (phase === 'verified' ? '검증 완료' : '적용됨')
+          : (phase === 'restored' && approved.includes(index) ? '복구됨' : '변경 없음');
+      });
+    }
+
+    function record(message) {
+      const entry = document.createElement('li');
+      entry.textContent = message;
+      history.append(entry);
+      element('empty').hidden = true;
+      render(message);
+    }
+
+    selection.addEventListener('change', () => render());
+
+    approve.addEventListener('click', () => {
+      approved = selected();
+      for (const index of approved) current[index] = proposals[index].proposed;
+      phase = 'applied';
+      record(`승인한 ${approved.length}개 항목을 적용했습니다.`);
+      verify.focus();
+    });
+
+    verify.addEventListener('click', () => {
+      const matchesPlan = proposals.every((proposal, index) =>
+        current[index] === (approved.includes(index) ? proposal.proposed : proposal.original)
+      );
+      if (!matchesPlan) {
+        record('현재 값이 승인 내용과 달라 복구를 보류했습니다.');
+        return;
+      }
+      phase = 'verified';
+      record(`검증 완료. 승인 ${approved.length}개는 제안 값, 미승인 ${proposals.length - approved.length}개는 원래 값입니다.`);
+      restore.focus();
+    });
+
+    restore.addEventListener('click', () => {
+      if (!approved.every(index => current[index] === proposals[index].proposed)) {
+        record('현재 값이 검증 이후 달라져 복구를 보류했습니다.');
+        return;
+      }
+      for (const index of approved) current[index] = proposals[index].original;
+      phase = 'restored';
+      record(`복구 완료. 승인한 ${approved.length}개 항목이 원래 값으로 돌아왔습니다.`);
+      reset.focus();
+    });
+
+    reset.addEventListener('click', () => {
+      phase = 'select';
+      approved = [];
+      current = proposals.map(proposal => proposal.original);
+      for (const box of checkboxes) box.checked = false;
+      history.replaceChildren();
+      element('empty').hidden = false;
+      render('초기화했습니다. 선택한 항목 0개');
+      checkboxes[0].focus();
+    });
+
+    render();
+  </script>
+</body>
+</html>
