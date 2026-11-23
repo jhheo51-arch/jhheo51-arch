@@ -45,6 +45,7 @@
     <td valign="top" width="25%">
       <table width="100%">
         <tr><td><a href="https://github.com/jhheo51-arch/claim-relay"><strong>claim-relay</strong></a><br><sub>가상 사고의 사람 검토 경로</sub></td></tr>
+        <tr><td><a href="./portfolio/optimesh/CASE-APPROVAL-RECOVERY-20261123-v1.md"><strong>OptiMesh</strong></a><br><sub>설정 변경의 선택 승인, 검증, 복구</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/regional-ops-experiment-board"><strong>권역별 운영 실험 보드</strong></a><br><sub>교통 자료와 현장 가설 대조</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/dept-morning-brief"><strong>백화점 아침 점검</strong></a><br><sub>공개 리뷰로 점검 규칙 검증</sub></td></tr>
         <tr><td><a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md"><strong>MC 진단 과제</strong></a><br><sub>본인 답안의 공개 요약</sub></td></tr>
@@ -60,6 +61,8 @@
     </td>
   </tr>
 </table>
+
+**Workflow Atlas**는 여러 작업에 쓰던 Codex와 Claude Code의 스킬과 사용법을 한곳에 모아 다시 쓰는 개인 작업 도구입니다.
 
 더 많은 프로젝트는 [공개 작업 목록](./portfolio/project-index/README.md), 지원 자료는 [직무별 이력서와 포트폴리오](./portfolio/other-roles/README.md)에서 보실 수 있습니다.
 
