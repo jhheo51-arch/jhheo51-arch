@@ -50,7 +50,8 @@
         <a href="https://github.com/jhheo51-arch/regional-ops-experiment-board" aria-label="권역별 운영 실험 보드">권&#8288;역&#8288;별&nbsp;운&#8288;영&nbsp;실&#8288;험&nbsp;보&#8288;드</a> &ensp;
         <a href="https://github.com/jhheo51-arch/dept-morning-brief" aria-label="백화점 아침 점검">백&#8288;화&#8288;점&nbsp;아&#8288;침&nbsp;점&#8288;검</a> &ensp;
         <a href="https://github.com/jhheo51-arch/workflow-atlas-public" aria-label="Workflow Atlas">Workflow&nbsp;Atlas</a> &ensp;
-        <a href="./skills/one-page-brief/SKILL.md" aria-label="1페이지 핵심 보고 스킬">1페이지&nbsp;핵심&nbsp;보고</a> (<a href="./skills/one-page-brief/examples/aurora-safety-voc-one-page-20261126-v2.pdf" aria-label="Salesforce 안전 결함 VOC 검증 예시 PDF">Salesforce&nbsp;예시&nbsp;PDF</a>) &ensp;
+        <a href="https://github.com/jhheo51-arch/workflow-atlas-public/blob/main/skills/one-page-brief/SKILL.md" aria-label="1페이지 핵심 보고 스킬">1페이지&nbsp;핵심&nbsp;보고</a> (<a href="./skills/one-page-brief/examples/aurora-safety-voc-one-page-20261126-v2.pdf" aria-label="Salesforce 안전 결함 VOC 검증 예시 PDF">Salesforce&nbsp;예시&nbsp;PDF</a>) &ensp;
+        <a href="https://github.com/jhheo51-arch/workflow-atlas-public/blob/main/skills/rfp/SKILL.md" aria-label="RFP 작성과 대응 스킬">RFP&nbsp;작성과&nbsp;대응</a> &ensp;
         <a href="https://github.com/jhheo51-arch/jhheo51-arch/blob/main/portfolio/salesforce-mc-crm/MC_과제_공개요약_20261118_v1.md" aria-label="SFMC 미발송 독학">SFMC&nbsp;미&#8288;발&#8288;송&nbsp;독&#8288;학</a><br>
         <sub>Workflow Atlas는 Codex와 Claude Code 작업 스킬 모음입니다.<br>SFMC 미발송 독학은 공개 자료와 가상 CSV로 미발송 판단 기준을 검증한 사례입니다.</sub>
       </td>
